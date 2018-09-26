@@ -1,4 +1,7 @@
 # wsn_hardware
 Hardware design for the WSN stations
 
-Eagle files for sensors and other hardware develop at UiO. 
+[Eagle](https://www.autodesk.com/products/eagle/overview) files for sensors and other hardware develop at UiO. 
+
+
+
