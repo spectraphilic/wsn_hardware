@@ -2662,6 +2662,9 @@ to be daisy chained easily.&lt;/p&gt;
 <wire x1="106.68" y1="147.32" x2="106.68" y2="22.86" width="0.8128" layer="94"/>
 <text x="-28.702" y="0.254" size="1.27" layer="97" rot="R180" align="center-right">Clear JP1 to remove
 I2C pullups from bus</text>
+<wire x1="-40.64" y1="22.86" x2="-40.64" y2="-43.18" width="0.8128" layer="94"/>
+<wire x1="-40.64" y1="-43.18" x2="106.68" y2="-43.18" width="0.8128" layer="94"/>
+<wire x1="106.68" y1="-43.18" x2="106.68" y2="22.86" width="0.8128" layer="94"/>
 </plain>
 <instances>
 <instance part="GND2" gate="1" x="12.7" y="60.96"/>
@@ -2677,9 +2680,9 @@ I2C pullups from bus</text>
 <instance part="GND1" gate="1" x="152.4" y="63.5"/>
 <instance part="GND" gate="1" x="195.58" y="53.34"/>
 <instance part="R2" gate="G$1" x="195.58" y="63.5" rot="R90"/>
-<instance part="GND4" gate="1" x="60.96" y="-20.32" rot="MR0"/>
-<instance part="SUPPLY4" gate="G$1" x="60.96" y="-2.54" rot="MR0"/>
-<instance part="J1" gate="G$1" x="71.12" y="-12.7" rot="MR0"/>
+<instance part="GND4" gate="1" x="30.48" y="-20.32" rot="MR0"/>
+<instance part="SUPPLY4" gate="G$1" x="30.48" y="-2.54" rot="MR0"/>
+<instance part="J1" gate="G$1" x="40.64" y="-12.7" rot="MR0"/>
 <instance part="SUPPLY1" gate="G$1" x="152.4" y="88.9"/>
 <instance part="SUPPLY3" gate="G$1" x="132.08" y="88.9"/>
 <instance part="GND5" gate="1" x="132.08" y="63.5"/>
@@ -2713,8 +2716,8 @@ I2C pullups from bus</text>
 <wire x1="152.4" y1="66.04" x2="152.4" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="63.5" y1="-15.24" x2="60.96" y2="-15.24" width="0.1524" layer="91"/>
-<wire x1="60.96" y1="-15.24" x2="60.96" y2="-17.78" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="-15.24" x2="30.48" y2="-15.24" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="-15.24" x2="30.48" y2="-17.78" width="0.1524" layer="91"/>
 <pinref part="GND4" gate="1" pin="GND"/>
 <pinref part="J1" gate="G$1" pin="GND"/>
 </segment>
@@ -2746,8 +2749,8 @@ I2C pullups from bus</text>
 <wire x1="182.88" y1="78.74" x2="190.5" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="63.5" y1="-7.62" x2="58.42" y2="-7.62" width="0.1524" layer="91"/>
-<label x="58.42" y="-7.62" size="1.27" layer="95" rot="MR0" xref="yes"/>
+<wire x1="33.02" y1="-7.62" x2="27.94" y2="-7.62" width="0.1524" layer="91"/>
+<label x="27.94" y="-7.62" size="1.27" layer="95" rot="MR0" xref="yes"/>
 <pinref part="J1" gate="G$1" pin="SCL"/>
 </segment>
 <segment>
@@ -2768,8 +2771,8 @@ I2C pullups from bus</text>
 <wire x1="182.88" y1="81.28" x2="190.5" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="63.5" y1="-10.16" x2="58.42" y2="-10.16" width="0.1524" layer="91"/>
-<label x="58.42" y="-10.16" size="1.27" layer="95" rot="MR0" xref="yes"/>
+<wire x1="33.02" y1="-10.16" x2="27.94" y2="-10.16" width="0.1524" layer="91"/>
+<label x="27.94" y="-10.16" size="1.27" layer="95" rot="MR0" xref="yes"/>
 <pinref part="J1" gate="G$1" pin="SDA"/>
 </segment>
 <segment>
@@ -2801,8 +2804,8 @@ I2C pullups from bus</text>
 <junction x="12.7" y="76.2"/>
 </segment>
 <segment>
-<wire x1="63.5" y1="-12.7" x2="60.96" y2="-12.7" width="0.1524" layer="91"/>
-<wire x1="60.96" y1="-12.7" x2="60.96" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="-12.7" x2="30.48" y2="-12.7" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="-12.7" x2="30.48" y2="-2.54" width="0.1524" layer="91"/>
 <pinref part="SUPPLY4" gate="G$1" pin="3.3V"/>
 <pinref part="J1" gate="G$1" pin="VCC"/>
 </segment>

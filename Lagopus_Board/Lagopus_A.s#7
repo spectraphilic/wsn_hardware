@@ -2852,6 +2852,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="P+6" library="SparkFun" deviceset="3.3V" device=""/>
 <part name="R1" library="Spark" deviceset="R-US_" device="" value="10 K"/>
 <part name="R2" library="Spark" deviceset="R-US_" device="" value="10 K"/>
+<part name="C5" library="SparkFun-Capacitors" deviceset="10UF" device="-0603-6.3V-20%" value="10uF"/>
+<part name="SUPPLY13" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
+<part name="GND16" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="SUPPLY14" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
+<part name="GND18" library="SparkFun" deviceset="GND" device=""/>
+<part name="C10" library="SparkFun-Capacitors" deviceset="0.1UF" device="-0603-25V-(+80/-20%)" value="0.1uF"/>
 </parts>
 <sheets>
 <sheet>
@@ -2895,6 +2901,7 @@ pull-up from INT</text>
 I2C pullups from bus</text>
 <text x="665.734" y="468.63" size="1.27" layer="97" align="center-left">Open(Default) - I2C Operation
 Closed - Serial Operation</text>
+<text x="421.64" y="398.78" size="1.778" layer="97">7-bit unshifted I2C address: 0x49</text>
 </plain>
 <instances>
 <instance part="GND1" gate="1" x="68.58" y="515.62"/>
@@ -3020,6 +3027,12 @@ Closed - Serial Operation</text>
 <attribute name="NAME" x="95.758" y="538.734" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="90.678" y="539.75" size="1.778" layer="96" rot="R270"/>
 </instance>
+<instance part="C5" gate="G$1" x="304.8" y="530.86"/>
+<instance part="SUPPLY13" gate="G$1" x="304.8" y="538.48"/>
+<instance part="GND16" gate="1" x="304.8" y="523.24"/>
+<instance part="SUPPLY14" gate="G$1" x="317.5" y="538.48"/>
+<instance part="GND18" gate="1" x="317.5" y="523.24"/>
+<instance part="C10" gate="G$1" x="317.5" y="530.86"/>
 </instances>
 <busses>
 </busses>
@@ -3207,6 +3220,16 @@ Closed - Serial Operation</text>
 <pinref part="P+6" gate="G$1" pin="3.3V"/>
 <wire x1="515.62" y1="556.26" x2="515.62" y2="533.4" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="C5" gate="G$1" pin="1"/>
+<pinref part="SUPPLY13" gate="G$1" pin="3.3V"/>
+<wire x1="304.8" y1="538.48" x2="304.8" y2="535.94" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="SUPPLY14" gate="G$1" pin="3.3V"/>
+<wire x1="317.5" y1="535.94" x2="317.5" y2="538.48" width="0.1524" layer="91"/>
+<pinref part="C10" gate="G$1" pin="1"/>
+</segment>
 </net>
 <net name="GND" class="0">
 <segment>
@@ -3323,13 +3346,22 @@ Closed - Serial Operation</text>
 <pinref part="GND28" gate="1" pin="GND"/>
 <wire x1="365.76" y1="439.42" x2="365.76" y2="441.96" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="C5" gate="G$1" pin="2"/>
+<pinref part="GND16" gate="1" pin="GND"/>
+<wire x1="304.8" y1="525.78" x2="304.8" y2="528.32" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<wire x1="317.5" y1="528.32" x2="317.5" y2="525.78" width="0.1524" layer="91"/>
+<pinref part="GND18" gate="1" pin="GND"/>
+<pinref part="C10" gate="G$1" pin="2"/>
+</segment>
 </net>
 <net name="SCL" class="0">
 <segment>
 <wire x1="91.44" y1="523.24" x2="127" y2="523.24" width="0.1524" layer="91"/>
 <label x="127" y="523.24" size="1.27" layer="95" font="vector" xref="yes"/>
 <pinref part="U2" gate="U1" pin="SCL"/>
-<label x="251.46" y="535.94" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <wire x1="317.5" y1="284.48" x2="312.42" y2="284.48" width="0.1524" layer="91"/>
@@ -3356,6 +3388,11 @@ Closed - Serial Operation</text>
 <wire x1="254" y1="274.32" x2="254" y2="271.78" width="0.1524" layer="91"/>
 <label x="254" y="271.78" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="SCL/VZ"/>
+<wire x1="259.08" y1="535.94" x2="251.46" y2="535.94" width="0.1524" layer="91"/>
+<label x="251.46" y="535.94" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="SDA" class="0">
 <segment>
@@ -3374,9 +3411,6 @@ Closed - Serial Operation</text>
 <pinref part="J1" gate="G$1" pin="SDA"/>
 </segment>
 <segment>
-<label x="251.46" y="530.86" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
-</segment>
-<segment>
 <pinref part="U5" gate="G$1" pin="TX/SDA_S"/>
 <wire x1="426.72" y1="546.1" x2="411.48" y2="546.1" width="0.1524" layer="91"/>
 <label x="406.4" y="546.1" size="1.778" layer="95"/>
@@ -3390,6 +3424,11 @@ Closed - Serial Operation</text>
 <pinref part="R13" gate="G$1" pin="1"/>
 <wire x1="238.76" y1="271.78" x2="238.76" y2="274.32" width="0.1524" layer="91"/>
 <label x="238.76" y="271.78" size="1.27" layer="95" rot="R270" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="PWM/SDA"/>
+<wire x1="248.92" y1="530.86" x2="259.08" y2="530.86" width="0.1524" layer="91"/>
+<label x="248.92" y="530.86" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="!INT" class="0">
@@ -3434,18 +3473,6 @@ Closed - Serial Operation</text>
 <pinref part="JP9" gate="G$1" pin="1"/>
 <wire x1="101.6" y1="543.56" x2="101.6" y2="541.02" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="2"/>
-</segment>
-</net>
-<net name="N$1" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="SCL/VZ"/>
-<wire x1="259.08" y1="535.94" x2="251.46" y2="535.94" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$2" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="PWM/SDA"/>
-<wire x1="259.08" y1="530.86" x2="251.46" y2="530.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="!RST" class="0">

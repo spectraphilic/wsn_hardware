@@ -2621,14 +2621,14 @@ to be daisy chained easily.&lt;/p&gt;
 <part name="U1" library="SparkFun-Sensors" deviceset="TMP102" device="1:1"/>
 <part name="GND1" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND" library="SparkFun" deviceset="GND" device=""/>
-<part name="R3" library="SparkFun-Resistors" deviceset="10KOHM-1/10W-1%(0603)" device="0603" value="10K"/>
+<part name="R2" library="SparkFun-Resistors" deviceset="10KOHM-1/10W-1%(0603)" device="0603" value="10K"/>
+<part name="R3" library="SparkFun-Resistors" deviceset="4.7KOHM" device="-0603-1/10W-1%" value="4.7k"/>
 <part name="R4" library="SparkFun-Resistors" deviceset="4.7KOHM" device="-0603-1/10W-1%" value="4.7k"/>
-<part name="R5" library="SparkFun-Resistors" deviceset="4.7KOHM" device="-0603-1/10W-1%" value="4.7k"/>
 <part name="SUPPLY18" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
-<part name="JP4" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_3_2-NC_TRACE" device="_SILK" value=""/>
+<part name="JP1" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_3_2-NC_TRACE" device="_SILK" value=""/>
 <part name="GND4" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="SUPPLY4" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
-<part name="J4" library="SparkX" deviceset="I2C_STANDARD" device="_NO_SILK" value="PTH"/>
+<part name="J1" library="SparkX" deviceset="I2C_STANDARD" device="_NO_SILK" value="PTH"/>
 <part name="SUPPLY1" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="SUPPLY3" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="GND5" library="SparkFun" deviceset="GND" device=""/>
@@ -2661,20 +2661,20 @@ resistors.</text>
 <instance part="R1" gate="G$1" x="60.96" y="55.88" rot="R270"/>
 <instance part="SUPPLY10" gate="G$1" x="12.7" y="78.74"/>
 <instance part="SUPPLY12" gate="G$1" x="45.72" y="78.74"/>
-<instance part="SUPPLY14" gate="G$1" x="0" y="76.2"/>
+<instance part="SUPPLY14" gate="G$1" x="0" y="78.74"/>
 <instance part="U3" gate="U1" x="27.94" y="71.12"/>
 <instance part="C2" gate="G$1" x="132.08" y="76.2" rot="MR0"/>
 <instance part="U1" gate="G$1" x="172.72" y="76.2"/>
 <instance part="GND1" gate="1" x="152.4" y="63.5"/>
 <instance part="GND" gate="1" x="195.58" y="53.34"/>
-<instance part="R3" gate="G$1" x="195.58" y="63.5" rot="R90"/>
-<instance part="R4" gate="G$1" x="20.32" y="-20.32" rot="R90"/>
-<instance part="R5" gate="G$1" x="35.56" y="-20.32" rot="R90"/>
+<instance part="R2" gate="G$1" x="195.58" y="63.5" rot="R90"/>
+<instance part="R3" gate="G$1" x="20.32" y="-20.32" rot="R90"/>
+<instance part="R4" gate="G$1" x="35.56" y="-20.32" rot="R90"/>
 <instance part="SUPPLY18" gate="G$1" x="27.94" y="-2.54"/>
-<instance part="JP4" gate="G$1" x="27.94" y="-10.16" rot="R270"/>
+<instance part="JP1" gate="G$1" x="27.94" y="-10.16" rot="R270"/>
 <instance part="GND4" gate="1" x="60.96" y="-20.32" rot="MR0"/>
 <instance part="SUPPLY4" gate="G$1" x="60.96" y="-2.54" rot="MR0"/>
-<instance part="J4" gate="G$1" x="71.12" y="-12.7" rot="MR0"/>
+<instance part="J1" gate="G$1" x="71.12" y="-12.7" rot="MR0"/>
 <instance part="SUPPLY1" gate="G$1" x="152.4" y="88.9"/>
 <instance part="SUPPLY3" gate="G$1" x="132.08" y="88.9"/>
 <instance part="GND5" gate="1" x="132.08" y="63.5"/>
@@ -2704,10 +2704,10 @@ resistors.</text>
 <wire x1="63.5" y1="-15.24" x2="60.96" y2="-15.24" width="0.1524" layer="91"/>
 <wire x1="60.96" y1="-15.24" x2="60.96" y2="-17.78" width="0.1524" layer="91"/>
 <pinref part="GND4" gate="1" pin="GND"/>
-<pinref part="J4" gate="G$1" pin="GND"/>
+<pinref part="J1" gate="G$1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="R3" gate="G$1" pin="1"/>
+<pinref part="R2" gate="G$1" pin="1"/>
 <pinref part="GND" gate="1" pin="GND"/>
 <wire x1="195.58" y1="55.88" x2="195.58" y2="58.42" width="0.1524" layer="91"/>
 </segment>
@@ -2734,7 +2734,7 @@ resistors.</text>
 <wire x1="182.88" y1="78.74" x2="190.5" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="R5" gate="G$1" pin="1"/>
+<pinref part="R4" gate="G$1" pin="1"/>
 <wire x1="35.56" y1="-25.4" x2="35.56" y2="-27.94" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="-27.94" x2="33.02" y2="-27.94" width="0.1524" layer="91"/>
 <label x="33.02" y="-27.94" size="1.27" layer="95" rot="R180" xref="yes"/>
@@ -2742,7 +2742,7 @@ resistors.</text>
 <segment>
 <wire x1="63.5" y1="-7.62" x2="58.42" y2="-7.62" width="0.1524" layer="91"/>
 <label x="58.42" y="-7.62" size="1.27" layer="95" rot="MR0" xref="yes"/>
-<pinref part="J4" gate="G$1" pin="SCL"/>
+<pinref part="J1" gate="G$1" pin="SCL"/>
 </segment>
 </net>
 <net name="SDA" class="0">
@@ -2757,7 +2757,7 @@ resistors.</text>
 <wire x1="182.88" y1="81.28" x2="190.5" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="R4" gate="G$1" pin="1"/>
+<pinref part="R3" gate="G$1" pin="1"/>
 <wire x1="20.32" y1="-25.4" x2="20.32" y2="-27.94" width="0.1524" layer="91"/>
 <wire x1="17.78" y1="-27.94" x2="20.32" y2="-27.94" width="0.1524" layer="91"/>
 <label x="17.78" y="-27.94" size="1.27" layer="95" rot="R180" xref="yes"/>
@@ -2765,12 +2765,12 @@ resistors.</text>
 <segment>
 <wire x1="63.5" y1="-10.16" x2="58.42" y2="-10.16" width="0.1524" layer="91"/>
 <label x="58.42" y="-10.16" size="1.27" layer="95" rot="MR0" xref="yes"/>
-<pinref part="J4" gate="G$1" pin="SDA"/>
+<pinref part="J1" gate="G$1" pin="SDA"/>
 </segment>
 </net>
 <net name="3.3V" class="0">
 <segment>
-<wire x1="0" y1="73.66" x2="0" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="0" y1="73.66" x2="0" y2="78.74" width="0.1524" layer="91"/>
 <pinref part="C1" gate="G$1" pin="1"/>
 <pinref part="SUPPLY14" gate="G$1" pin="3.3V"/>
 </segment>
@@ -2791,7 +2791,7 @@ resistors.</text>
 <junction x="12.7" y="76.2"/>
 </segment>
 <segment>
-<pinref part="JP4" gate="G$1" pin="2"/>
+<pinref part="JP1" gate="G$1" pin="2"/>
 <pinref part="SUPPLY18" gate="G$1" pin="3.3V"/>
 <wire x1="27.94" y1="-2.54" x2="27.94" y2="-5.08" width="0.1524" layer="91"/>
 </segment>
@@ -2799,7 +2799,7 @@ resistors.</text>
 <wire x1="63.5" y1="-12.7" x2="60.96" y2="-12.7" width="0.1524" layer="91"/>
 <wire x1="60.96" y1="-12.7" x2="60.96" y2="-2.54" width="0.1524" layer="91"/>
 <pinref part="SUPPLY4" gate="G$1" pin="3.3V"/>
-<pinref part="J4" gate="G$1" pin="VCC"/>
+<pinref part="J1" gate="G$1" pin="VCC"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="VCC"/>
@@ -2825,23 +2825,23 @@ resistors.</text>
 <segment>
 <pinref part="U1" gate="G$1" pin="ADD0"/>
 <wire x1="182.88" y1="71.12" x2="195.58" y2="71.12" width="0.1524" layer="91"/>
-<pinref part="R3" gate="G$1" pin="2"/>
+<pinref part="R2" gate="G$1" pin="2"/>
 <wire x1="195.58" y1="68.58" x2="195.58" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$4" class="0">
 <segment>
-<pinref part="R4" gate="G$1" pin="2"/>
+<pinref part="R3" gate="G$1" pin="2"/>
 <wire x1="20.32" y1="-15.24" x2="20.32" y2="-10.16" width="0.1524" layer="91"/>
-<pinref part="JP4" gate="G$1" pin="3"/>
+<pinref part="JP1" gate="G$1" pin="3"/>
 <wire x1="20.32" y1="-10.16" x2="22.86" y2="-10.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$5" class="0">
 <segment>
-<pinref part="R5" gate="G$1" pin="2"/>
+<pinref part="R4" gate="G$1" pin="2"/>
 <wire x1="35.56" y1="-15.24" x2="35.56" y2="-10.16" width="0.1524" layer="91"/>
-<pinref part="JP4" gate="G$1" pin="1"/>
+<pinref part="JP1" gate="G$1" pin="1"/>
 <wire x1="35.56" y1="-10.16" x2="33.02" y2="-10.16" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -2849,7 +2849,7 @@ resistors.</text>
 </sheet>
 </sheets>
 <errors>
-<approved hash="104,1,63.5,-12.7,J4,VCC,3.3V,,,"/>
+<approved hash="104,1,63.5,-12.7,J1,VCC,3.3V,,,"/>
 </errors>
 </schematic>
 </drawing>
