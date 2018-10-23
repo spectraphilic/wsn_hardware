@@ -2613,7 +2613,6 @@ to be daisy chained easily.&lt;/p&gt;
 <part name="GND7" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="C1" library="SparkFun-Capacitors" deviceset="0.1UF" device="-0603-25V-(+80/-20%)" value="0.1uF"/>
 <part name="R1" library="SparkFun-Resistors" deviceset="100KOHM" device="-0603-1/10W-1%" value="100k"/>
-<part name="SUPPLY6" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="SUPPLY10" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="SUPPLY12" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="SUPPLY14" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
@@ -2633,12 +2632,12 @@ to be daisy chained easily.&lt;/p&gt;
 <part name="SUPPLY1" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="SUPPLY3" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="GND5" library="SparkFun" deviceset="GND" device=""/>
+<part name="GND6" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<text x="64.516" y="64.516" size="1.27" layer="97" align="top-left">I2C address of the BME280.
-VCC (Default) - 0x77
+<text x="64.516" y="64.516" size="1.27" layer="97" align="top-left">I2C address of the BME280. GND (Default) - 0x76
 </text>
 <text x="3.556" y="53.848" size="1.778" layer="97" align="top-left">BME280 is configured to I2C mode</text>
 <text x="147.32" y="109.22" size="2.54" layer="97">VCC: 1.4V to 3.6V</text>
@@ -2659,8 +2658,7 @@ resistors.</text>
 <instance part="GND2" gate="1" x="12.7" y="60.96"/>
 <instance part="GND7" gate="1" x="0" y="60.96"/>
 <instance part="C1" gate="G$1" x="0" y="68.58"/>
-<instance part="R1" gate="G$1" x="60.96" y="73.66" rot="R90"/>
-<instance part="SUPPLY6" gate="G$1" x="60.96" y="81.28"/>
+<instance part="R1" gate="G$1" x="60.96" y="55.88" rot="R270"/>
 <instance part="SUPPLY10" gate="G$1" x="12.7" y="78.74"/>
 <instance part="SUPPLY12" gate="G$1" x="45.72" y="78.74"/>
 <instance part="SUPPLY14" gate="G$1" x="0" y="76.2"/>
@@ -2680,6 +2678,7 @@ resistors.</text>
 <instance part="SUPPLY1" gate="G$1" x="152.4" y="88.9"/>
 <instance part="SUPPLY3" gate="G$1" x="132.08" y="88.9"/>
 <instance part="GND5" gate="1" x="132.08" y="63.5"/>
+<instance part="GND6" gate="1" x="60.96" y="43.18"/>
 </instances>
 <busses>
 </busses>
@@ -2716,6 +2715,11 @@ resistors.</text>
 <pinref part="C2" gate="G$1" pin="2"/>
 <pinref part="GND5" gate="1" pin="GND"/>
 <wire x1="132.08" y1="73.66" x2="132.08" y2="66.04" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND6" gate="1" pin="GND"/>
+<pinref part="R1" gate="G$1" pin="2"/>
+<wire x1="60.96" y1="45.72" x2="60.96" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SCL" class="0">
@@ -2787,11 +2791,6 @@ resistors.</text>
 <junction x="12.7" y="76.2"/>
 </segment>
 <segment>
-<wire x1="60.96" y1="81.28" x2="60.96" y2="78.74" width="0.1524" layer="91"/>
-<pinref part="R1" gate="G$1" pin="2"/>
-<pinref part="SUPPLY6" gate="G$1" pin="3.3V"/>
-</segment>
-<segment>
 <pinref part="JP4" gate="G$1" pin="2"/>
 <pinref part="SUPPLY18" gate="G$1" pin="3.3V"/>
 <wire x1="27.94" y1="-2.54" x2="27.94" y2="-5.08" width="0.1524" layer="91"/>
@@ -2817,7 +2816,7 @@ resistors.</text>
 <net name="SDO/ADR" class="0">
 <segment>
 <pinref part="R1" gate="G$1" pin="1"/>
-<wire x1="60.96" y1="63.5" x2="60.96" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="63.5" x2="60.96" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="43.18" y1="63.5" x2="60.96" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="U3" gate="U1" pin="SDO/ADR"/>
 </segment>
