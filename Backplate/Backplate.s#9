@@ -300,42 +300,19 @@
 <smd name="P$3" x="0.325" y="-1.435" dx="0.63" dy="0.5" layer="1" rot="R90"/>
 <smd name="P$4" x="0.975" y="-1.435" dx="0.63" dy="0.5" layer="1" rot="R90"/>
 <polygon width="0" layer="1">
-<vertex x="-1.225" y="1.75"/>
-<vertex x="-1.225" y="-0.56"/>
-<vertex x="1.225" y="-0.56"/>
 <vertex x="1.225" y="1.75"/>
 <vertex x="0.725" y="1.75"/>
-<vertex x="0.725" y="1.34"/>
-<vertex x="0.575" y="1.34"/>
 <vertex x="0.575" y="1.75"/>
 <vertex x="0.075" y="1.75"/>
-<vertex x="0.075" y="1.34"/>
-<vertex x="-0.075" y="1.34"/>
 <vertex x="-0.075" y="1.75"/>
-<vertex x="-0.575" y="1.75"/>
-<vertex x="-0.575" y="1.34"/>
-<vertex x="-0.725" y="1.34"/>
-<vertex x="-0.725" y="1.75"/>
-</polygon>
-<polygon width="0" layer="1">
-<vertex x="-1.225" y="-1.12"/>
-<vertex x="-1.225" y="-2.6"/>
-<vertex x="0.575" y="-2.6"/>
-<vertex x="0.575" y="-1.12"/>
-<vertex x="0.075" y="-1.12"/>
-<vertex x="0.075" y="-1.535"/>
-<vertex x="-0.075" y="-1.535"/>
-<vertex x="-0.075" y="-1.12"/>
-<vertex x="-0.575" y="-1.12"/>
-<vertex x="-0.575" y="-1.535"/>
-<vertex x="-0.725" y="-1.535"/>
-<vertex x="-0.725" y="-1.12"/>
 </polygon>
 <smd name="P$5" x="0.975" y="1.435" dx="0.63" dy="0.5" layer="1" rot="R270"/>
 <smd name="P$6" x="0.325" y="1.435" dx="0.63" dy="0.5" layer="1" rot="R270"/>
 <smd name="P$7" x="-0.325" y="1.435" dx="0.63" dy="0.5" layer="1" rot="R270"/>
 <smd name="P$8" x="-0.975" y="1.435" dx="0.63" dy="0.5" layer="1" rot="R270"/>
 <circle x="-2.025" y="-1.475" radius="0.15" width="0.127" layer="21"/>
+<rectangle x1="-1.225" y1="-0.56" x2="1.225" y2="1.34" layer="1"/>
+<rectangle x1="-1.225" y1="-2.6" x2="0.575" y2="-1.535" layer="1"/>
 </package>
 </packages>
 <symbols>
@@ -1801,6 +1778,8 @@ part number 2062-2P from STA</description>
 <sheets>
 <sheet>
 <plain>
+<text x="218.44" y="143.51" size="5.08" layer="97" rot="R90" align="center">Battery</text>
+<text x="123.19" y="143.51" size="5.08" layer="97" rot="R90" align="center">WaspMote</text>
 </plain>
 <instances>
 <instance part="B2" gate="G$1" x="22.86" y="48.26"/>
@@ -2070,11 +2049,6 @@ part number 2062-2P from STA</description>
 <label x="-15.24" y="93.98" size="1.778" layer="95" rot="R270" xref="yes"/>
 </segment>
 <segment>
-<pinref part="J1" gate="G$1" pin="P$2"/>
-<wire x1="160.02" y1="97.79" x2="153.67" y2="99.06" width="0.1524" layer="91"/>
-<label x="153.67" y="99.06" size="1.778" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
 <pinref part="J1" gate="G$1" pin="P$4"/>
 <wire x1="160.02" y1="92.71" x2="153.67" y2="88.9" width="0.1524" layer="91"/>
 <label x="153.67" y="88.9" size="1.778" layer="95" rot="R180" xref="yes"/>
@@ -2084,6 +2058,11 @@ part number 2062-2P from STA</description>
 <wire x1="163.83" y1="78.74" x2="158.75" y2="78.74" width="0.1524" layer="91"/>
 <wire x1="158.75" y1="78.74" x2="157.48" y2="77.47" width="0.1524" layer="91"/>
 <label x="157.48" y="77.47" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="J1" gate="G$1" pin="P$2"/>
+<wire x1="160.02" y1="97.79" x2="153.67" y2="99.06" width="0.1524" layer="91"/>
+<label x="153.67" y="99.06" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="SUN+" class="0">
