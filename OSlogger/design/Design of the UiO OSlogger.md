@@ -74,4 +74,11 @@ Currently we use the concept of frames to carry information . This could be tran
 ## Road Map
 
 1. redesign Lemming board compatible with waspmote
-2. Launch design for 
+2. Launch design for OSlogger:
+   1. decide which microprocessor
+   2. decide key components (RTC, sd reader, ACC, PWR system...)
+   3. produce first electronic schematic and board layout
+   4. build breadboard prototype, develop firmware
+   5. Manufacturing first version
+   6. Adapt code to the new board
+3. Redesign Lagopus, and lemming accordingly to new board packaging
