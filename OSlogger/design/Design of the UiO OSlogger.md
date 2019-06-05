@@ -41,18 +41,37 @@ The overall design consists of three main parts:
 
 The overall package should be compact in size.
 
+The MCU and its surrounding device data lines could follow the following architecture:
+
+![](/home/arcticsnow/github/wsn_hardware/OSlogger/design/MCU_devices_data_lines.png)
+
+
+
+As a basis for the electronic design, a good inspiration is the MayFly schematic. The overall idea is laid out in this design to the exception of components like the MCU that would need to be changed, and it will involved:
+
+![Mayfly 0.5b version electronic schematic](https://3qzcxr28gq9vutx8scdn91zq-wpengine.netdna-ssl.com/wp-content/uploads/mayfly_v0p5b_schematic.png)
+
+
+
 ## Software
 
 One key requirement is that the hardware can be programmed using the Arduino language and compiler, that designing custom code, and integrating new devices is just as easy as with an Arduino board. Then, a second goal is to transfer the current software developed for Waspmote to this new system for deployment of base WSN.   
 
 Current Github repository for the WSN code, waspmote based: https://github.com/spectraphilic/wasp_sketches
 
-Currently we use the concept of frames to carry information . This could be transfered to th
+Currently we use the concept of frames to carry information . This could be transfered to the new software as well.
 
 
 
 ## Accessories to build
 
-1.  [868 MHz Xbee](https://www.digi.com/products/embedded-systems/rf-modules/sub-1-ghz-modules/digi-xbee-sx-868) module with headers and antenna threaded plug
+1.  [868 MHz Xbee](https://www.digi.com/products/embedded-systems/rf-modules/sub-1-ghz-modules/digi-xbee-sx-868) module with headers and antenna threaded plug compatible with other xbee socket.
 2. Lemming board
 3. Lagopus board
+
+
+
+## Road Map
+
+1. redesign Lemming board compatible with waspmote
+2. Launch design for 
