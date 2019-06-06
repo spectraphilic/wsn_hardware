@@ -28,11 +28,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.49497475"
-     inkscape:cx="769.76967"
-     inkscape:cy="258.88927"
+     inkscape:zoom="0.7"
+     inkscape:cx="532.66678"
+     inkscape:cy="556.10223"
      inkscape:document-units="mm"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="g1469"
      showgrid="false"
      inkscape:snap-bbox="true"
      inkscape:window-width="1920"
@@ -48,7 +48,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -111,44 +111,53 @@
     </g>
     <g
        id="g1469">
-      <rect
-         y="120.33485"
-         x="208.7375"
-         height="42.228584"
-         width="59.066566"
-         id="rect1460"
-         style="fill:#ffcfaa;fill-opacity:1;stroke:#090909;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-      <text
-         id="text1450"
-         y="129.79042"
-         x="210.8511"
-         style="font-style:normal;font-weight:normal;font-size:7.76111126px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-         xml:space="preserve"><tspan
-           style="stroke-width:0.26458332"
+      <g
+         id="g2576"
+         transform="translate(0,-10.054167)">
+        <rect
+           style="fill:#ffcfaa;fill-opacity:1;stroke:#090909;stroke-width:0.5683105;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="rect1460"
+           width="59.066566"
+           height="54.55542"
+           x="208.7375"
+           y="119.02214" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-weight:normal;font-size:7.76111126px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+           x="210.8511"
            y="129.79042"
-           x="210.8511"
-           id="tspan1448"
-           sodipodi:role="line">Xbee socket</tspan><tspan
-           id="tspan1452"
-           style="stroke-width:0.26458332"
-           y="139.49181"
-           x="210.8511"
-           sodipodi:role="line">4G socket</tspan><tspan
-           id="tspan1454"
-           style="stroke-width:0.26458332"
-           y="149.19319"
-           x="210.8511"
-           sodipodi:role="line">Iridium socket</tspan><tspan
-           id="tspan1456"
-           style="stroke-width:0.26458332"
-           y="158.89459"
-           x="210.8511"
-           sodipodi:role="line">USB serial</tspan><tspan
-           id="tspan1458"
-           style="stroke-width:0.26458332"
-           y="168.59598"
-           x="210.8511"
-           sodipodi:role="line" /></text>
+           id="text1450"><tspan
+             sodipodi:role="line"
+             id="tspan1448"
+             x="210.8511"
+             y="129.79042"
+             style="stroke-width:0.26458332">Xbee socket</tspan><tspan
+             sodipodi:role="line"
+             x="210.8511"
+             y="139.49181"
+             style="stroke-width:0.26458332"
+             id="tspan1452">4G socket</tspan><tspan
+             sodipodi:role="line"
+             x="210.8511"
+             y="149.19319"
+             style="stroke-width:0.26458332"
+             id="tspan1454">Iridium socket</tspan><tspan
+             sodipodi:role="line"
+             x="210.8511"
+             y="158.89459"
+             style="stroke-width:0.26458332"
+             id="tspan1456">USB serial</tspan><tspan
+             id="tspan2566"
+             sodipodi:role="line"
+             x="210.8511"
+             y="168.59598"
+             style="stroke-width:0.26458332">NB-IoT</tspan><tspan
+             sodipodi:role="line"
+             x="210.8511"
+             y="178.29736"
+             style="stroke-width:0.26458332"
+             id="tspan1458" /></text>
+      </g>
     </g>
     <g
        transform="translate(-2.47e-6,49.712129)"
@@ -230,12 +239,6 @@
            x="191.07315"
            sodipodi:role="line" /></text>
     </g>
-    <path
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 238.13715,139.57825 v 1.06908 h -1.60362"
-       id="path1592"
-       inkscape:connector-curvature="0"
-       inkscape:connector-type="orthogonal" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:4.93888903px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
