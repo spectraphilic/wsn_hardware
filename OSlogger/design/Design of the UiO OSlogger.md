@@ -43,7 +43,7 @@ The overall package should be compact in size.
 
 The MCU and its surrounding device data lines could follow the following architecture:
 
-![](/home/arcticsnow/github/wsn_hardware/OSlogger/design/MCU_devices_data_lines.png)
+![](MCU_devices_data_lines.png)
 
 
 
