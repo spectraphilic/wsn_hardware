@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.0.0">
+<eagle version="9.5.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.005" unitdist="inch" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.001" altunitdist="inch" altunit="mm"/>
+<grid distance="0.005" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.001" altunitdist="inch" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -67,8 +68,8 @@
 <layer number="58" name="bCAD" color="7" fill="1" visible="no" active="no"/>
 <layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
-<layer number="88" name="SimResults" color="9" fill="1" visible="no" active="yes"/>
-<layer number="89" name="SimProbes" color="9" fill="1" visible="no" active="yes"/>
+<layer number="88" name="SimResults" color="9" fill="1" visible="no" active="no"/>
+<layer number="89" name="SimProbes" color="9" fill="1" visible="no" active="no"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="no" active="no"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="no" active="no"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="no" active="no"/>
@@ -209,9 +210,6 @@ john.hulth@geo.uio.no</text>
 <text x="-22.352" y="-25.4" size="1.778" layer="21" rot="R90">Lagopus A V1.0</text>
 <dimension x1="-44.45" y1="-26.67" x2="44.45" y2="-26.67" x3="0" y3="-37.084" textsize="1.778" layer="48"/>
 <dimension x1="-44.45" y1="-26.67" x2="-44.45" y2="44.45" x3="-58.039" y3="8.89" textsize="1.778" layer="48"/>
-<dimension x1="-12.7" y1="-26.67" x2="12.7" y2="-26.67" x3="0" y3="-31.115" textsize="1.778" layer="20"/>
-<dimension x1="2.159" y1="19.05" x2="2.159" y2="-19.05" x3="5.334" y3="0" textsize="1.778" layer="20" dtype="diameter" width="0"/>
-<dimension x1="2.413" y1="-19.05" x2="2.413" y2="-26.67" x3="5.588" y3="-22.86" textsize="1.778" layer="20" dtype="diameter" width="0"/>
 </plain>
 <libraries>
 <library name="SparkFun-Capacitors">
@@ -3572,10 +3570,14 @@ http://ams.com/eng/Products/Spectral-Sensing/Multi-spectral-Sensing/AS7265x</des
 <param name="slThermalsForVias" value="0"/>
 <param name="dpMaxLengthDifference" value="10mm"/>
 <param name="dpGapFactor" value="2.5"/>
-<param name="checkGrid" value="0"/>
 <param name="checkAngle" value="0"/>
 <param name="checkFont" value="1"/>
 <param name="checkRestrict" value="0"/>
+<param name="checkStop" value="0"/>
+<param name="checkValues" value="0"/>
+<param name="checkNames" value="1"/>
+<param name="checkWireStubs" value="1"/>
+<param name="checkPolygonWidth" value="0"/>
 <param name="useDiameter" value="13"/>
 <param name="maxErrors" value="50"/>
 </designrules>
@@ -3676,78 +3678,156 @@ http://ams.com/eng/Products/Spectral-Sensing/Multi-spectral-Sensing/AS7265x</des
 </pass>
 </autorouter>
 <elements>
-<element name="C1" library="SparkFun-Capacitors" package="0603" value="4.7uF" x="-12.446" y="36.957" rot="R180">
+<element name="C1" library="SparkFun-Capacitors" package="0603" value="4.7uF" x="-12.446" y="36.957" smashed="yes" rot="R180">
+<attribute name="NAME" x="-12.446" y="36.195" size="0.6096" layer="25" font="vector" ratio="20" rot="R180" align="bottom-center"/>
 <attribute name="PROD_ID" value="CAP-08280" x="-12.446" y="36.957" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" x="-12.446" y="37.719" size="0.6096" layer="27" font="vector" ratio="20" rot="R180" align="top-center"/>
 </element>
-<element name="C2" library="SparkFun-Capacitors" package="0603" value="0.1uF" x="-12.446" y="39.116" rot="R180">
+<element name="C2" library="SparkFun-Capacitors" package="0603" value="0.1uF" x="-12.446" y="39.116" smashed="yes" rot="R180">
+<attribute name="NAME" x="-12.446" y="38.354" size="0.6096" layer="25" font="vector" ratio="20" rot="R180" align="bottom-center"/>
 <attribute name="PROD_ID" value="CAP-00810" x="-12.446" y="39.116" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" x="-12.446" y="39.878" size="0.6096" layer="27" font="vector" ratio="20" rot="R180" align="top-center"/>
 </element>
-<element name="J1" library="SparkX" package="1X04_NO_SILK" value="PTH" x="0.508" y="4.826" rot="R225"/>
-<element name="J2" library="SparkX" package="1X04_NO_SILK" value="PTH" x="-4.064" y="10.795" rot="R180"/>
+<element name="J1" library="SparkX" package="1X04_NO_SILK" value="PTH" x="0.508" y="4.826" smashed="yes" rot="R225">
+<attribute name="NAME" x="2.393853125" y="4.736196875" size="0.6096" layer="25" font="vector" ratio="20" rot="R225"/>
+<attribute name="VALUE" x="-0.0308125" y="7.160865625" size="0.6096" layer="27" font="vector" ratio="20" rot="R225"/>
+</element>
+<element name="J2" library="SparkX" package="1X04_NO_SILK" value="PTH" x="-4.064" y="10.795" smashed="yes" rot="R180">
+<attribute name="NAME" x="-2.794" y="9.398" size="0.6096" layer="25" font="vector" ratio="20" rot="R180"/>
+<attribute name="VALUE" x="-2.794" y="12.827" size="0.6096" layer="27" font="vector" ratio="20" rot="R180"/>
+</element>
 <element name="U1" library="SparkFun" package="TO-39" value="MLX90614_" x="-17.018" y="25.019" smashed="yes" rot="R270">
 <attribute name="NAME" x="-12.018" y="29.019" size="0.4064" layer="25" rot="R270"/>
 <attribute name="VALUE" x="-15.558" y="26.193" size="0.4064" layer="27" rot="R180"/>
 </element>
-<element name="U2" library="SparkFun-Sensors" package="VL53L1X" value="VL53L1X" x="0" y="39.4765" rot="R180">
+<element name="U2" library="SparkFun-Sensors" package="VL53L1X" value="VL53L1X" x="0" y="39.4765" smashed="yes" rot="R180">
+<attribute name="NAME" x="2.45" y="37.7265" size="0.508" layer="25" font="vector" rot="R180"/>
 <attribute name="PROD_ID" value="IC-13960" x="0" y="39.4765" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" x="2.45" y="41.7265" size="0.508" layer="27" font="vector" rot="R180"/>
 </element>
-<element name="U5" library="kris" package="AS7265X" value="AS72652" x="0" y="28.7625" rot="R180"/>
+<element name="U5" library="kris" package="AS7265X" value="AS72652" x="0" y="28.7625" smashed="yes" rot="R180">
+<attribute name="NAME" x="1" y="27.8625" size="0.3048" layer="25" font="vector" rot="R180"/>
+<attribute name="VALUE" x="1" y="29.9625" size="0.3048" layer="27" font="vector" rot="R180"/>
+</element>
 <element name="GND/VCC" library="SparkFun-Connectors" package="1X02_NO_SILK" value="M021X02_NO_SILK" x="21.717" y="23.114" smashed="yes" rot="R270"/>
-<element name="R5" library="Spark" package="R0402_B" value="10 K" x="11.176" y="25.4" rot="R270"/>
-<element name="R6" library="Spark" package="R0402_B" value="10 K" x="-11.303" y="26.924" rot="R180"/>
-<element name="R12" library="Spark" package="R0402_B" value="10 K" x="9.779" y="25.4" rot="R270"/>
-<element name="R15" library="Spark" package="R0402_B" value="10 K" x="8.382" y="25.4" rot="R270"/>
-<element name="U6" library="kris" package="AS7265X" value="AS72651" x="-5.3625" y="33.9625" rot="R90"/>
-<element name="U7" library="kris" package="AS7265X" value="AS72653" x="5.3625" y="33.8" rot="R270"/>
-<element name="U8" library="kris" package="USON-8" value="MX25L4006E" x="13.97" y="28.448" rot="R270"/>
-<element name="R16" library="Spark" package="R0402_B" value="4K7" x="-11.303" y="28.321" rot="R180"/>
-<element name="R17" library="Spark" package="R0402_B" value="4K7" x="-11.303" y="29.718" rot="R180"/>
+<element name="R5" library="Spark" package="R0402_B" value="10 K" x="11.176" y="25.4" smashed="yes" rot="R270">
+<attribute name="NAME" x="11.8745" y="26.289" size="0.4064" layer="25" rot="R270"/>
+<attribute name="VALUE" x="10.033" y="26.4795" size="0.4064" layer="27" rot="R270"/>
+</element>
+<element name="R6" library="Spark" package="R0402_B" value="10 K" x="-11.303" y="26.924" smashed="yes" rot="R180">
+<attribute name="NAME" x="-10.414" y="26.2255" size="0.4064" layer="25" rot="R180"/>
+<attribute name="VALUE" x="-10.2235" y="28.067" size="0.4064" layer="27" rot="R180"/>
+</element>
+<element name="R12" library="Spark" package="R0402_B" value="10 K" x="9.779" y="25.4" smashed="yes" rot="R270">
+<attribute name="NAME" x="10.4775" y="26.289" size="0.4064" layer="25" rot="R270"/>
+<attribute name="VALUE" x="8.636" y="26.4795" size="0.4064" layer="27" rot="R270"/>
+</element>
+<element name="R15" library="Spark" package="R0402_B" value="10 K" x="8.382" y="25.4" smashed="yes" rot="R270">
+<attribute name="NAME" x="9.0805" y="26.289" size="0.4064" layer="25" rot="R270"/>
+<attribute name="VALUE" x="7.239" y="26.4795" size="0.4064" layer="27" rot="R270"/>
+</element>
+<element name="U6" library="kris" package="AS7265X" value="AS72651" x="-5.3625" y="33.9625" smashed="yes" rot="R90">
+<attribute name="NAME" x="-6.2625" y="32.9625" size="0.3048" layer="25" font="vector" rot="R90"/>
+<attribute name="VALUE" x="-4.1625" y="32.9625" size="0.3048" layer="27" font="vector" rot="R90"/>
+</element>
+<element name="U7" library="kris" package="AS7265X" value="AS72653" x="5.3625" y="33.8" smashed="yes" rot="R270">
+<attribute name="NAME" x="6.2625" y="34.8" size="0.3048" layer="25" font="vector" rot="R270"/>
+<attribute name="VALUE" x="4.1625" y="34.8" size="0.3048" layer="27" font="vector" rot="R270"/>
+</element>
+<element name="U8" library="kris" package="USON-8" value="MX25L4006E" x="13.97" y="28.448" smashed="yes" rot="R270">
+<attribute name="NAME" x="15.79" y="28.998" size="0.3048" layer="25" font="vector" rot="R270"/>
+<attribute name="VALUE" x="11.8" y="29.028" size="0.3048" layer="27" font="vector" rot="R270"/>
+</element>
+<element name="R16" library="Spark" package="R0402_B" value="4K7" x="-11.303" y="28.321" smashed="yes" rot="R180">
+<attribute name="NAME" x="-10.414" y="27.6225" size="0.4064" layer="25" rot="R180"/>
+<attribute name="VALUE" x="-10.2235" y="29.464" size="0.4064" layer="27" rot="R180"/>
+</element>
+<element name="R17" library="Spark" package="R0402_B" value="4K7" x="-11.303" y="29.718" smashed="yes" rot="R180">
+<attribute name="NAME" x="-10.414" y="29.0195" size="0.4064" layer="25" rot="R180"/>
+<attribute name="VALUE" x="-10.2235" y="30.861" size="0.4064" layer="27" rot="R180"/>
+</element>
 <element name="U$7" library="PWSONN6" package="HN01" value="HN01" x="21.717" y="33.274" smashed="yes" rot="R90"/>
 <element name="U$8" library="PWSONN6" package="HN01" value="HN01" x="21.717" y="30.734" smashed="yes" rot="R90"/>
-<element name="U$1" library="PWSONN6" package="HN01" value="HN01" x="21.717" y="25.654" rot="R90"/>
-<element name="U$2" library="PWSONN6" package="HN01" value="HN01" x="21.717" y="28.194" rot="R90"/>
-<element name="R18" library="Spark" package="R0402_B" value="100K" x="17.145" y="31.75" rot="R90"/>
-<element name="R13" library="SparkFun-Resistors" package="0603" value="4.7k" x="-9.144" y="16.51" rot="R90">
+<element name="U$1" library="PWSONN6" package="HN01" value="HN01" x="21.717" y="25.654" smashed="yes" rot="R90"/>
+<element name="U$2" library="PWSONN6" package="HN01" value="HN01" x="21.717" y="28.194" smashed="yes" rot="R90"/>
+<element name="R18" library="Spark" package="R0402_B" value="100K" x="17.145" y="31.75" smashed="yes" rot="R90">
+<attribute name="NAME" x="16.4465" y="30.861" size="0.4064" layer="25" rot="R90"/>
+<attribute name="VALUE" x="18.288" y="30.6705" size="0.4064" layer="27" rot="R90"/>
+</element>
+<element name="R13" library="SparkFun-Resistors" package="0603" value="4.7k" x="-9.144" y="16.51" smashed="yes" rot="R90">
+<attribute name="NAME" x="-9.906" y="16.51" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
 <attribute name="PROD_ID" value="RES-07857" x="-12.954" y="16.51" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="-8.382" y="16.51" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
 </element>
-<element name="R14" library="SparkFun-Resistors" package="0603" value="4.7k" x="-11.684" y="16.51" rot="R90">
+<element name="R14" library="SparkFun-Resistors" package="0603" value="4.7k" x="-11.684" y="16.51" smashed="yes" rot="R90">
+<attribute name="NAME" x="-12.446" y="16.51" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
 <attribute name="PROD_ID" value="RES-07857" x="-15.494" y="16.51" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="-10.922" y="16.51" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
 </element>
-<element name="JP1" library="SparkFun-Jumpers" package="SMT-JUMPER_3_2-NC_PASTE_SILK" value="" x="-10.414" y="20.32"/>
-<element name="JP2" library="SparkFun-Jumpers" package="SMT-JUMPER_2_NO_SILK" value="" x="11.938" y="21.717" rot="R180"/>
-<element name="R3" library="SparkFun-Resistors" package="0603" value="10k" x="9.144" y="22.479" rot="R90">
+<element name="JP1" library="SparkFun-Jumpers" package="SMT-JUMPER_3_2-NC_PASTE_SILK" value="" x="-10.414" y="20.32" smashed="yes">
+<attribute name="NAME" x="-10.414" y="21.463" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center"/>
+<attribute name="VALUE" x="-10.414" y="19.177" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
+</element>
+<element name="JP2" library="SparkFun-Jumpers" package="SMT-JUMPER_2_NO_SILK" value="" x="11.938" y="21.717" smashed="yes" rot="R180">
+<attribute name="NAME" x="11.938" y="20.574" size="0.6096" layer="25" font="vector" ratio="20" rot="R180" align="bottom-center"/>
+<attribute name="VALUE" x="11.938" y="22.86" size="0.6096" layer="27" font="vector" ratio="20" rot="R180" align="top-center"/>
+</element>
+<element name="R3" library="SparkFun-Resistors" package="0603" value="10k" x="9.144" y="22.479" smashed="yes" rot="R90">
+<attribute name="NAME" x="8.382" y="22.479" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
 <attribute name="PROD_ID" value="RES-00824" x="5.334" y="18.669" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="9.906" y="22.479" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
 </element>
-<element name="C11" library="SparkFun-Capacitors" package="0603" value="1.0uF" x="5.419" y="22.47" rot="R270">
+<element name="C11" library="SparkFun-Capacitors" package="0603" value="1.0uF" x="5.419" y="22.47" smashed="yes" rot="R270">
+<attribute name="NAME" x="6.181" y="22.47" size="0.6096" layer="25" font="vector" ratio="20" rot="R270" align="bottom-center"/>
 <attribute name="PROD_ID" value="CAP-00868" x="5.419" y="22.47" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" x="4.657" y="22.47" size="0.6096" layer="27" font="vector" ratio="20" rot="R270" align="top-center"/>
 </element>
-<element name="C10" library="SparkFun-Capacitors" package="0603" value="10uF" x="7.246" y="22.485" rot="R270">
+<element name="C10" library="SparkFun-Capacitors" package="0603" value="10uF" x="7.246" y="22.485" smashed="yes" rot="R270">
+<attribute name="NAME" x="8.008" y="22.485" size="0.6096" layer="25" font="vector" ratio="20" rot="R270" align="bottom-center"/>
 <attribute name="PROD_ID" value="CAP-11015" x="7.246" y="22.485" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" x="6.484" y="22.485" size="0.6096" layer="27" font="vector" ratio="20" rot="R270" align="top-center"/>
 </element>
-<element name="C13" library="SparkFun-Capacitors" package="0603" value="1.0uF" x="-12.446" y="31.369" rot="R180">
+<element name="C13" library="SparkFun-Capacitors" package="0603" value="1.0uF" x="-12.446" y="31.369" smashed="yes" rot="R180">
+<attribute name="NAME" x="-12.446" y="30.607" size="0.6096" layer="25" font="vector" ratio="20" rot="R180" align="bottom-center"/>
 <attribute name="PROD_ID" value="CAP-00868" x="-12.446" y="31.369" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" x="-12.446" y="32.131" size="0.6096" layer="27" font="vector" ratio="20" rot="R180" align="top-center"/>
 </element>
-<element name="C12" library="SparkFun-Capacitors" package="0603" value="10uF" x="-12.446" y="33.147" rot="R180">
+<element name="C12" library="SparkFun-Capacitors" package="0603" value="10uF" x="-12.446" y="33.147" smashed="yes" rot="R180">
+<attribute name="NAME" x="-12.446" y="32.385" size="0.6096" layer="25" font="vector" ratio="20" rot="R180" align="bottom-center"/>
 <attribute name="PROD_ID" value="CAP-11015" x="-12.446" y="33.147" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" x="-12.446" y="33.909" size="0.6096" layer="27" font="vector" ratio="20" rot="R180" align="top-center"/>
 </element>
-<element name="C15" library="SparkFun-Capacitors" package="0603" value="1.0uF" x="11.684" y="32.258" rot="R270">
+<element name="C15" library="SparkFun-Capacitors" package="0603" value="1.0uF" x="11.684" y="32.258" smashed="yes" rot="R270">
+<attribute name="NAME" x="12.446" y="32.258" size="0.6096" layer="25" font="vector" ratio="20" rot="R270" align="bottom-center"/>
 <attribute name="PROD_ID" value="CAP-00868" x="11.684" y="32.258" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" x="10.922" y="32.258" size="0.6096" layer="27" font="vector" ratio="20" rot="R270" align="top-center"/>
 </element>
-<element name="C14" library="SparkFun-Capacitors" package="0603" value="10uF" x="13.462" y="32.258" rot="R270">
+<element name="C14" library="SparkFun-Capacitors" package="0603" value="10uF" x="13.462" y="32.258" smashed="yes" rot="R270">
+<attribute name="NAME" x="14.224" y="32.258" size="0.6096" layer="25" font="vector" ratio="20" rot="R270" align="bottom-center"/>
 <attribute name="PROD_ID" value="CAP-11015" x="13.462" y="32.258" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" x="12.7" y="32.258" size="0.6096" layer="27" font="vector" ratio="20" rot="R270" align="top-center"/>
 </element>
-<element name="R2" library="Spark" package="R0402_B" value="10 K" x="-11.072" y="41.0435" rot="R180"/>
-<element name="C3" library="SparkFun-Capacitors" package="0603" value="10uF" x="-16.129" y="31.369">
+<element name="R2" library="Spark" package="R0402_B" value="10 K" x="-11.072" y="41.0435" smashed="yes" rot="R180">
+<attribute name="NAME" x="-10.183" y="40.345" size="0.4064" layer="25" rot="R180"/>
+<attribute name="VALUE" x="-9.9925" y="42.1865" size="0.4064" layer="27" rot="R180"/>
+</element>
+<element name="C3" library="SparkFun-Capacitors" package="0603" value="10uF" x="-16.129" y="31.369" smashed="yes">
+<attribute name="NAME" x="-16.129" y="32.131" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center"/>
 <attribute name="PROD_ID" value="CAP-11015" x="-16.129" y="31.369" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="-16.129" y="30.607" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
 </element>
-<element name="C4" library="SparkFun-Capacitors" package="0603" value="0.1uF" x="-16.129" y="33.147">
+<element name="C4" library="SparkFun-Capacitors" package="0603" value="0.1uF" x="-16.129" y="33.147" smashed="yes">
+<attribute name="NAME" x="-16.129" y="33.909" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center"/>
 <attribute name="PROD_ID" value="CAP-00810" x="-16.129" y="33.147" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="-16.129" y="32.385" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
 </element>
-<element name="C16" library="SparkFun-Capacitors" package="0603" value="1.0uF" x="15.367" y="32.258" rot="R270">
+<element name="C16" library="SparkFun-Capacitors" package="0603" value="1.0uF" x="15.367" y="32.258" smashed="yes" rot="R270">
+<attribute name="NAME" x="16.129" y="32.258" size="0.6096" layer="25" font="vector" ratio="20" rot="R270" align="bottom-center"/>
 <attribute name="PROD_ID" value="CAP-00868" x="15.367" y="32.258" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" x="14.605" y="32.258" size="0.6096" layer="27" font="vector" ratio="20" rot="R270" align="top-center"/>
 </element>
-<element name="U$4" library="PWSONN6" package="HN01" value="HN01" x="21.717" y="18.034"/>
-<element name="U$5" library="UIO-John" package="UIO-LOGO-BL" value="" x="-25.4" y="-21.59" rot="R90"/>
+<element name="U$4" library="PWSONN6" package="HN01" value="HN01" x="21.717" y="18.034" smashed="yes"/>
+<element name="U$5" library="UIO-John" package="UIO-LOGO-BL" value="" x="-25.4" y="-21.59" smashed="yes" rot="R90"/>
 </elements>
 <signals>
 <signal name="3.3V">
@@ -4254,6 +4334,13 @@ http://ams.com/eng/Products/Spectral-Sensing/Multi-spectral-Sensing/AS7265x</des
 <signal name="3.3V2">
 </signal>
 </signals>
+<mfgpreviewcolors>
+<mfgpreviewcolor name="soldermaskcolor" color="0xC8008000"/>
+<mfgpreviewcolor name="silkscreencolor" color="0xFFFEFEFE"/>
+<mfgpreviewcolor name="backgroundcolor" color="0xFF282828"/>
+<mfgpreviewcolor name="coppercolor" color="0xFFFFBF00"/>
+<mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
+</mfgpreviewcolors>
 </board>
 </drawing>
 <compatibility>
