@@ -1,0 +1,11 @@
+"Part";"Value";"Device";"Package";"Description";"PROD_ID";"VALUE";
+"C1";"0.1uF";"0.1UF-0603-25V-(+80/-20%)";"0603";"0.1µF ceramic capacitors";"CAP-00810";"0.1uF";
+"C2";"0.1uF";"0.1UF-0603-25V-(+80/-20%)";"0603";"0.1µF ceramic capacitors";"CAP-00810";"0.1uF";
+"C3";"0.1uF";"0.1UF-0603-25V-(+80/-20%)";"0603";"0.1µF ceramic capacitors";"CAP-00810";"0.1uF";
+"C4";"10uF";"10UF-0603-6.3V-20%";"0603";"10.0µF ceramic capacitors";"CAP-11015";"10uF";
+"J1";"PTH";"I2C_STANDARD_NO_SILK";"1X04_NO_SILK";"SparkFun I2C Standard Pinout Header";"";"";
+"R1";"100k";"100KOHM-0603-1/10W-1%";"0603";"100kΩ resistor";"RES-07828";"100k";
+"R2";"10k";"10KOHM-0603-1/10W-1%";"0603";"10kΩ resistor";"RES-00824";"10k";
+"U1";"SHT31-DIS-F";"SHT3X";"SHT3X";"SHT3x - Digital Temperature and Humidity Sensor";"";"";
+"U3";"BME280";"BME280";"LGA-8-2.5X2.5";"Bosch BME280 &ndash; Combined Humidity and Pressure Sensor";"IC-13090";"BME280";
+"U4";"TMP117";"TMP117";"TMP117";"Temperature Sensor";"IC-14700";"";
