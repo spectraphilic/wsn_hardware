@@ -1,0 +1,24 @@
+{
+    "Header": {
+        "Comment": "All values are metric (mm)",
+        "CreationDate": "2019-12-19T11:59:22Z",
+        "GenerationSoftware": {
+            "Application": "EAGLE",
+            "Vendor": "Autodesk",
+            "Version": "9.5.2"
+        },
+        "Part": "Single"
+    },
+    "Overall": {
+        "BoardThickness": 1.57,
+        "LayerNumber": 2,
+        "Name": {
+            "ProjectId": "Lagopus_A_2"
+        },
+        "Owner": "John Hulth <john.hulth@geo.uio.no>",
+        "Size": {
+            "X": 88.886163,
+            "Y": 71.142284
+        }
+    }
+}
