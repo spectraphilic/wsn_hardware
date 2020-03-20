@@ -4,6 +4,49 @@ S. Filhol, June 2019
 
 
 
+## IoT logger design
+
+**Requirements:**
+	- M0 microprocessor (SAM D21G). Could we use the one with 64 pins? would the adafruit library still work?  (module RTC included, add external crystal)
+	- MRAM/EEPROM memory chip (MR25H256   256kb memory with SPI communication)
+	- **Connectivity:**
+        - Lora/xbee radio module connector (UART) (e.g. RFM95 Opradio)
+        - 4G module plug
+	- SD card reader
+	- **Power:**
+    	- Solar charge controller for LiPo batteries (MPPT, talk to Vincent Boitier, see email)
+    	- 	3V3 power circuit (SPX3819-3.3), 500mA  (include switch)
+    	- 	5V power circuit, 500 mA  (include switch)
+    	- 	battery power monitoring 
+	- Accelerometer (read https://www.sparkfun.com/pages/accel_gyro_guide)
+	- connectors for lemming board (change pattern)
+	- USB boot loader (power or data only?)  + Jtag connector (flash micropro to allow for bootloading program with IDE)
+	- pull-up resistor I2C lines
+	- LEDs: USB connectivity, processor activity
+	- coin cell (?)
+
+### extra feature
+(arduino WIFI low power, magnetic switch)
+relay SSR (solid state relay)
+ADC + reference potential (LM4041) => for analog sensor reading
+
+Idea for later version:
+- paper screen (? later version) => to display either sensor reading and/or logger settings
+
+Lemming board: 
+- 	- GPS connector (sparkfun ublock, ou Maestro A2200) regarder antenne GPS en spirale sur PCB.
+- 	Iridium connector
+- 	
+
+
+
+
+
+
+
+
+
+
 This documents highlights the design guidelines and requirements for a full open-source (hardware and software) data logger for Wireless Sensor Network (WSN) application in cold and remote regions. Inspired by [Arduino](https://www.arduino.cc/), and the Waspmote from [Libelium](http://www.libelium.com/products/waspmote/), the goal is to build a core platform with power management, computational power, sensor interface, and a variety of wireless communication systems. The core design principle should follow power efficiency, simplicity and flexibility for fast and easy integration of accessories (sensors), just like Arduino's board. The objective for this platform is to be used for weather station system, but also quick and easy implementation of small projects (e.g. student project).
 
 Some existing projects  approaching this philosophy are the [MayflyDIY](https://www.envirodiy.org/mayfly/) system, the [Loom Project](https://www.open-sensing.org/project-loom), the [Maixduino](https://www.seeedstudio.com/Sipeed-Maixduino-Kit-for-RISC-V-AI-IoT-p-4047.html), or [Seeed Stalker](https://www.seeedstudio.com/category/Arduino-c-1001/category/Arduino-Compatible-c-11/seeeduino-boards-c-987/Seeeduino-Stalker-V3-1-p-2686.html). While all of them show interesting features, none present the full list of requirements needed to tackle data logging and communication in cold and remote regions. 
