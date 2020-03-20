@@ -905,23 +905,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <rectangle x1="0.15" y1="-1.15" x2="0.5" y2="-0.8" layer="51" rot="R180"/>
 <rectangle x1="0.8" y1="-1.15" x2="1.15" y2="-0.8" layer="51" rot="R180"/>
 </package>
-<package name="TMP117">
-<smd name="3" x="-0.975" y="-0.65" dx="0.45" dy="0.3" layer="1"/>
-<smd name="2" x="-0.975" y="0" dx="0.45" dy="0.3" layer="1"/>
-<smd name="1" x="-0.975" y="0.65" dx="0.45" dy="0.3" layer="1"/>
-<smd name="6" x="0.975" y="0.65" dx="0.45" dy="0.3" layer="1"/>
-<smd name="5" x="0.975" y="0" dx="0.45" dy="0.3" layer="1"/>
-<smd name="4" x="0.975" y="-0.65" dx="0.45" dy="0.3" layer="1"/>
-<circle x="-0.942" y="1.385" radius="0.05" width="0.2032" layer="21"/>
-<wire x1="-1" y1="1" x2="-1" y2="-1" width="0.127" layer="51"/>
-<wire x1="-1" y1="-1" x2="1" y2="-1" width="0.127" layer="51"/>
-<wire x1="1" y1="-1" x2="1" y2="1" width="0.127" layer="51"/>
-<wire x1="1" y1="1" x2="-1" y2="1" width="0.127" layer="51"/>
-<wire x1="-1" y1="1" x2="1" y2="1" width="0.2032" layer="21"/>
-<wire x1="-1" y1="-1" x2="1" y2="-1" width="0.2032" layer="21"/>
-<text x="-0.03" y="1.531" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
-<text x="-0.03" y="-1.246" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
-</package>
 </packages>
 <symbols>
 <symbol name="BME280">
@@ -941,20 +924,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pin name="VDD" x="-12.7" y="5.08" length="short"/>
 <text x="-10.16" y="7.874" size="1.778" layer="95">&gt;NAME</text>
 <text x="-10.16" y="-10.414" size="1.778" layer="95" align="top-left">&gt;VALUE</text>
-</symbol>
-<symbol name="TMP117">
-<pin name="SCL" x="12.7" y="0" length="short" rot="R180"/>
-<pin name="GND" x="-10.16" y="-5.08" length="short"/>
-<pin name="!INT" x="12.7" y="5.08" length="short" rot="R180"/>
-<pin name="ADD0" x="12.7" y="-5.08" length="short" rot="R180"/>
-<pin name="V+" x="-10.16" y="5.08" length="short" direction="pwr"/>
-<pin name="SDA" x="12.7" y="2.54" length="short" rot="R180"/>
-<wire x1="-7.62" y1="7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="-7.62" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-7.62" x2="10.16" y2="7.62" width="0.254" layer="94"/>
-<wire x1="10.16" y1="7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
-<text x="-7.62" y="8.128" size="1.778" layer="95">&gt;NAME</text>
-<text x="-7.62" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -984,31 +953,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <technology name="">
 <attribute name="PROD_ID" value="IC-13090" constant="no"/>
 <attribute name="VALUE" value="BME280" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="TMP117" prefix="U">
-<description>Temperature Sensor
-TMP117x High-Accuracy, Low-Power, Digital Temperature Sensor
-With SMBus™- and I2C-Compatible Interface</description>
-<gates>
-<gate name="G$1" symbol="TMP117" x="3.81" y="0"/>
-</gates>
-<devices>
-<device name="" package="TMP117">
-<connects>
-<connect gate="G$1" pin="!INT" pad="3"/>
-<connect gate="G$1" pin="ADD0" pad="4"/>
-<connect gate="G$1" pin="GND" pad="2"/>
-<connect gate="G$1" pin="SCL" pad="1"/>
-<connect gate="G$1" pin="SDA" pad="6"/>
-<connect gate="G$1" pin="V+" pad="5"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="IC-14700" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -1203,109 +1147,6 @@ to be daisy chained easily.&lt;/p&gt;
 <connect gate="G$1" pin="SCL" pad="4"/>
 <connect gate="G$1" pin="SDA" pad="3"/>
 <connect gate="G$1" pin="VCC" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
-<library name="microbuilder">
-<description>&lt;h2&gt;&lt;b&gt;microBuilder.eu&lt;/b&gt; Eagle Footprint Library&lt;/h2&gt;
-
-&lt;p&gt;Footprints for common components used in our projects and products.  This is the same library that we use internally, and it is regularly updated.  The newest version can always be found at &lt;b&gt;www.microBuilder.eu&lt;/b&gt;.  If you find this library useful, please feel free to purchase something from our online store. Please also note that all holes are optimised for metric drill bits!&lt;/p&gt;
-
-&lt;h3&gt;Obligatory Warning&lt;/h3&gt;
-&lt;p&gt;While it probably goes without saying, there are no guarantees that the footprints or schematic symbols in this library are flawless, and we make no promises of fitness for production, prototyping or any other purpose. These libraries are provided for information puposes only, and are used at your own discretion.  While we make every effort to produce accurate footprints, and many of the items found in this library have be proven in production, we can't make any promises of suitability for a specific purpose. If you do find any errors, though, please feel free to contact us at www.microbuilder.eu to let us know about it so that we can update the library accordingly!&lt;/p&gt;
-
-&lt;h3&gt;License&lt;/h3&gt;
-&lt;p&gt;This work is placed in the public domain, and may be freely used for commercial and non-commercial work with the following conditions:&lt;/p&gt;
-&lt;p&gt;THIS SOFTWARE IS PROVIDED ''AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE INSTITUTE OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,  BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-&lt;/p&gt;</description>
-<packages>
-<package name="SHT3X">
-<wire x1="-1.25" y1="1.25" x2="1.25" y2="1.25" width="0.127" layer="51"/>
-<wire x1="1.25" y1="1.25" x2="1.25" y2="-1.25" width="0.127" layer="51"/>
-<wire x1="1.25" y1="-1.25" x2="-1.25" y2="-1.25" width="0.127" layer="51"/>
-<wire x1="-1.25" y1="-1.25" x2="-1.25" y2="1.25" width="0.127" layer="51"/>
-<circle x="0" y="0" radius="0.75" width="0.127" layer="51"/>
-<smd name="THERMAL" x="0" y="0" dx="1" dy="1.7" layer="1"/>
-<smd name="1" x="-1.15" y="0.75" dx="0.25" dy="0.6" layer="1" rot="R90"/>
-<smd name="2" x="-1.15" y="0.25" dx="0.25" dy="0.6" layer="1" rot="R90"/>
-<smd name="3" x="-1.15" y="-0.25" dx="0.25" dy="0.6" layer="1" rot="R90"/>
-<smd name="4" x="-1.15" y="-0.75" dx="0.25" dy="0.6" layer="1" rot="R90"/>
-<smd name="5" x="1.15" y="-0.75" dx="0.25" dy="0.6" layer="1" rot="R270"/>
-<smd name="6" x="1.15" y="-0.25" dx="0.25" dy="0.6" layer="1" rot="R270"/>
-<smd name="7" x="1.15" y="0.25" dx="0.25" dy="0.6" layer="1" rot="R270"/>
-<smd name="8" x="1.15" y="0.75" dx="0.25" dy="0.6" layer="1" rot="R270"/>
-<wire x1="-1.4" y1="1.1" x2="-1.4" y2="1.4" width="0.127" layer="21"/>
-<wire x1="-1.4" y1="1.4" x2="1.4" y2="1.4" width="0.127" layer="21"/>
-<wire x1="1.4" y1="1.4" x2="1.4" y2="1.1" width="0.127" layer="21"/>
-<wire x1="-1.4" y1="-1.1" x2="-1.4" y2="-1.4" width="0.127" layer="21"/>
-<wire x1="-1.4" y1="-1.4" x2="1.4" y2="-1.4" width="0.127" layer="21"/>
-<wire x1="1.4" y1="-1.4" x2="1.4" y2="-1.1" width="0.127" layer="21"/>
-<circle x="-1.9" y="1.25" radius="0.111803125" width="0.4064" layer="21"/>
-<text x="-1.265" y="1.61" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
-<text x="-1.238" y="-1.971" size="0.4064" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-</packages>
-<symbols>
-<symbol name="SHT3X">
-<pin name="NRESET" x="-12.7" y="2.54" length="short"/>
-<pin name="ALERT" x="-12.7" y="0" length="short"/>
-<pin name="ADDR" x="-12.7" y="-2.54" length="short"/>
-<pin name="VSS" x="-12.7" y="-5.08" length="short" direction="pwr"/>
-<pin name="VDD" x="12.7" y="2.54" length="short" direction="pwr" rot="R180"/>
-<pin name="SCL" x="12.7" y="0" length="short" rot="R180"/>
-<pin name="SDA" x="12.7" y="-2.54" length="short" rot="R180"/>
-<pin name="R(VSS)" x="12.7" y="-5.08" length="short" rot="R180"/>
-<wire x1="-10.16" y1="5.08" x2="10.16" y2="5.08" width="0.254" layer="94" style="shortdash"/>
-<wire x1="10.16" y1="5.08" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-7.62" x2="-10.16" y2="-7.62" width="0.254" layer="94" style="shortdash"/>
-<wire x1="-10.16" y1="-7.62" x2="-10.16" y2="5.08" width="0.254" layer="94"/>
-<text x="0" y="7.62" size="1.27" layer="94" ratio="15" align="center">SHT3x Temp and
-Humidity Sensor</text>
-<wire x1="-10.16" y1="5.08" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="10.16" x2="10.16" y2="10.16" width="0.254" layer="94"/>
-<wire x1="10.16" y1="10.16" x2="10.16" y2="5.08" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="-7.62" x2="-10.16" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="-12.7" x2="10.16" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-12.7" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
-<text x="-2.54" y="-10.16" size="1.27" layer="94" ratio="15" align="center-right">VDD:
-Temp:</text>
-<text x="-1.27" y="-10.16" size="1.27" layer="94" ratio="15" align="center-left">2.4-5.5V
--40~125°C</text>
-<text x="-10.16" y="11.43" size="1.27" layer="95">&gt;NAME</text>
-<text x="-10.16" y="-15.24" size="1.27" layer="96">&gt;VALUE</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="SHT3X" prefix="U" uservalue="yes">
-<description>&lt;p&gt;&lt;b&gt;SHT3x&lt;/b&gt; - Digital Temperature and Humidity Sensor&lt;/p&gt;
-&lt;p&gt;
-&lt;ul&gt;
-&lt;li&gt;Supply Voltage: 2.4-5.5V&lt;/li&gt;
-&lt;li&gt;Humidity Accuracy: SHT30 = +/-3%RH, SHT31 = +/-2%RH&lt;/li&gt;
-&lt;li&gt;Temperature Sensor: -40~125°C (+/-0.3°C from 10-55C)&lt;/li&gt;
-&lt;li&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/p&gt;</description>
-<gates>
-<gate name="G$1" symbol="SHT3X" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SHT3X">
-<connects>
-<connect gate="G$1" pin="ADDR" pad="2"/>
-<connect gate="G$1" pin="ALERT" pad="3"/>
-<connect gate="G$1" pin="NRESET" pad="6"/>
-<connect gate="G$1" pin="R(VSS)" pad="7"/>
-<connect gate="G$1" pin="SCL" pad="4"/>
-<connect gate="G$1" pin="SDA" pad="1"/>
-<connect gate="G$1" pin="VDD" pad="5"/>
-<connect gate="G$1" pin="VSS" pad="8 THERMAL"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1698,6 +1539,157 @@ Warning: This is the KIT version of the AXIAL-0.3 package. This package has a sm
 </deviceset>
 </devicesets>
 </library>
+<library name="Lagopus_B_2">
+<description>Generated from &lt;b&gt;Lagopus_B_2.sch&lt;/b&gt;&lt;p&gt;
+by exp-lbrs.ulp</description>
+<packages>
+<package name="TMP117">
+<circle x="-0.942" y="1.385" radius="0.05" width="0.2032" layer="21"/>
+<wire x1="-1" y1="1" x2="-1" y2="-1" width="0.127" layer="51"/>
+<wire x1="-1" y1="-1" x2="1" y2="-1" width="0.127" layer="51"/>
+<wire x1="1" y1="-1" x2="1" y2="1" width="0.127" layer="51"/>
+<wire x1="1" y1="1" x2="-1" y2="1" width="0.127" layer="51"/>
+<wire x1="-1" y1="1" x2="1" y2="1" width="0.2032" layer="21"/>
+<wire x1="-1" y1="-1" x2="1" y2="-1" width="0.2032" layer="21"/>
+<smd name="1" x="-0.975" y="0.65" dx="0.45" dy="0.3" layer="1"/>
+<smd name="2" x="-0.975" y="0" dx="0.45" dy="0.3" layer="1"/>
+<smd name="3" x="-0.975" y="-0.65" dx="0.45" dy="0.3" layer="1"/>
+<smd name="4" x="0.975" y="-0.65" dx="0.45" dy="0.3" layer="1"/>
+<smd name="5" x="0.975" y="0" dx="0.45" dy="0.3" layer="1"/>
+<smd name="6" x="0.975" y="0.65" dx="0.45" dy="0.3" layer="1"/>
+<text x="-0.03" y="1.531" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="-0.03" y="-1.246" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+<smd name="THERMAL" x="0" y="0" dx="1.6" dy="1" layer="1" rot="R90" cream="no"/>
+</package>
+<package name="SHT3X">
+<circle x="0" y="0" radius="0.75" width="0.127" layer="51"/>
+<circle x="-1.9" y="1.25" radius="0.111803125" width="0.4064" layer="21"/>
+<wire x1="-1.25" y1="1.25" x2="1.25" y2="1.25" width="0.127" layer="51"/>
+<wire x1="1.25" y1="1.25" x2="1.25" y2="-1.25" width="0.127" layer="51"/>
+<wire x1="1.25" y1="-1.25" x2="-1.25" y2="-1.25" width="0.127" layer="51"/>
+<wire x1="-1.25" y1="-1.25" x2="-1.25" y2="1.25" width="0.127" layer="51"/>
+<wire x1="-1.4" y1="1.1" x2="-1.4" y2="1.4" width="0.127" layer="21"/>
+<wire x1="-1.4" y1="1.4" x2="1.4" y2="1.4" width="0.127" layer="21"/>
+<wire x1="1.4" y1="1.4" x2="1.4" y2="1.1" width="0.127" layer="21"/>
+<wire x1="-1.4" y1="-1.1" x2="-1.4" y2="-1.4" width="0.127" layer="21"/>
+<wire x1="-1.4" y1="-1.4" x2="1.4" y2="-1.4" width="0.127" layer="21"/>
+<wire x1="1.4" y1="-1.4" x2="1.4" y2="-1.1" width="0.127" layer="21"/>
+<smd name="1" x="-1.15" y="0.75" dx="0.25" dy="0.6" layer="1" rot="R90"/>
+<smd name="2" x="-1.15" y="0.25" dx="0.25" dy="0.6" layer="1" rot="R90"/>
+<smd name="3" x="-1.15" y="-0.25" dx="0.25" dy="0.6" layer="1" rot="R90"/>
+<smd name="4" x="-1.15" y="-0.75" dx="0.25" dy="0.6" layer="1" rot="R90"/>
+<smd name="5" x="1.15" y="-0.75" dx="0.25" dy="0.6" layer="1" rot="R270"/>
+<smd name="6" x="1.15" y="-0.25" dx="0.25" dy="0.6" layer="1" rot="R270"/>
+<smd name="7" x="1.15" y="0.25" dx="0.25" dy="0.6" layer="1" rot="R270"/>
+<smd name="8" x="1.15" y="0.75" dx="0.25" dy="0.6" layer="1" rot="R270"/>
+<smd name="THERMAL" x="0" y="0" dx="1" dy="1.7" layer="1"/>
+<text x="-1.265" y="1.61" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
+<text x="-1.238" y="-1.971" size="0.4064" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="TMP117">
+<wire x1="-7.62" y1="7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-7.62" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-7.62" x2="10.16" y2="7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<pin name="!INT" x="12.7" y="5.08" length="short" rot="R180"/>
+<pin name="ADD0" x="12.7" y="-5.08" length="short" rot="R180"/>
+<pin name="GND" x="-10.16" y="-5.08" length="short"/>
+<pin name="SCL" x="12.7" y="0" length="short" rot="R180"/>
+<pin name="SDA" x="12.7" y="2.54" length="short" rot="R180"/>
+<pin name="V+" x="-10.16" y="5.08" length="short" direction="pwr"/>
+<text x="-7.62" y="8.128" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="SHT3X">
+<wire x1="-10.16" y1="5.08" x2="10.16" y2="5.08" width="0.254" layer="94"/>
+<wire x1="10.16" y1="5.08" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-7.62" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-7.62" x2="-10.16" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="5.08" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="10.16" x2="10.16" y2="10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="10.16" x2="10.16" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-7.62" x2="-10.16" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-12.7" x2="10.16" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-12.7" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
+<pin name="ADDR" x="-12.7" y="-2.54" length="short"/>
+<pin name="ALERT" x="-12.7" y="0" length="short"/>
+<pin name="NRESET" x="-12.7" y="2.54" length="short"/>
+<pin name="R(VSS)" x="12.7" y="-5.08" length="short" rot="R180"/>
+<pin name="SCL" x="12.7" y="0" length="short" rot="R180"/>
+<pin name="SDA" x="12.7" y="-2.54" length="short" rot="R180"/>
+<pin name="VDD" x="12.7" y="2.54" length="short" direction="pwr" rot="R180"/>
+<pin name="VSS" x="-12.7" y="-5.08" length="short" direction="pwr"/>
+<text x="0" y="7.62" size="1.27" layer="94" ratio="15" align="center">SHT3x Temp and
+Humidity Sensor</text>
+<text x="-2.54" y="-10.16" size="1.27" layer="94" ratio="15" align="center-right">VDD:
+Temp:</text>
+<text x="-1.27" y="-10.16" size="1.27" layer="94" ratio="15" align="center-left">2.4-5.5V
+-40~125°C</text>
+<text x="-10.16" y="11.43" size="1.27" layer="95">&gt;NAME</text>
+<text x="-10.16" y="-15.24" size="1.27" layer="96">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="TMP117" prefix="U">
+<description>Temperature Sensor
+TMP117x High-Accuracy, Low-Power, Digital Temperature Sensor
+With SMBus™- and I2C-Compatible Interface</description>
+<gates>
+<gate name="G$1" symbol="TMP117" x="3.81" y="0"/>
+</gates>
+<devices>
+<device name="" package="TMP117">
+<connects>
+<connect gate="G$1" pin="!INT" pad="3"/>
+<connect gate="G$1" pin="ADD0" pad="4"/>
+<connect gate="G$1" pin="GND" pad="2 THERMAL"/>
+<connect gate="G$1" pin="SCL" pad="1"/>
+<connect gate="G$1" pin="SDA" pad="6"/>
+<connect gate="G$1" pin="V+" pad="5"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="IC-14700" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SHT3X" prefix="U" uservalue="yes">
+<description>&lt;p&gt;&lt;b&gt;SHT3x&lt;/b&gt; - Digital Temperature and Humidity Sensor&lt;/p&gt;
+&lt;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Supply Voltage: 2.4-5.5V&lt;/li&gt;
+&lt;li&gt;Humidity Accuracy: SHT30 = +/-3%RH, SHT31 = +/-2%RH&lt;/li&gt;
+&lt;li&gt;Temperature Sensor: -40~125°C (+/-0.3°C from 10-55C)&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="SHT3X" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SHT3X">
+<connects>
+<connect gate="G$1" pin="ADDR" pad="2"/>
+<connect gate="G$1" pin="ALERT" pad="3"/>
+<connect gate="G$1" pin="NRESET" pad="6"/>
+<connect gate="G$1" pin="R(VSS)" pad="7"/>
+<connect gate="G$1" pin="SCL" pad="4"/>
+<connect gate="G$1" pin="SDA" pad="1"/>
+<connect gate="G$1" pin="VDD" pad="5"/>
+<connect gate="G$1" pin="VSS" pad="8 THERMAL"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1731,8 +1723,8 @@ Warning: This is the KIT version of the AXIAL-0.3 package. This package has a sm
 <part name="SUPPLY8" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="GND6" library="SparkFun" deviceset="GND" device=""/>
 <part name="C3" library="SparkFun-Capacitors" deviceset="0.1UF" device="-0603-25V-(+80/-20%)" value="0.1uF"/>
-<part name="U4" library="SparkFun-Sensors" deviceset="TMP117" device=""/>
-<part name="U1" library="microbuilder" deviceset="SHT3X" device="" value="SHT31-DIS-F"/>
+<part name="U4" library="Lagopus_B_2" deviceset="TMP117" device=""/>
+<part name="U1" library="Lagopus_B_2" deviceset="SHT3X" device="" value="SHT31-DIS-F"/>
 <part name="GND8" library="SparkFun" deviceset="GND" device=""/>
 <part name="C4" library="SparkFun-Capacitors" deviceset="10UF" device="-0603-6.3V-20%" value="10uF"/>
 <part name="SUPPLY13" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>

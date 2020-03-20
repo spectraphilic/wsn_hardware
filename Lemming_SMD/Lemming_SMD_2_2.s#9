@@ -233,7 +233,7 @@
 <pad name="MISO" x="43.18" y="21.59" drill="0.9"/>
 <wire x1="41.91" y1="50.8" x2="44.45" y2="50.8" width="0.127" layer="22"/>
 <wire x1="1.27" y1="46.99" x2="6.35" y2="46.99" width="0.127" layer="22"/>
-<text x="72.39" y="2.54" size="1.27" layer="21" rot="R180">WaspMote v1.5</text>
+<text x="11.43" y="-2.54" size="1.27" layer="21" rot="R180">WaspMote v1.5</text>
 <wire x1="0" y1="0" x2="0" y2="50.8" width="0.127" layer="22" style="longdash"/>
 <wire x1="0" y1="50.8" x2="73.66" y2="50.8" width="0.127" layer="22" style="longdash"/>
 <wire x1="73.66" y1="50.8" x2="73.66" y2="0" width="0.127" layer="22" style="longdash"/>

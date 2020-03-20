@@ -2106,15 +2106,15 @@ GND: Iridium GND (black)</text>
 <instance part="X2" gate="-3" x="-66.04" y="99.06" smashed="yes">
 <attribute name="NAME" x="-63.5" y="98.298" size="1.524" layer="95"/>
 </instance>
-<instance part="X3" gate="-1" x="-195.58" y="15.24" smashed="yes">
-<attribute name="NAME" x="-193.04" y="14.478" size="1.524" layer="95"/>
-<attribute name="VALUE" x="-196.342" y="16.637" size="1.778" layer="96"/>
+<instance part="X3" gate="-1" x="-226.06" y="17.78" smashed="yes">
+<attribute name="NAME" x="-223.52" y="17.018" size="1.524" layer="95"/>
+<attribute name="VALUE" x="-226.822" y="19.177" size="1.778" layer="96"/>
 </instance>
-<instance part="X3" gate="-2" x="-195.58" y="12.7" smashed="yes">
-<attribute name="NAME" x="-193.04" y="11.938" size="1.524" layer="95"/>
+<instance part="X3" gate="-2" x="-226.06" y="15.24" smashed="yes">
+<attribute name="NAME" x="-223.52" y="14.478" size="1.524" layer="95"/>
 </instance>
-<instance part="X3" gate="-3" x="-195.58" y="10.16" smashed="yes">
-<attribute name="NAME" x="-193.04" y="9.398" size="1.524" layer="95"/>
+<instance part="X3" gate="-3" x="-226.06" y="12.7" smashed="yes">
+<attribute name="NAME" x="-223.52" y="11.938" size="1.524" layer="95"/>
 </instance>
 <instance part="X4" gate="-1" x="-195.58" y="116.84" smashed="yes">
 <attribute name="NAME" x="-193.04" y="116.078" size="1.524" layer="95"/>
@@ -2350,13 +2350,13 @@ GND: Iridium GND (black)</text>
 <attribute name="NAME" x="91.44" y="-2.54" size="2" layer="95" ratio="10"/>
 <attribute name="VALUE" x="91.44" y="-25.4" size="2" layer="96" ratio="10"/>
 </instance>
-<instance part="X11" gate="G$1" x="-198.12" y="-27.94" smashed="yes">
-<attribute name="NAME" x="-241.3" y="-31.75" size="2" layer="95" ratio="10"/>
-<attribute name="VALUE" x="-208.28" y="-44.45" size="2" layer="96" ratio="10"/>
+<instance part="X11" gate="G$1" x="-198.12" y="-20.32" smashed="yes">
+<attribute name="NAME" x="-241.3" y="-24.13" size="2" layer="95" ratio="10"/>
+<attribute name="VALUE" x="-208.28" y="-36.83" size="2" layer="96" ratio="10"/>
 </instance>
-<instance part="X12" gate="G$1" x="-193.04" y="33.02" smashed="yes">
-<attribute name="NAME" x="-203.2" y="46.99" size="2" layer="95" ratio="10"/>
-<attribute name="VALUE" x="-203.2" y="16.51" size="2" layer="96" ratio="10"/>
+<instance part="X12" gate="G$1" x="-198.12" y="10.16" smashed="yes">
+<attribute name="NAME" x="-208.28" y="24.13" size="2" layer="95" ratio="10"/>
+<attribute name="VALUE" x="-208.28" y="-6.35" size="2" layer="96" ratio="10"/>
 </instance>
 <instance part="X13" gate="G$1" x="-35.56" y="104.14" smashed="yes">
 <attribute name="NAME" x="-45.72" y="118.11" size="2" layer="95" ratio="10"/>
@@ -2437,11 +2437,15 @@ GND: Iridium GND (black)</text>
 <junction x="-203.2" y="81.28"/>
 </segment>
 <segment>
-<label x="-210.82" y="17.78" size="1.778" layer="95" rot="R180" xref="yes"/>
-<wire x1="-205.74" y1="17.78" x2="-210.82" y2="17.78" width="0.1524" layer="91"/>
-<wire x1="-205.74" y1="17.78" x2="-203.2" y2="15.24" width="0.1524" layer="91"/>
+<label x="-241.3" y="20.32" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="-236.22" y1="20.32" x2="-241.3" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="-236.22" y1="20.32" x2="-233.68" y2="17.78" width="0.1524" layer="91"/>
 <pinref part="X3" gate="-1" pin="S"/>
-<wire x1="-203.2" y1="15.24" x2="-198.12" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="-233.68" y1="17.78" x2="-228.6" y2="17.78" width="0.1524" layer="91"/>
+<pinref part="X12" gate="G$1" pin="P1.2"/>
+<wire x1="-236.22" y1="20.32" x2="-203.2" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="-203.2" y1="20.32" x2="-203.2" y2="17.78" width="0.1524" layer="91"/>
+<junction x="-236.22" y="20.32"/>
 </segment>
 <segment>
 <label x="-101.6" y="106.68" size="1.778" layer="95" rot="R180" xref="yes"/>
@@ -2517,6 +2521,10 @@ GND: Iridium GND (black)</text>
 <wire x1="-238.76" y1="-20.32" x2="-236.22" y2="-22.86" width="0.1524" layer="91"/>
 <pinref part="X6" gate="-1" pin="S"/>
 <wire x1="-236.22" y1="-22.86" x2="-231.14" y2="-22.86" width="0.1524" layer="91"/>
+<pinref part="X11" gate="G$1" pin="P1.2"/>
+<wire x1="-238.76" y1="-20.32" x2="-238.76" y2="-12.7" width="0.1524" layer="91"/>
+<wire x1="-238.76" y1="-12.7" x2="-203.2" y2="-12.7" width="0.1524" layer="91"/>
+<junction x="-238.76" y="-20.32"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="GND1"/>
@@ -2781,14 +2789,22 @@ GND: Iridium GND (black)</text>
 <label x="-167.64" y="-83.82" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<label x="-210.82" y="12.7" size="1.778" layer="95" rot="R180" xref="yes"/>
-<wire x1="-210.82" y1="12.7" x2="-198.12" y2="12.7" width="0.1524" layer="91"/>
+<label x="-241.3" y="15.24" size="1.778" layer="95" rot="R180" xref="yes"/>
 <pinref part="X3" gate="-2" pin="S"/>
+<wire x1="-241.3" y1="15.24" x2="-228.6" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="-228.6" y1="15.24" x2="-215.9" y2="15.24" width="0.1524" layer="91"/>
+<pinref part="X12" gate="G$1" pin="P2.2"/>
+<wire x1="-215.9" y1="15.24" x2="-215.9" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="-215.9" y1="10.16" x2="-203.2" y2="10.16" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <label x="-243.84" y="-25.4" size="1.778" layer="95" rot="R180" xref="yes"/>
-<wire x1="-243.84" y1="-25.4" x2="-231.14" y2="-25.4" width="0.1524" layer="91"/>
 <pinref part="X6" gate="-2" pin="S"/>
+<wire x1="-243.84" y1="-25.4" x2="-231.14" y2="-25.4" width="0.1524" layer="91"/>
+<wire x1="-231.14" y1="-25.4" x2="-218.44" y2="-25.4" width="0.1524" layer="91"/>
+<wire x1="-218.44" y1="-25.4" x2="-218.44" y2="-20.32" width="0.1524" layer="91"/>
+<pinref part="X11" gate="G$1" pin="P2.2"/>
+<wire x1="-218.44" y1="-20.32" x2="-203.2" y2="-20.32" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="1TX" class="0">
@@ -2997,11 +3013,15 @@ GND: Iridium GND (black)</text>
 <pinref part="Q3" gate="G$1" pin="C"/>
 </segment>
 <segment>
-<label x="-210.82" y="7.62" size="1.778" layer="95" rot="R180" xref="yes"/>
-<wire x1="-210.82" y1="7.62" x2="-205.74" y2="7.62" width="0.1524" layer="91"/>
+<label x="-241.3" y="10.16" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="-241.3" y1="10.16" x2="-236.22" y2="10.16" width="0.1524" layer="91"/>
 <pinref part="X3" gate="-3" pin="S"/>
-<wire x1="-198.12" y1="10.16" x2="-203.2" y2="10.16" width="0.1524" layer="91"/>
-<wire x1="-205.74" y1="7.62" x2="-203.2" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="-228.6" y1="12.7" x2="-233.68" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="-236.22" y1="10.16" x2="-233.68" y2="12.7" width="0.1524" layer="91"/>
+<pinref part="X12" gate="G$1" pin="P3.2"/>
+<wire x1="-236.22" y1="10.16" x2="-236.22" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="-236.22" y1="2.54" x2="-203.2" y2="2.54" width="0.1524" layer="91"/>
+<junction x="-236.22" y="10.16"/>
 </segment>
 <segment>
 <label x="-243.84" y="-30.48" size="1.778" layer="95" rot="R180" xref="yes"/>
@@ -3009,6 +3029,11 @@ GND: Iridium GND (black)</text>
 <pinref part="X6" gate="-3" pin="S"/>
 <wire x1="-231.14" y1="-27.94" x2="-236.22" y2="-27.94" width="0.1524" layer="91"/>
 <wire x1="-238.76" y1="-30.48" x2="-236.22" y2="-27.94" width="0.1524" layer="91"/>
+<wire x1="-238.76" y1="-30.48" x2="-210.82" y2="-30.48" width="0.1524" layer="91"/>
+<wire x1="-210.82" y1="-30.48" x2="-210.82" y2="-27.94" width="0.1524" layer="91"/>
+<junction x="-238.76" y="-30.48"/>
+<pinref part="X11" gate="G$1" pin="P3.2"/>
+<wire x1="-210.82" y1="-27.94" x2="-203.2" y2="-27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="5V_D5" class="0">

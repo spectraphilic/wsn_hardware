@@ -3690,7 +3690,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <smd name="L3.2" x="-3.025" y="-3" dx="2.5" dy="1.4" layer="1"/>
 <text x="-3.695" y="5.72" size="2" layer="25" font="vector" ratio="10">&gt;NAME</text>
 <text x="-3.695" y="-6.98" size="2" layer="27" font="vector" ratio="10">&gt;VALUE</text>
-<text x="7.215" y="3.18" size="2" layer="21" font="vector" ratio="10" rot="R90">1</text>
 </package>
 <package name="P-2059-302/998-403">
 <wire x1="-3.475" y1="2.15" x2="2.325" y2="2.15" width="0.01" layer="21"/>
@@ -3790,9 +3789,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <smd name="L1.2" x="-3.025" y="1.5" dx="2.5" dy="1.4" layer="1"/>
 <smd name="L2.1" x="2.975" y="-1.5" dx="2.5" dy="1.4" layer="1"/>
 <smd name="L2.2" x="-3.025" y="-1.5" dx="2.5" dy="1.4" layer="1"/>
-<text x="-3.695" y="4.22" size="2" layer="25" font="vector" ratio="10">&gt;NAME</text>
-<text x="-3.695" y="-5.94" size="2" layer="27" font="vector" ratio="10">&gt;VALUE</text>
-<text x="7.735" y="1.68" size="2" layer="21" font="vector" ratio="10" rot="R90">1</text>
+<text x="1" y="0" size="0.508" layer="25" font="vector" ratio="10" rot="R90" align="center">&gt;NAME</text>
+<text x="5" y="0" size="0.508" layer="27" font="vector" ratio="10" align="center-left">&gt;VALUE</text>
 </package>
 </packages>
 </library>
@@ -4082,7 +4080,7 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <element name="U3" library="SparkFun-Sensors" package="LGA-8-2.5X2.5" value="BME280" x="53.34" y="20.701" smashed="yes" rot="R180">
 <attribute name="NAME" x="52.705" y="20.32" size="0.6096" layer="25" font="vector" ratio="20"/>
 <attribute name="PROD_ID" value="IC-13090" x="58.42" y="21.971" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" x="53.34" y="17.907" size="1.27" layer="25" align="center"/>
+<attribute name="VALUE" x="56.515" y="22.098" size="1.27" layer="25" rot="R90" align="center"/>
 </element>
 <element name="U$3" library="UIO-John" package="UIO-LOGO-BL" value="" x="56.515" y="27.305" smashed="yes"/>
 <element name="IC1" library="texas" library_urn="urn:adsk.eagle:library:387" package="SO-08" package3d_urn="urn:adsk.eagle:package:7566865/2" value="ISO1540" x="28.575" y="17.78" smashed="yes" rot="R180">
@@ -4178,44 +4176,44 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <attribute name="VALUE" x="33.147" y="40.005" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
 </element>
 <element name="X7" library="con-wago_2059" package="P-2059-303/998-403" value="2059-303/998-403" x="67.5" y="4.5" smashed="yes" rot="R270">
-<attribute name="NAME" x="73.22" y="8.195" size="2" layer="25" font="vector" ratio="10" rot="R270"/>
-<attribute name="VALUE" x="67.02" y="-7.805" size="2" layer="27" font="vector" ratio="10" rot="R270"/>
+<attribute name="NAME" x="65.465" y="5.148" size="0.8128" layer="25" font="vector" ratio="10"/>
+<attribute name="VALUE" x="64.226" y="-12.885" size="0.8128" layer="27" font="vector" ratio="10" rot="R270"/>
 </element>
 <element name="X8" library="con-wago_2059" package="P-2059-302/998-403" value="2059-302/998-403" x="10" y="4.5" smashed="yes" rot="R270">
-<attribute name="NAME" x="14.22" y="8.195" size="2" layer="25" font="vector" ratio="10" rot="R270"/>
-<attribute name="VALUE" x="7.56" y="-7.305" size="2" layer="27" font="vector" ratio="10" rot="R270"/>
+<attribute name="NAME" x="9.331" y="5.076" size="0.8128" layer="25" font="vector" ratio="10"/>
+<attribute name="VALUE" x="8.068" y="-13.909" size="0.8128" layer="27" font="vector" ratio="10" rot="R270"/>
 </element>
 <element name="X10" library="con-wago_2059" package="P-2059-302/998-403" value="2059-302/998-403" x="16" y="4.5" smashed="yes" rot="R270">
-<attribute name="NAME" x="20.22" y="8.195" size="2" layer="25" font="vector" ratio="10" rot="R270"/>
-<attribute name="VALUE" x="16.06" y="-5.805" size="2" layer="27" font="vector" ratio="10" rot="R270"/>
+<attribute name="NAME" x="15.173" y="5.234" size="0.8128" layer="25" font="vector" ratio="10"/>
+<attribute name="VALUE" x="17.076" y="-13.425" size="0.8128" layer="27" font="vector" ratio="10" rot="R270"/>
 </element>
 <element name="X11" library="con-wago_2059" package="P-2059-303/998-403" value="2059-303/998-403" x="37.5" y="4.5" smashed="yes" rot="R270">
-<attribute name="NAME" x="43.22" y="8.195" size="2" layer="25" font="vector" ratio="10" rot="R270"/>
-<attribute name="VALUE" x="37.52" y="-8.305" size="2" layer="27" font="vector" ratio="10" rot="R270"/>
+<attribute name="NAME" x="34.985" y="5.12" size="0.8128" layer="25" font="vector" ratio="10"/>
+<attribute name="VALUE" x="36.758" y="-14.147" size="0.8128" layer="27" font="vector" ratio="10" rot="R270"/>
 </element>
 <element name="X12" library="con-wago_2059" package="P-2059-303/998-403" value="2059-303/998-403" x="47.5" y="4.5" smashed="yes" rot="R270">
-<attribute name="NAME" x="53.22" y="8.195" size="2" layer="25" font="vector" ratio="10" rot="R270"/>
-<attribute name="VALUE" x="48.02" y="-7.805" size="2" layer="27" font="vector" ratio="10" rot="R270"/>
+<attribute name="NAME" x="44.891" y="5.214" size="0.8128" layer="25" font="vector" ratio="10"/>
+<attribute name="VALUE" x="47.004" y="-13.139" size="0.8128" layer="27" font="vector" ratio="10" rot="R270"/>
 </element>
 <element name="X13" library="con-wago_2059" package="P-2059-303/998-403" value="2059-303/998-403" x="57.5" y="4.5" smashed="yes" rot="R270">
-<attribute name="NAME" x="63.22" y="8.195" size="2" layer="25" font="vector" ratio="10" rot="R270"/>
-<attribute name="VALUE" x="57.52" y="-8.805" size="2" layer="27" font="vector" ratio="10" rot="R270"/>
+<attribute name="NAME" x="55.051" y="5.054" size="0.8128" layer="25" font="vector" ratio="10"/>
+<attribute name="VALUE" x="57.266" y="-13.377" size="0.8128" layer="27" font="vector" ratio="10" rot="R270"/>
 </element>
 <element name="X15" library="con-wago_2059" package="P-2059-302/998-403" value="2059-302/998-403" x="23" y="4.5" smashed="yes" rot="R270">
-<attribute name="NAME" x="27.22" y="8.195" size="2" layer="25" font="vector" ratio="10" rot="R270"/>
-<attribute name="VALUE" x="23.06" y="-7.805" size="2" layer="27" font="vector" ratio="10" rot="R270"/>
+<attribute name="NAME" x="22.031" y="5.122" size="0.8128" layer="25" font="vector" ratio="10"/>
+<attribute name="VALUE" x="23.568" y="-14.155" size="0.8128" layer="27" font="vector" ratio="10" rot="R270"/>
 </element>
 <element name="X16" library="con-wago_2059" package="P-2059-302/998-403" value="2059-302/998-403" x="29" y="4.5" smashed="yes" rot="R270">
-<attribute name="NAME" x="33.22" y="8.195" size="2" layer="25" font="vector" ratio="10" rot="R270"/>
-<attribute name="VALUE" x="29.06" y="-7.805" size="2" layer="27" font="vector" ratio="10" rot="R270"/>
+<attribute name="NAME" x="28.127" y="5.026" size="0.8128" layer="25" font="vector" ratio="10"/>
+<attribute name="VALUE" x="30.076" y="-13.901" size="0.8128" layer="27" font="vector" ratio="10" rot="R270"/>
 </element>
 <element name="X17" library="con-wago_2059" package="P-2059-302/998-403" value="2059-302/998-403" x="50.8" y="39.116" smashed="yes">
-<attribute name="NAME" x="47.105" y="43.336" size="2" layer="25" font="vector" ratio="10"/>
-<attribute name="VALUE" x="47.105" y="33.176" size="2" layer="27" font="vector" ratio="10"/>
+<attribute name="NAME" x="50.153" y="38.764" size="0.8128" layer="25" font="vector" ratio="10"/>
+<attribute name="VALUE" x="82.157" y="39.272" size="0.8128" layer="27" font="vector" ratio="10"/>
 </element>
 <element name="X18" library="con-wago_2059" package="P-2059-303/998-403" value="2059-303/998-403" x="50.8" y="31.242" smashed="yes">
-<attribute name="NAME" x="47.105" y="36.962" size="2" layer="25" font="vector" ratio="10"/>
-<attribute name="VALUE" x="47.105" y="24.262" size="2" layer="27" font="vector" ratio="10"/>
+<attribute name="NAME" x="49.899" y="29.342" size="0.8128" layer="25" font="vector" ratio="10"/>
+<attribute name="VALUE" x="82.411" y="35.438" size="0.8128" layer="27" font="vector" ratio="10"/>
 </element>
 </elements>
 <signals>

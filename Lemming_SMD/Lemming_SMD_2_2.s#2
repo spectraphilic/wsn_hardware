@@ -1567,7 +1567,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <smd name="L3.2" x="-3.025" y="-3" dx="2.5" dy="1.4" layer="1"/>
 <text x="-3.695" y="5.72" size="2" layer="25" font="vector" ratio="10">&gt;NAME</text>
 <text x="-3.695" y="-6.98" size="2" layer="27" font="vector" ratio="10">&gt;VALUE</text>
-<text x="7.215" y="3.18" size="2" layer="21" font="vector" ratio="10" rot="R90">1</text>
 </package>
 <package name="P-2059-302/998-403">
 <wire x1="-3.475" y1="2.15" x2="2.325" y2="2.15" width="0.01" layer="21"/>
@@ -1667,9 +1666,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <smd name="L1.2" x="-3.025" y="1.5" dx="2.5" dy="1.4" layer="1"/>
 <smd name="L2.1" x="2.975" y="-1.5" dx="2.5" dy="1.4" layer="1"/>
 <smd name="L2.2" x="-3.025" y="-1.5" dx="2.5" dy="1.4" layer="1"/>
-<text x="-3.695" y="4.22" size="2" layer="25" font="vector" ratio="10">&gt;NAME</text>
-<text x="-3.695" y="-5.94" size="2" layer="27" font="vector" ratio="10">&gt;VALUE</text>
-<text x="7.735" y="1.68" size="2" layer="21" font="vector" ratio="10" rot="R90">1</text>
+<text x="1" y="0" size="0.508" layer="25" font="vector" ratio="10" rot="R90" align="center">&gt;NAME</text>
+<text x="5" y="0" size="0.508" layer="27" font="vector" ratio="10" align="center-left">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
