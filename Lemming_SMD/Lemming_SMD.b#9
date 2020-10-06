@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="dots" multiple="1" display="yes" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
+<grid distance="0.025" unitdist="inch" unit="inch" style="dots" multiple="1" display="yes" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -67,8 +67,8 @@
 <layer number="58" name="bCAD" color="7" fill="1" visible="no" active="no"/>
 <layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
-<layer number="88" name="SimResults" color="9" fill="1" visible="no" active="yes"/>
-<layer number="89" name="SimProbes" color="9" fill="1" visible="no" active="yes"/>
+<layer number="88" name="SimResults" color="9" fill="1" visible="yes" active="yes"/>
+<layer number="89" name="SimProbes" color="9" fill="1" visible="yes" active="yes"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="no" active="no"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="no" active="no"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="no" active="no"/>
@@ -189,14 +189,33 @@
 <wire x1="45.72" y1="0" x2="45.72" y2="50.8" width="0" layer="20"/>
 <wire x1="45.72" y1="50.8" x2="0" y2="50.8" width="0" layer="20"/>
 <wire x1="0" y1="50.8" x2="0" y2="11.43" width="0" layer="20"/>
-<text x="8.89" y="3.175" size="1.016" layer="27" rot="R270" align="center-left">+3.3V</text>
-<text x="11.43" y="3.175" size="1.016" layer="27" rot="R270" align="center-left">SDA</text>
-<text x="13.97" y="3.175" size="1.016" layer="27" rot="R270" align="center-left">SCL</text>
-<text x="16.51" y="3.175" size="1.016" layer="27" rot="R270" align="center-left">GND</text>
-<text x="13.97" y="48.26" size="1.778" layer="26" font="vector" rot="MR270">(C)john.hulth@geo.uio.no 2018</text>
-<text x="38.1" y="48.26" size="1.778" layer="26" font="vector" rot="MR270">Lemming Sensor board V1.0</text>
+<text x="12.7" y="50.165" size="1.778" layer="26" font="vector" rot="MR270">(C) 2018
+john.hulth@geo.uio.no</text>
+<text x="41.275" y="48.26" size="1.778" layer="26" font="vector" rot="MR270">Lemming SMD V1.0</text>
 <wire x1="6.35" y1="0" x2="6.35" y2="11.43" width="0" layer="20"/>
 <wire x1="6.35" y1="11.43" x2="0" y2="11.43" width="0" layer="20"/>
+<text x="38.1" y="48.26" size="0.8128" layer="25" font="fixed" rot="R90" align="center-left">+5V</text>
+<text x="35.56" y="48.26" size="0.8128" layer="25" font="fixed" rot="R90" align="center-left">D6</text>
+<text x="33.02" y="48.26" size="0.8128" layer="25" font="fixed" rot="R90" align="center-left">GND</text>
+<text x="29.21" y="48.26" size="0.8128" layer="25" font="fixed" rot="R90" align="center-left">+5V</text>
+<text x="26.67" y="48.26" size="0.8128" layer="25" font="fixed" rot="R90" align="center-left">D8</text>
+<text x="24.13" y="48.26" size="0.8128" layer="25" font="fixed" rot="R90" align="center-left">GND</text>
+<text x="20.32" y="48.26" size="0.8128" layer="25" font="fixed" rot="R90" align="center-left">+5V</text>
+<text x="17.78" y="48.26" size="0.8128" layer="25" font="fixed" rot="R90" align="center-left">D8</text>
+<text x="15.24" y="48.26" size="0.8128" layer="25" font="fixed" rot="R90" align="center-left">GND</text>
+<text x="38.1" y="2.54" size="0.8128" layer="25" font="fixed" rot="R270" align="center-left">+5V</text>
+<text x="40.64" y="2.54" size="0.8128" layer="25" font="fixed" rot="R270" align="center-left">1RX</text>
+<text x="43.18" y="2.54" size="0.8128" layer="25" font="fixed" rot="R270" align="center-left">GND</text>
+<text x="29.21" y="2.54" size="0.8128" layer="25" font="fixed" rot="R270" align="center-left">+5V</text>
+<text x="31.75" y="2.54" size="0.8128" layer="25" font="fixed" rot="R270" align="center-left">D6</text>
+<text x="34.29" y="2.54" size="0.8128" layer="25" font="fixed" rot="R270" align="center-left">GND</text>
+<text x="20.32" y="2.54" size="0.8128" layer="25" font="fixed" rot="R270" align="center-left">+5V</text>
+<text x="22.86" y="2.54" size="0.8128" layer="25" font="fixed" rot="R270" align="center-left">D8</text>
+<text x="25.4" y="2.54" size="0.8128" layer="25" font="fixed" rot="R270" align="center-left">GND</text>
+<text x="11.43" y="2.54" size="0.8128" layer="25" font="fixed" rot="R270" align="center-left">SDA</text>
+<text x="13.97" y="2.54" size="0.8128" layer="25" font="fixed" rot="R270" align="center-left">SCL</text>
+<text x="16.51" y="2.54" size="0.8128" layer="25" font="fixed" rot="R270" align="center-left">GND</text>
+<text x="8.89" y="2.54" size="0.8128" layer="25" font="fixed" rot="R270" align="center-left">+3V3</text>
 </plain>
 <libraries>
 <library name="UIO-John">
@@ -308,14 +327,10 @@
 <pad name="1" x="-2.54" y="0" drill="1.1" diameter="1.4224" shape="long" rot="R90"/>
 <pad name="2" x="0" y="0" drill="1.1" diameter="1.4224" shape="long" rot="R90"/>
 <pad name="3" x="2.54" y="0" drill="1.1" diameter="1.4224" shape="long" rot="R90"/>
-<text x="-10.16" y="2.54" size="1.27" layer="25" ratio="10" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-5.08" size="1.27" layer="27" ratio="10" align="center">&gt;VALUE</text>
 <hole x="-2.54" y="2.54" drill="1.1"/>
 <hole x="0" y="2.54" drill="1.1"/>
 <hole x="2.54" y="2.54" drill="1.1"/>
-<text x="2.54" y="3.81" size="0.8128" layer="27" font="fixed" rot="R90" align="center-left">$3</text>
-<text x="0" y="3.81" size="0.8128" layer="27" font="fixed" rot="R90" align="center-left">$2</text>
-<text x="-2.54" y="3.81" size="0.8128" layer="27" font="fixed" rot="R90" align="center-left">$1</text>
 </package>
 </packages>
 </library>
@@ -720,14 +735,14 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="MF" value="MOLEX" x="12.7" y="6.35" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="OC_FARNELL" value="1462920" x="12.7" y="6.35" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="OC_NEWARK" value="38C0355" x="12.7" y="6.35" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" x="12.7" y="11.43" size="1.27" layer="27" ratio="10" rot="R180" align="center"/>
+<attribute name="VALUE" x="12.7" y="10.795" size="1.27" layer="25" ratio="10" rot="R180" align="center"/>
 </element>
 <element name="X2" library="con-molex" package="22-23-2031" value="1-WIRE" x="31.75" y="6.35" smashed="yes" rot="R180">
 <attribute name="MPN" value="22-23-2031" x="31.75" y="6.35" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="MOLEX" x="31.75" y="6.35" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="OC_FARNELL" value="1462950" x="31.75" y="6.35" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="OC_NEWARK" value="30C0862" x="31.75" y="6.35" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" x="31.75" y="11.43" size="1.27" layer="27" ratio="10" rot="R180" align="center"/>
+<attribute name="VALUE" x="31.75" y="10.795" size="1.27" layer="25" ratio="10" rot="R180" align="center"/>
 <attribute name="PIN1" value="" x="31.75" y="6.35" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="LABEL01" value="" x="31.75" y="6.35" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
@@ -736,16 +751,16 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="MF" value="MOLEX" x="22.86" y="6.35" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="OC_FARNELL" value="1462950" x="22.86" y="6.35" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="OC_NEWARK" value="30C0862" x="22.86" y="6.35" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" x="22.86" y="11.43" size="1.27" layer="27" ratio="10" rot="R180" align="center"/>
 <attribute name="PIN1" value="" x="22.86" y="6.35" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="LABEL01" value="" x="22.86" y="6.35" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" x="22.86" y="10.795" size="1.27" layer="25" ratio="10" rot="R180" align="center"/>
 </element>
 <element name="X4" library="con-molex" package="22-23-2031" value="MB-7389" x="40.64" y="6.35" smashed="yes" rot="R180">
 <attribute name="MPN" value="22-23-2031" x="40.64" y="6.35" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="MOLEX" x="40.64" y="6.35" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="OC_FARNELL" value="1462950" x="40.64" y="6.35" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="OC_NEWARK" value="30C0862" x="40.64" y="6.35" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" x="40.64" y="11.43" size="1.27" layer="27" ratio="10" rot="R180" align="center"/>
+<attribute name="VALUE" x="40.64" y="10.795" size="1.27" layer="25" ratio="10" rot="R180" align="center"/>
 <attribute name="PIN1" value="" x="40.64" y="6.35" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="LABEL01" value="" x="40.64" y="6.35" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
@@ -845,7 +860,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <element name="U3" library="SparkFun-Sensors" package="LGA-8-2.5X2.5" value="BME280" x="10.795" y="16.51" smashed="yes" rot="R90">
 <attribute name="PROD_ID" value="IC-13090" x="12.065" y="11.43" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="10.414" y="17.145" size="0.6096" layer="25" font="vector" ratio="20" rot="R270"/>
-<attribute name="VALUE" x="8.509" y="15.24" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-left"/>
+<attribute name="VALUE" x="8.001" y="16.51" size="0.6096" layer="25" font="vector" rot="R270" align="center"/>
 </element>
 <element name="X5" library="con-molex" package="22-23-2031" value="1-WIRE" x="35.56" y="44.45" smashed="yes">
 <attribute name="OC_FARNELL" value="1462950" x="35.56" y="44.45" size="1.778" layer="27" display="off"/>
@@ -854,7 +869,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="OC_NEWARK" value="30C0862" x="35.56" y="44.45" size="1.778" layer="27" display="off"/>
 <attribute name="PIN1" value="" x="35.56" y="44.45" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="MOLEX" x="35.56" y="44.45" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="35.56" y="39.37" size="1.27" layer="27" ratio="10" align="center"/>
+<attribute name="VALUE" x="35.56" y="40.005" size="1.27" layer="25" ratio="10" align="center"/>
 </element>
 <element name="X6" library="con-molex" package="22-23-2031" value="SDI-12" x="26.67" y="44.45" smashed="yes">
 <attribute name="OC_FARNELL" value="1462950" x="26.67" y="44.45" size="1.778" layer="27" display="off"/>
@@ -863,7 +878,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="OC_NEWARK" value="30C0862" x="26.67" y="44.45" size="1.778" layer="27" display="off"/>
 <attribute name="PIN1" value="" x="26.67" y="44.45" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="MOLEX" x="26.67" y="44.45" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="26.67" y="39.37" size="1.27" layer="27" ratio="10" align="center"/>
+<attribute name="VALUE" x="26.67" y="40.005" size="1.27" layer="25" ratio="10" align="center"/>
 </element>
 <element name="X7" library="con-molex" package="22-23-2031" value="SDI-12" x="17.78" y="44.45" smashed="yes">
 <attribute name="OC_FARNELL" value="1462950" x="17.78" y="44.45" size="1.778" layer="27" display="off"/>
@@ -872,7 +887,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="OC_NEWARK" value="30C0862" x="17.78" y="44.45" size="1.778" layer="27" display="off"/>
 <attribute name="PIN1" value="" x="17.78" y="44.45" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="MOLEX" x="17.78" y="44.45" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="17.78" y="39.37" size="1.27" layer="27" ratio="10" align="center"/>
+<attribute name="VALUE" x="17.78" y="40.005" size="1.27" layer="25" ratio="10" align="center"/>
 </element>
 </elements>
 <signals>
@@ -1321,4 +1336,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </signals>
 </board>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>
