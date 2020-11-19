@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -572,7 +572,6 @@
 <pad name="4" x="2.2" y="-3.03" drill="1.3"/>
 <pad name="5" x="3.57" y="1.16" drill="1.3"/>
 <pad name="2" x="-3.57" y="1.16" drill="1.3"/>
-<pad name="6" x="0" y="0" drill="1.3"/>
 </package>
 <package name="CR6">
 <wire x1="95.778090625" y1="-32.00478125" x2="95.778090625" y2="-45.25158125" width="0.025" layer="200"/>
