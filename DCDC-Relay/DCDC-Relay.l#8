@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="inch" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -207,27 +207,19 @@ by exp-lbrs.ulp</description>
 <text x="-5.08" y="6.35" size="1.27" layer="25">&gt;NAME</text>
 <text x="-5.08" y="-5.08" size="1.27" layer="27">&gt;VALUE</text>
 </package>
-<package name="HEADERS_61300511121">
-<circle x="-5.02" y="-2" radius="0.1" width="0.2" layer="21"/>
-<wire x1="-6.35" y1="1.27" x2="6.35" y2="1.27" width="0.127" layer="51"/>
-<wire x1="6.35" y1="1.27" x2="6.35" y2="-1.27" width="0.127" layer="51"/>
-<wire x1="6.35" y1="-1.27" x2="-6.35" y2="-1.27" width="0.127" layer="51"/>
-<wire x1="-6.35" y1="-1.27" x2="-6.35" y2="1.27" width="0.127" layer="51"/>
-<wire x1="-6.35" y1="1.27" x2="6.35" y2="1.27" width="0.127" layer="21"/>
-<wire x1="6.35" y1="1.27" x2="6.35" y2="-1.27" width="0.127" layer="21"/>
-<wire x1="6.35" y1="-1.27" x2="-6.35" y2="-1.27" width="0.127" layer="21"/>
-<wire x1="-6.35" y1="-1.27" x2="-6.35" y2="1.27" width="0.127" layer="21"/>
-<wire x1="-6.6" y1="1.52" x2="-6.6" y2="-1.52" width="0.05" layer="39"/>
-<wire x1="-6.6" y1="-1.52" x2="6.6" y2="-1.52" width="0.05" layer="39"/>
-<wire x1="6.6" y1="-1.52" x2="6.6" y2="1.52" width="0.05" layer="39"/>
-<wire x1="6.6" y1="1.52" x2="-6.6" y2="1.52" width="0.05" layer="39"/>
-<pad name="1" x="-5.08" y="0" drill="1.1" shape="square"/>
-<pad name="2" x="-2.54" y="0" drill="1.1"/>
-<pad name="3" x="0" y="0" drill="1.1"/>
-<pad name="4" x="2.54" y="0" drill="1.1"/>
-<pad name="5" x="5.08" y="0" drill="1.1"/>
-<text x="-2.996" y="3.02" size="1.27" layer="25">&gt;NAME</text>
-<text x="-3.25" y="-3.762" size="1.27" layer="27" distance="52">&gt;VALUE</text>
+<package name="DCDC-RELAY_RELAY_AQ1">
+<description>&lt;b&gt;SOLID STATE RELAY&lt;/b&gt; NAiS&lt;p&gt;
+Source: http://www.mew-europe.com/.. en_ds_61601_0000.pdf</description>
+<wire x1="43.18" y1="2.54" x2="0" y2="2.54" width="0.2032" layer="21"/>
+<wire x1="0" y1="2.54" x2="0" y2="10.16" width="0.2032" layer="21"/>
+<wire x1="0" y1="10.16" x2="43.18" y2="10.16" width="0.2032" layer="21"/>
+<wire x1="43.18" y1="10.16" x2="43.18" y2="2.54" width="0.2032" layer="21"/>
+<pad name="1" x="35.56" y="5.08" drill="1.3" rot="R180"/>
+<pad name="2" x="25.4" y="5.08" drill="1.3" rot="R180"/>
+<pad name="3" x="12.7" y="5.08" drill="1.3" rot="R180"/>
+<pad name="4" x="7.62" y="5.08" drill="1.3" rot="R180"/>
+<text x="31.75" y="12.7" size="1.27" layer="25" rot="R180">&gt;NAME</text>
+<text x="20.32" y="12.7" size="1.27" layer="27" rot="R180">&gt;VALUE</text>
 </package>
 <package name="UIO-JOHN_WASPMOTE_V1.5">
 <description>WaspMote v1.5
@@ -314,20 +306,6 @@ by exp-lbrs.ulp</description>
 <pad name="2" x="-1.7" y="0" drill="1" diameter="2.1844"/>
 <text x="3" y="5" size="1.27" layer="25" rot="R180">&gt;NAME</text>
 </package>
-<package name="RELAY_AQ1">
-<description>&lt;b&gt;SOLID STATE RELAY&lt;/b&gt; NAiS&lt;p&gt;
-Source: http://www.mew-europe.com/.. en_ds_61601_0000.pdf</description>
-<wire x1="43.18" y1="0" x2="0" y2="0" width="0.2032" layer="21"/>
-<wire x1="0" y1="0" x2="0" y2="7.62" width="0.2032" layer="21"/>
-<wire x1="0" y1="7.62" x2="43.18" y2="7.62" width="0.2032" layer="21"/>
-<wire x1="43.18" y1="7.62" x2="43.18" y2="0" width="0.2032" layer="21"/>
-<pad name="1" x="35.56" y="5.08" drill="2.159" rot="R180"/>
-<pad name="2" x="25.4" y="5.08" drill="2.159" rot="R180"/>
-<pad name="3" x="12.7" y="5.08" drill="2.159" rot="R180"/>
-<pad name="4" x="7.62" y="5.08" drill="2.159" rot="R180"/>
-<text x="31.75" y="8.89" size="1.27" layer="25" rot="R180">&gt;NAME</text>
-<text x="20.32" y="8.89" size="1.27" layer="27" rot="R180">&gt;VALUE</text>
-</package>
 </packages>
 <symbols>
 <symbol name="DC-DC-CONVERTER_173010535">
@@ -341,70 +319,7 @@ Source: http://www.mew-europe.com/.. en_ds_61601_0000.pdf</description>
 <text x="-7.62" y="3.81" size="1.778" layer="95">&gt;NAME</text>
 <text x="-10.16" y="-11.43" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
-<symbol name="HEADERS_61300511121">
-<wire x1="-2.54" y1="7.62" x2="2.54" y2="7.62" width="0.254" layer="94"/>
-<wire x1="2.54" y1="7.62" x2="2.54" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="2.54" y1="-7.62" x2="-2.54" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="-7.62" x2="-2.54" y2="7.62" width="0.254" layer="94"/>
-<pin name="1" x="7.62" y="5.08" length="middle" direction="pas" rot="R180"/>
-<pin name="2" x="7.62" y="2.54" length="middle" direction="pas" rot="R180"/>
-<pin name="3" x="7.62" y="0" length="middle" direction="pas" rot="R180"/>
-<pin name="4" x="7.62" y="-2.54" length="middle" direction="pas" rot="R180"/>
-<pin name="5" x="7.62" y="-5.08" length="middle" direction="pas" rot="R180"/>
-<text x="-2.54" y="9.144" size="1.27" layer="95">&gt;NAME</text>
-<text x="-2.54" y="-10.16" size="1.27" layer="96">&gt;VALUE</text>
-</symbol>
-<symbol name="UIO-JOHN_WASPMOTE_V1.5">
-<description>WaspMote v1.5
-(c) 2017 john.hulth@geo.uio.no</description>
-<wire x1="-35.56" y1="-20.32" x2="-35.56" y2="20.32" width="0.254" layer="94"/>
-<wire x1="-35.56" y1="20.32" x2="35.56" y2="20.32" width="0.254" layer="94"/>
-<wire x1="35.56" y1="20.32" x2="35.56" y2="-20.32" width="0.254" layer="94"/>
-<wire x1="35.56" y1="-20.32" x2="-35.56" y2="-20.32" width="0.254" layer="94"/>
-<pin name="3V3" x="10.16" y="-25.4" length="middle" rot="R90"/>
-<pin name="5V" x="5.08" y="-25.4" length="middle" rot="R90"/>
-<pin name="A1" x="40.64" y="-17.78" length="middle" rot="R180"/>
-<pin name="A2" x="40.64" y="-12.7" length="middle" rot="R180"/>
-<pin name="A3" x="40.64" y="-7.62" length="middle" rot="R180"/>
-<pin name="A4" x="40.64" y="-2.54" length="middle" rot="R180"/>
-<pin name="A5" x="40.64" y="2.54" length="middle" rot="R180"/>
-<pin name="A6" x="40.64" y="7.62" length="middle" rot="R180"/>
-<pin name="A7" x="40.64" y="12.7" length="middle" rot="R180"/>
-<pin name="ANALOG" x="40.64" y="17.78" length="middle" rot="R180"/>
-<pin name="AUX_1RX" x="-20.32" y="-25.4" length="middle" rot="R90"/>
-<pin name="AUX_1TX" x="-25.4" y="-25.4" length="middle" rot="R90"/>
-<pin name="AUX_2RX" x="-10.16" y="-25.4" length="middle" rot="R90"/>
-<pin name="AUX_2TX" x="-15.24" y="-25.4" length="middle" rot="R90"/>
-<pin name="BATTERY" x="15.24" y="-25.4" length="middle" rot="R90"/>
-<pin name="D1" x="-40.64" y="-17.78" length="middle"/>
-<pin name="D2" x="-40.64" y="-12.7" length="middle"/>
-<pin name="D3" x="-40.64" y="-7.62" length="middle"/>
-<pin name="D4" x="-40.64" y="-2.54" length="middle"/>
-<pin name="D5" x="-40.64" y="2.54" length="middle"/>
-<pin name="D6" x="-40.64" y="7.62" length="middle"/>
-<pin name="D7" x="-40.64" y="12.7" length="middle"/>
-<pin name="D8" x="-40.64" y="17.78" length="middle"/>
-<pin name="GND" x="20.32" y="-25.4" length="middle" rot="R90"/>
-<pin name="GPS_POW" x="-5.08" y="-25.4" length="middle" rot="R90"/>
-<pin name="MISO" x="-5.08" y="25.4" length="middle" rot="R270"/>
-<pin name="MOSI" x="-10.16" y="25.4" length="middle" rot="R270"/>
-<pin name="RESERVED" x="20.32" y="25.4" length="middle" rot="R270"/>
-<pin name="RXD1" x="-20.32" y="25.4" length="middle" rot="R270"/>
-<pin name="SCK" x="-25.4" y="25.4" length="middle" rot="R270"/>
-<pin name="SCL" x="5.08" y="25.4" length="middle" rot="R270"/>
-<pin name="SDA" x="0" y="25.4" length="middle" rot="R270"/>
-<pin name="TXD1" x="-15.24" y="25.4" length="middle" rot="R270"/>
-<text x="0" y="0" size="2.54" layer="94" align="center">WaspMote v1.5</text>
-</symbol>
-<symbol name="ADAFRUIT_1X2">
-<wire x1="-2.54" y1="5.08" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="-2.54" x2="5.08" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="5.08" y1="-2.54" x2="5.08" y2="5.08" width="0.254" layer="94"/>
-<wire x1="5.08" y1="5.08" x2="-2.54" y2="5.08" width="0.254" layer="94"/>
-<pin name="1" x="-5.08" y="2.54" visible="pin" length="middle" direction="pas"/>
-<pin name="2" x="-5.08" y="0" visible="pin" length="middle" direction="pas"/>
-</symbol>
-<symbol name="RELAY_PHOTOMOS-DC">
+<symbol name="DCDC-RELAY_RELAY_PHOTOMOS-DC">
 <circle x="6.35" y="2.54" radius="0.127" width="0.254" layer="94"/>
 <circle x="6.35" y="-2.54" radius="0.127" width="0.254" layer="94"/>
 <rectangle x1="5.842" y1="0.254" x2="6.858" y2="0.508" layer="94"/>
@@ -463,6 +378,56 @@ Source: http://www.mew-europe.com/.. en_ds_61601_0000.pdf</description>
 <vertex x="2.794" y="-0.762"/>
 </polygon>
 </symbol>
+<symbol name="UIO-JOHN_WASPMOTE_V1.5">
+<description>WaspMote v1.5
+(c) 2017 john.hulth@geo.uio.no</description>
+<wire x1="-35.56" y1="-20.32" x2="-35.56" y2="20.32" width="0.254" layer="94"/>
+<wire x1="-35.56" y1="20.32" x2="35.56" y2="20.32" width="0.254" layer="94"/>
+<wire x1="35.56" y1="20.32" x2="35.56" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="35.56" y1="-20.32" x2="-35.56" y2="-20.32" width="0.254" layer="94"/>
+<pin name="3V3" x="10.16" y="-25.4" length="middle" rot="R90"/>
+<pin name="5V" x="5.08" y="-25.4" length="middle" rot="R90"/>
+<pin name="A1" x="40.64" y="-17.78" length="middle" rot="R180"/>
+<pin name="A2" x="40.64" y="-12.7" length="middle" rot="R180"/>
+<pin name="A3" x="40.64" y="-7.62" length="middle" rot="R180"/>
+<pin name="A4" x="40.64" y="-2.54" length="middle" rot="R180"/>
+<pin name="A5" x="40.64" y="2.54" length="middle" rot="R180"/>
+<pin name="A6" x="40.64" y="7.62" length="middle" rot="R180"/>
+<pin name="A7" x="40.64" y="12.7" length="middle" rot="R180"/>
+<pin name="ANALOG" x="40.64" y="17.78" length="middle" rot="R180"/>
+<pin name="AUX_1RX" x="-20.32" y="-25.4" length="middle" rot="R90"/>
+<pin name="AUX_1TX" x="-25.4" y="-25.4" length="middle" rot="R90"/>
+<pin name="AUX_2RX" x="-10.16" y="-25.4" length="middle" rot="R90"/>
+<pin name="AUX_2TX" x="-15.24" y="-25.4" length="middle" rot="R90"/>
+<pin name="BATTERY" x="15.24" y="-25.4" length="middle" rot="R90"/>
+<pin name="D1" x="-40.64" y="-17.78" length="middle"/>
+<pin name="D2" x="-40.64" y="-12.7" length="middle"/>
+<pin name="D3" x="-40.64" y="-7.62" length="middle"/>
+<pin name="D4" x="-40.64" y="-2.54" length="middle"/>
+<pin name="D5" x="-40.64" y="2.54" length="middle"/>
+<pin name="D6" x="-40.64" y="7.62" length="middle"/>
+<pin name="D7" x="-40.64" y="12.7" length="middle"/>
+<pin name="D8" x="-40.64" y="17.78" length="middle"/>
+<pin name="GND" x="20.32" y="-25.4" length="middle" rot="R90"/>
+<pin name="GPS_POW" x="-5.08" y="-25.4" length="middle" rot="R90"/>
+<pin name="MISO" x="-5.08" y="25.4" length="middle" rot="R270"/>
+<pin name="MOSI" x="-10.16" y="25.4" length="middle" rot="R270"/>
+<pin name="RESERVED" x="20.32" y="25.4" length="middle" rot="R270"/>
+<pin name="RXD1" x="-20.32" y="25.4" length="middle" rot="R270"/>
+<pin name="SCK" x="-25.4" y="25.4" length="middle" rot="R270"/>
+<pin name="SCL" x="5.08" y="25.4" length="middle" rot="R270"/>
+<pin name="SDA" x="0" y="25.4" length="middle" rot="R270"/>
+<pin name="TXD1" x="-15.24" y="25.4" length="middle" rot="R270"/>
+<text x="0" y="0" size="2.54" layer="94" align="center">WaspMote v1.5</text>
+</symbol>
+<symbol name="ADAFRUIT_1X2">
+<wire x1="-2.54" y1="5.08" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-2.54" x2="5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="5.08" x2="-2.54" y2="5.08" width="0.254" layer="94"/>
+<pin name="1" x="-5.08" y="2.54" visible="pin" length="middle" direction="pas"/>
+<pin name="2" x="-5.08" y="0" visible="pin" length="middle" direction="pas"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="DC-DC-CONVERTER_173010535" prefix="U">
@@ -490,28 +455,26 @@ Source: http://www.mew-europe.com/.. en_ds_61601_0000.pdf</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="HEADERS_61300511121" prefix="J">
-<description>&lt;h3&gt; CONN HEADER VERT 5POS 2.54MM &lt;/h3&gt;
-&lt;BR&gt;
-&lt;a href="https://katalog.we-online.de/em/datasheet/6130xx11121.pdf"&gt; Manufacturer's datasheet&lt;/a&gt;</description>
+<deviceset name="DCDC-RELAY_RELAY_AQ*" prefix="K">
+<description>http://www.crydom.com/en/products/catalog/cmx-series-dc-pcb-mount.pdf</description>
 <gates>
-<gate name="G$1" symbol="HEADERS_61300511121" x="0" y="0"/>
+<gate name="G$1" symbol="DCDC-RELAY_RELAY_PHOTOMOS-DC" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="HEADERS_61300511121">
+<device name="" package="DCDC-RELAY_RELAY_AQ1">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="A" pad="3"/>
+<connect gate="G$1" pin="DS1" pad="1"/>
+<connect gate="G$1" pin="DS2" pad="2"/>
+<connect gate="G$1" pin="K" pad="4"/>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="CREATED_BY" value="PCBLayout.com" constant="no"/>
-<attribute name="DIGI_KEY_PART_NUMBER" value="732-5318-ND" constant="no"/>
-<attribute name="MANUFACTURER" value="Wurth Electronics Inc." constant="no"/>
-<attribute name="MPN" value="61300511121" constant="no"/>
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="OC_FARNELL" value="" constant="no"/>
+<attribute name="OC_NEWARK" value="" constant="no"/>
+<attribute name="POPULARITY" value="" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -580,46 +543,6 @@ Source: http://www.mew-europe.com/.. en_ds_61601_0000.pdf</description>
 </connects>
 <technologies>
 <technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="RELAY_AQ*" prefix="K">
-<description>&lt;b&gt;SOLID STATE RELAY&lt;/b&gt; NAiS&lt;p&gt;
-Source: http://www.mew-europe.com/..  en_ds_61601_0000.pdf</description>
-<gates>
-<gate name="G$1" symbol="RELAY_PHOTOMOS-DC" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="RELAY_AQ1">
-<connects>
-<connect gate="G$1" pin="A" pad="3"/>
-<connect gate="G$1" pin="DS1" pad="1"/>
-<connect gate="G$1" pin="DS2" pad="2"/>
-<connect gate="G$1" pin="K" pad="4"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="OC_FARNELL" value="" constant="no"/>
-<attribute name="OC_NEWARK" value="" constant="no"/>
-<attribute name="POPULARITY" value="" constant="no"/>
-</technology>
-<technology name="1AD2-3">
-<attribute name="MF" value="AROMAT/ MATSUSHITA" constant="no"/>
-<attribute name="MPN" value="AQ1AD2-3/28VDC" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-<attribute name="OC_NEWARK" value="10C4052" constant="no"/>
-<attribute name="POPULARITY" value="0" constant="no"/>
-</technology>
-<technology name="2AD1-3">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="AQ2AD1-3/28VDC" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-<attribute name="OC_NEWARK" value="13P1229" constant="no"/>
-<attribute name="POPULARITY" value="0" constant="no"/>
-</technology>
 </technologies>
 </device>
 </devices>

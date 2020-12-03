@@ -501,16 +501,16 @@ by exp-lbrs.ulp</description>
 <package name="CMX60D5">
 <description>&lt;b&gt;SOLID STATE RELAY&lt;/b&gt; NAiS&lt;p&gt;
 Source: http://www.mew-europe.com/.. en_ds_61601_0000.pdf</description>
-<wire x1="43.18" y1="2.54" x2="0" y2="2.54" width="0.2032" layer="21"/>
-<wire x1="0" y1="2.54" x2="0" y2="10.16" width="0.2032" layer="21"/>
-<wire x1="0" y1="10.16" x2="43.18" y2="10.16" width="0.2032" layer="21"/>
-<wire x1="43.18" y1="10.16" x2="43.18" y2="2.54" width="0.2032" layer="21"/>
-<pad name="1" x="35.56" y="5.08" drill="1.3" rot="R180"/>
-<pad name="2" x="25.4" y="5.08" drill="1.3" rot="R180"/>
-<pad name="3" x="12.7" y="5.08" drill="1.3" rot="R180"/>
-<pad name="4" x="7.62" y="5.08" drill="1.3" rot="R180"/>
-<text x="31.75" y="12.7" size="1.27" layer="25" rot="R180">&gt;NAME</text>
-<text x="20.32" y="12.7" size="1.27" layer="27" rot="R180">&gt;VALUE</text>
+<wire x1="43.18" y1="0" x2="0" y2="0" width="0.2032" layer="21"/>
+<wire x1="0" y1="0" x2="0" y2="7.62" width="0.2032" layer="21"/>
+<wire x1="0" y1="7.62" x2="43.18" y2="7.62" width="0.2032" layer="21"/>
+<wire x1="43.18" y1="7.62" x2="43.18" y2="0" width="0.2032" layer="21"/>
+<pad name="1" x="35.56" y="2.54" drill="1.4" diameter="2.5" rot="R180"/>
+<pad name="2" x="25.4" y="2.54" drill="1.4" diameter="2.5" rot="R180"/>
+<pad name="3" x="12.7" y="2.54" drill="1.4" diameter="2.5" rot="R180"/>
+<pad name="4" x="7.62" y="2.54" drill="1.4" diameter="2.5" rot="R180"/>
+<text x="31.75" y="10.16" size="1.27" layer="25" rot="R180">&gt;NAME</text>
+<text x="20.32" y="10.16" size="1.27" layer="27" rot="R180">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
@@ -1173,7 +1173,7 @@ Warning: This is the KIT version of the AXIAL-0.3 package. This package has a sm
 </classes>
 <parts>
 <part name="U$1" library="UIO-John" deviceset="WASPMOTE_V1.5" device=""/>
-<part name="U5" library="DC-DC Converter" deviceset="173010535" device="" package3d_urn="urn:adsk.eagle:package:20779907/3" value="TSR 1-2450"/>
+<part name="U5" library="DC-DC Converter" deviceset="173010535" device="" package3d_urn="urn:adsk.eagle:package:20779907/3" value="TSR 1-2465"/>
 <part name="J2" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="1X2" device="-3.5MM" package3d_urn="urn:adsk.eagle:package:6240635/1"/>
 <part name="J1" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="1X2" device="-3.5MM" package3d_urn="urn:adsk.eagle:package:6240635/1"/>
 <part name="R1" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="10KOHM" device="-HORIZ-1/4W-5%" package3d_urn="urn:adsk.eagle:package:39658/1" value="10k"/>

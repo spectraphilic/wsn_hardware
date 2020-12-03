@@ -1182,7 +1182,7 @@ Warning: This is the KIT version of the AXIAL-0.3 package. This package has a sm
 <part name="U5" library="DC-DC Converter" deviceset="173010535" device="" package3d_urn="urn:adsk.eagle:package:20779907/3" value="TSR 1-2450"/>
 <part name="J2" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="1X2" device="-3.5MM" package3d_urn="urn:adsk.eagle:package:6240635/1"/>
 <part name="J1" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="1X2" device="-3.5MM" package3d_urn="urn:adsk.eagle:package:6240635/1"/>
-<part name="K1" library="DCDC-Relay" deviceset="DCDC-RELAY_RELAY_AQ*" device=""/>
+<part name="K1" library="DCDC-Relay" deviceset="DCDC-RELAY_RELAY_AQ*" device="" value="CMX60D5"/>
 <part name="R1" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="10KOHM" device="-HORIZ-1/4W-5%" package3d_urn="urn:adsk.eagle:package:39658/1" value="10k"/>
 <part name="R2" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="100KOHM" device="-HORIZ-1/4W-1%" package3d_urn="urn:adsk.eagle:package:39658/1" value="100k"/>
 </parts>
@@ -1206,13 +1206,13 @@ Warning: This is the KIT version of the AXIAL-0.3 package. This package has a sm
 <attribute name="NAME" x="162.56" y="87.63" size="1.778" layer="95" font="vector"/>
 <attribute name="VALUE" x="162.56" y="73.66" size="1.778" layer="96" font="vector"/>
 </instance>
-<instance part="R1" gate="G$1" x="241.3" y="104.14" smashed="yes" rot="R90">
-<attribute name="NAME" x="239.776" y="104.14" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="242.824" y="104.14" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
+<instance part="R1" gate="G$1" x="205.74" y="7.62" smashed="yes" rot="R90">
+<attribute name="NAME" x="204.216" y="7.62" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="207.264" y="7.62" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
 </instance>
-<instance part="R2" gate="G$1" x="241.3" y="119.38" smashed="yes" rot="R90">
-<attribute name="NAME" x="239.776" y="119.38" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="242.824" y="119.38" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
+<instance part="R2" gate="G$1" x="205.74" y="22.86" smashed="yes" rot="R90">
+<attribute name="NAME" x="204.216" y="22.86" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="207.264" y="22.86" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
 </instance>
 </instances>
 <busses>
@@ -1267,9 +1267,9 @@ Warning: This is the KIT version of the AXIAL-0.3 package. This package has a sm
 </segment>
 <segment>
 <pinref part="R1" gate="G$1" pin="1"/>
-<wire x1="241.3" y1="99.06" x2="241.3" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="241.3" y1="93.98" x2="236.22" y2="93.98" width="0.1524" layer="91"/>
-<label x="236.22" y="93.98" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="205.74" y1="2.54" x2="205.74" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="-2.54" x2="200.66" y2="-2.54" width="0.1524" layer="91"/>
+<label x="200.66" y="-2.54" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="1RX" class="0">
@@ -1468,11 +1468,11 @@ Warning: This is the KIT version of the AXIAL-0.3 package. This package has a sm
 <segment>
 <pinref part="R2" gate="G$1" pin="1"/>
 <pinref part="R1" gate="G$1" pin="2"/>
-<wire x1="241.3" y1="114.3" x2="241.3" y2="111.76" width="0.1524" layer="91"/>
-<wire x1="241.3" y1="111.76" x2="241.3" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="241.3" y1="111.76" x2="236.22" y2="111.76" width="0.1524" layer="91"/>
-<junction x="241.3" y="111.76"/>
-<label x="236.22" y="111.76" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="205.74" y1="17.78" x2="205.74" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="15.24" x2="205.74" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="15.24" x2="200.66" y2="15.24" width="0.1524" layer="91"/>
+<junction x="205.74" y="15.24"/>
+<label x="200.66" y="15.24" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="ANALOG" class="0">
@@ -1514,9 +1514,9 @@ Warning: This is the KIT version of the AXIAL-0.3 package. This package has a sm
 </segment>
 <segment>
 <pinref part="R2" gate="G$1" pin="2"/>
-<wire x1="241.3" y1="124.46" x2="241.3" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="241.3" y1="129.54" x2="236.22" y2="129.54" width="0.1524" layer="91"/>
-<label x="236.22" y="129.54" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="205.74" y1="27.94" x2="205.74" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="33.02" x2="200.66" y2="33.02" width="0.1524" layer="91"/>
+<label x="200.66" y="33.02" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="BATT+" class="0">
@@ -1534,6 +1534,40 @@ Warning: This is the KIT version of the AXIAL-0.3 package. This package has a sm
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,1,162.56,50.8,U5,VIN,24V,,,"/>
+<approved hash="104,1,193.04,50.8,U5,VOUT,SOLAR+,,,"/>
+<approved hash="106,1,38.1,35.56,1RX,,,,,"/>
+<approved hash="106,1,33.02,35.56,1TX,,,,,"/>
+<approved hash="106,1,48.26,35.56,2RX,,,,,"/>
+<approved hash="106,1,43.18,35.56,2TX,,,,,"/>
+<approved hash="106,1,68.58,35.56,3V3_SENS,,,,,"/>
+<approved hash="106,1,63.5,35.56,5V_SENS,,,,,"/>
+<approved hash="106,1,99.06,43.18,A1,,,,,"/>
+<approved hash="106,1,99.06,48.26,A2,,,,,"/>
+<approved hash="106,1,99.06,53.34,A3,,,,,"/>
+<approved hash="106,1,99.06,58.42,A4,,,,,"/>
+<approved hash="106,1,99.06,68.58,A6,,,,,"/>
+<approved hash="106,1,99.06,78.74,ANALOG,,,,,"/>
+<approved hash="106,1,73.66,35.56,BATTERY,,,,,"/>
+<approved hash="106,1,17.78,43.18,D1,,,,,"/>
+<approved hash="106,1,17.78,48.26,D2,,,,,"/>
+<approved hash="106,1,17.78,53.34,D3,,,,,"/>
+<approved hash="106,1,17.78,58.42,D4,,,,,"/>
+<approved hash="106,1,17.78,63.5,D5,,,,,"/>
+<approved hash="106,1,17.78,68.58,D6,,,,,"/>
+<approved hash="106,1,17.78,73.66,D7,,,,,"/>
+<approved hash="106,1,17.78,78.74,D8,,,,,"/>
+<approved hash="106,1,53.34,35.56,GPS_POW,,,,,"/>
+<approved hash="106,1,53.34,86.36,MISO,,,,,"/>
+<approved hash="106,1,48.26,86.36,MOSI,,,,,"/>
+<approved hash="106,1,78.74,86.36,RES,,,,,"/>
+<approved hash="106,1,38.1,86.36,RXD1,,,,,"/>
+<approved hash="106,1,33.02,86.36,SCK,,,,,"/>
+<approved hash="106,1,63.5,86.36,SCL,,,,,"/>
+<approved hash="106,1,58.42,86.36,SDA,,,,,"/>
+<approved hash="106,1,43.18,86.36,TXD1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>
