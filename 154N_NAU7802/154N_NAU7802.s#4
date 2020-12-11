@@ -2806,6 +2806,86 @@ by exp-lbrs.ulp</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="1725698">
+<description>&lt;6 way PCB vertical mount terminal,2.54mm 6 way PCB vertical mount terminal,2.54mm&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by SamacSys&lt;/author&gt;</description>
+<packages>
+<package name="SHDR6W90P0X254_1X6_1570X620X85">
+<description>&lt;b&gt;1725698&lt;/b&gt;&lt;br&gt;
+</description>
+<pad name="1" x="0" y="0" drill="1.1" diameter="1.65" shape="square"/>
+<pad name="2" x="2.54" y="0" drill="1.1" diameter="1.65"/>
+<pad name="3" x="5.08" y="0" drill="1.1" diameter="1.65"/>
+<pad name="4" x="7.62" y="0" drill="1.1" diameter="1.65"/>
+<pad name="5" x="10.16" y="0" drill="1.1" diameter="1.65"/>
+<pad name="6" x="12.7" y="0" drill="1.1" diameter="1.65"/>
+<text x="6.35" y="2.54" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="6.35" y="5.08" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<wire x1="-1.5" y1="-3.1" x2="-1.5" y2="3.1" width="0.1" layer="51"/>
+<wire x1="-1.5" y1="3.1" x2="14.2" y2="3.1" width="0.1" layer="51"/>
+<wire x1="14.2" y1="3.1" x2="14.2" y2="-3.1" width="0.1" layer="51"/>
+<wire x1="14.2" y1="-3.1" x2="-1.5" y2="-3.1" width="0.1" layer="51"/>
+<wire x1="-1.5" y1="-3.1" x2="14.2" y2="-3.1" width="0.2" layer="21"/>
+<wire x1="14.2" y1="-3.1" x2="14.2" y2="3.1" width="0.2" layer="21"/>
+<wire x1="14.2" y1="3.1" x2="-1.5" y2="3.1" width="0.2" layer="21"/>
+<wire x1="-1.5" y1="3.1" x2="-1.5" y2="-3.1" width="0.2" layer="21"/>
+<wire x1="0" y1="-1.27" x2="0" y2="-3.81" width="0.1524" layer="51"/>
+<wire x1="2.54" y1="-1.27" x2="2.54" y2="-3.81" width="0.1524" layer="51"/>
+<wire x1="5.08" y1="-1.27" x2="5.08" y2="-3.81" width="0.1524" layer="51"/>
+<wire x1="7.62" y1="-1.27" x2="7.62" y2="-3.81" width="0.1524" layer="51"/>
+<wire x1="10.16" y1="-1.27" x2="10.16" y2="-3.81" width="0.1524" layer="51"/>
+<wire x1="12.7" y1="-1.27" x2="12.7" y2="-3.81" width="0.1524" layer="51"/>
+</package>
+</packages>
+<symbols>
+<symbol name="1725698">
+<wire x1="5.08" y1="2.54" x2="15.24" y2="2.54" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-15.24" x2="15.24" y2="2.54" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-15.24" x2="5.08" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="-15.24" width="0.254" layer="94"/>
+<text x="16.51" y="7.62" size="1.778" layer="95" align="center-left">&gt;NAME</text>
+<text x="16.51" y="5.08" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
+<pin name="1" x="0" y="0" length="middle"/>
+<pin name="2" x="0" y="-2.54" length="middle"/>
+<pin name="3" x="0" y="-5.08" length="middle"/>
+<pin name="4" x="0" y="-7.62" length="middle"/>
+<pin name="5" x="0" y="-10.16" length="middle"/>
+<pin name="6" x="0" y="-12.7" length="middle"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="1725698" prefix="J">
+<description>&lt;b&gt;6 way PCB vertical mount terminal,2.54mm 6 way PCB vertical mount terminal,2.54mm&lt;/b&gt;&lt;p&gt;
+Source: &lt;a href=""&gt; Datasheet &lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="1725698" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SHDR6W90P0X254_1X6_1570X620X85">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="ALLIED_NUMBER" value="70054339" constant="no"/>
+<attribute name="DESCRIPTION" value="6 way PCB vertical mount terminal,2.54mm 6 way PCB vertical mount terminal,2.54mm" constant="no"/>
+<attribute name="HEIGHT" value="8.5mm" constant="no"/>
+<attribute name="MANUFACTURER_NAME" value="Phoenix Contact" constant="no"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="1725698" constant="no"/>
+<attribute name="RS_PART_NUMBER" value="3909045" constant="no"/>
+<attribute name="RS_PRICE-STOCK" value="https://uk.rs-online.com/web/p/products/3909045" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -2846,12 +2926,14 @@ by exp-lbrs.ulp</description>
 <part name="R11" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="100OHM" device="-0603-1/10W-1%" package3d_urn="urn:adsk.eagle:package:39650/1" value="100"/>
 <part name="R12" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="100OHM" device="-0603-1/10W-1%" package3d_urn="urn:adsk.eagle:package:39650/1" value="100"/>
 <part name="R13" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="100OHM" device="-0603-1/10W-1%" package3d_urn="urn:adsk.eagle:package:39650/1" value="100"/>
-<part name="U4" library="154N_NAU7802" deviceset="SPARKFUN-IC-AMPLIFIERS_LMV324" device="" value="LMV324"/>
+<part name="U4" library="154N_NAU7802" deviceset="SPARKFUN-IC-AMPLIFIERS_LMV324" device="" override_package3d_urn="urn:adsk.eagle:package:24850255/4" override_package_urn="urn:adsk.eagle:footprint:24850256/1" value="LMV324"/>
 <part name="J2" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_06" device="SILK_FEMALE_PTH" package3d_urn="urn:adsk.eagle:package:38009/1"/>
 <part name="J3" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_06" device="SILK_FEMALE_PTH" package3d_urn="urn:adsk.eagle:package:38009/1"/>
 <part name="J1" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_06" device="SILK_FEMALE_PTH" package3d_urn="urn:adsk.eagle:package:38009/1"/>
 <part name="U$1" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="VDDA" device=""/>
 <part name="GND1" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
+<part name="J5" library="1725698" deviceset="1725698" device=""/>
+<part name="J4" library="1725698" deviceset="1725698" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -3004,6 +3086,14 @@ resistors from I2C bus</text>
 <instance part="GND1" gate="1" x="66.04" y="76.2" smashed="yes">
 <attribute name="VALUE" x="66.04" y="75.946" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
+<instance part="J5" gate="G$1" x="-60.96" y="91.44" smashed="yes">
+<attribute name="NAME" x="-44.45" y="99.06" size="1.778" layer="95" align="center-left"/>
+<attribute name="VALUE" x="-44.45" y="96.52" size="1.778" layer="96" align="center-left"/>
+</instance>
+<instance part="J4" gate="G$1" x="-60.96" y="40.64" smashed="yes">
+<attribute name="NAME" x="-44.45" y="48.26" size="1.778" layer="95" align="center-left"/>
+<attribute name="VALUE" x="-44.45" y="45.72" size="1.778" layer="96" align="center-left"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -3041,13 +3131,13 @@ resistors from I2C bus</text>
 <wire x1="60.96" y1="35.56" x2="60.96" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="-15.24" y1="88.9" x2="-22.86" y2="88.9" width="0.1524" layer="91"/>
-<label x="-22.86" y="88.9" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="-15.24" y1="88.9" x2="-17.78" y2="88.9" width="0.1524" layer="91"/>
+<label x="-17.78" y="88.9" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="J2" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<wire x1="-15.24" y1="38.1" x2="-22.86" y2="38.1" width="0.1524" layer="91"/>
-<label x="-22.86" y="38.1" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="-15.24" y1="38.1" x2="-17.78" y2="38.1" width="0.1524" layer="91"/>
+<label x="-17.78" y="38.1" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="J3" gate="G$1" pin="2"/>
 </segment>
 <segment>
@@ -3059,6 +3149,16 @@ resistors from I2C bus</text>
 <pinref part="GND1" gate="1" pin="GND"/>
 <pinref part="U4" gate="G5" pin="P$V-"/>
 <wire x1="66.04" y1="78.74" x2="66.04" y2="81.28" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<wire x1="-60.96" y1="88.9" x2="-63.5" y2="88.9" width="0.1524" layer="91"/>
+<label x="-63.5" y="88.9" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="J5" gate="G$1" pin="2"/>
+</segment>
+<segment>
+<wire x1="-60.96" y1="30.48" x2="-63.5" y2="30.48" width="0.1524" layer="91"/>
+<label x="-63.5" y="30.48" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="J4" gate="G$1" pin="5"/>
 </segment>
 </net>
 <net name="SCL" class="0">
@@ -3130,9 +3230,14 @@ resistors from I2C bus</text>
 <label x="17.78" y="15.24" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<wire x1="-15.24" y1="40.64" x2="-22.86" y2="40.64" width="0.1524" layer="91"/>
-<label x="-22.86" y="40.64" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="-15.24" y1="40.64" x2="-17.78" y2="40.64" width="0.1524" layer="91"/>
+<label x="-17.78" y="40.64" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="J3" gate="G$1" pin="1"/>
+</segment>
+<segment>
+<wire x1="-60.96" y1="27.94" x2="-63.5" y2="27.94" width="0.1524" layer="91"/>
+<label x="-63.5" y="27.94" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="J4" gate="G$1" pin="6"/>
 </segment>
 </net>
 <net name="B-" class="0">
@@ -3142,9 +3247,14 @@ resistors from I2C bus</text>
 <label x="17.78" y="40.64" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<wire x1="-15.24" y1="33.02" x2="-22.86" y2="33.02" width="0.1524" layer="91"/>
-<label x="-22.86" y="33.02" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="-15.24" y1="33.02" x2="-17.78" y2="33.02" width="0.1524" layer="91"/>
+<label x="-17.78" y="33.02" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="J3" gate="G$1" pin="4"/>
+</segment>
+<segment>
+<wire x1="-60.96" y1="35.56" x2="-63.5" y2="35.56" width="0.1524" layer="91"/>
+<label x="-63.5" y="35.56" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="J4" gate="G$1" pin="3"/>
 </segment>
 </net>
 <net name="VDDA" class="0">
@@ -3171,13 +3281,13 @@ resistors from I2C bus</text>
 <pinref part="U$72" gate="G$1" pin="VDDA"/>
 </segment>
 <segment>
-<wire x1="-15.24" y1="86.36" x2="-22.86" y2="86.36" width="0.1524" layer="91"/>
-<label x="-22.86" y="86.36" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="-15.24" y1="86.36" x2="-17.78" y2="86.36" width="0.1524" layer="91"/>
+<label x="-17.78" y="86.36" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="J2" gate="G$1" pin="3"/>
 </segment>
 <segment>
-<wire x1="-15.24" y1="35.56" x2="-22.86" y2="35.56" width="0.1524" layer="91"/>
-<label x="-22.86" y="35.56" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="-15.24" y1="35.56" x2="-17.78" y2="35.56" width="0.1524" layer="91"/>
+<label x="-17.78" y="35.56" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="J3" gate="G$1" pin="3"/>
 </segment>
 <segment>
@@ -3189,6 +3299,16 @@ resistors from I2C bus</text>
 <pinref part="U4" gate="G5" pin="P$V+"/>
 <pinref part="U$1" gate="G$1" pin="VDDA"/>
 <wire x1="66.04" y1="96.52" x2="66.04" y2="99.06" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<wire x1="-60.96" y1="86.36" x2="-63.5" y2="86.36" width="0.1524" layer="91"/>
+<label x="-63.5" y="86.36" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="J5" gate="G$1" pin="3"/>
+</segment>
+<segment>
+<wire x1="-60.96" y1="33.02" x2="-63.5" y2="33.02" width="0.1524" layer="91"/>
+<label x="-63.5" y="33.02" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="J4" gate="G$1" pin="4"/>
 </segment>
 </net>
 <net name="N$11" class="0">
@@ -3207,8 +3327,13 @@ resistors from I2C bus</text>
 </segment>
 <segment>
 <pinref part="J2" gate="G$1" pin="1"/>
-<wire x1="-15.24" y1="91.44" x2="-22.86" y2="91.44" width="0.1524" layer="91"/>
-<label x="-22.86" y="91.44" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="-15.24" y1="91.44" x2="-17.78" y2="91.44" width="0.1524" layer="91"/>
+<label x="-17.78" y="91.44" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<wire x1="-60.96" y1="91.44" x2="-63.5" y2="91.44" width="0.1524" layer="91"/>
+<label x="-63.5" y="91.44" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="J5" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="A-" class="0">
@@ -3219,8 +3344,13 @@ resistors from I2C bus</text>
 </segment>
 <segment>
 <pinref part="J2" gate="G$1" pin="4"/>
-<wire x1="-15.24" y1="83.82" x2="-22.86" y2="83.82" width="0.1524" layer="91"/>
-<label x="-22.86" y="83.82" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="-15.24" y1="83.82" x2="-17.78" y2="83.82" width="0.1524" layer="91"/>
+<label x="-17.78" y="83.82" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<wire x1="-60.96" y1="83.82" x2="-63.5" y2="83.82" width="0.1524" layer="91"/>
+<label x="-63.5" y="83.82" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="J5" gate="G$1" pin="4"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -3250,8 +3380,13 @@ resistors from I2C bus</text>
 </segment>
 <segment>
 <pinref part="J2" gate="G$1" pin="5"/>
-<wire x1="-15.24" y1="81.28" x2="-22.86" y2="81.28" width="0.1524" layer="91"/>
-<label x="-22.86" y="81.28" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="-15.24" y1="81.28" x2="-17.78" y2="81.28" width="0.1524" layer="91"/>
+<label x="-17.78" y="81.28" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<wire x1="-60.96" y1="81.28" x2="-63.5" y2="81.28" width="0.1524" layer="91"/>
+<label x="-63.5" y="81.28" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="J5" gate="G$1" pin="5"/>
 </segment>
 </net>
 <net name="GAIN_B-" class="0">
@@ -3264,9 +3399,14 @@ resistors from I2C bus</text>
 <junction x="22.86" y="45.72"/>
 </segment>
 <segment>
-<wire x1="-15.24" y1="27.94" x2="-22.86" y2="27.94" width="0.1524" layer="91"/>
-<label x="-22.86" y="27.94" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="-15.24" y1="27.94" x2="-17.78" y2="27.94" width="0.1524" layer="91"/>
+<label x="-17.78" y="27.94" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="J3" gate="G$1" pin="6"/>
+</segment>
+<segment>
+<wire x1="-60.96" y1="40.64" x2="-63.5" y2="40.64" width="0.1524" layer="91"/>
+<label x="-63.5" y="40.64" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="J4" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="GAIN_B+" class="0">
@@ -3279,9 +3419,14 @@ resistors from I2C bus</text>
 <junction x="22.86" y="20.32"/>
 </segment>
 <segment>
-<wire x1="-15.24" y1="30.48" x2="-22.86" y2="30.48" width="0.1524" layer="91"/>
-<label x="-22.86" y="30.48" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="-15.24" y1="30.48" x2="-17.78" y2="30.48" width="0.1524" layer="91"/>
+<label x="-17.78" y="30.48" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="J3" gate="G$1" pin="5"/>
+</segment>
+<segment>
+<wire x1="-60.96" y1="38.1" x2="-63.5" y2="38.1" width="0.1524" layer="91"/>
+<label x="-63.5" y="38.1" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="J4" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -3385,8 +3530,13 @@ resistors from I2C bus</text>
 </segment>
 <segment>
 <pinref part="J2" gate="G$1" pin="6"/>
-<wire x1="-15.24" y1="78.74" x2="-22.86" y2="78.74" width="0.1524" layer="91"/>
-<label x="-22.86" y="78.74" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="-15.24" y1="78.74" x2="-17.78" y2="78.74" width="0.1524" layer="91"/>
+<label x="-17.78" y="78.74" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<wire x1="-60.96" y1="78.74" x2="-63.5" y2="78.74" width="0.1524" layer="91"/>
+<label x="-63.5" y="78.74" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="J5" gate="G$1" pin="6"/>
 </segment>
 </net>
 </nets>
@@ -3413,6 +3563,11 @@ will not be understood (or retained) with this version.
 Since Version 8.3, EAGLE supports the association of 3D packages
 with devices in libraries, schematics, and board files. Those 3D
 packages will not be understood (or retained) with this version.
+</note>
+<note version="9.4" severity="warning">
+Since Version 9.4, EAGLE supports the overriding of 3D packages
+in schematics and board files. Those overridden 3d packages
+will not be understood (or retained) with this version.
 </note>
 </compatibility>
 </eagle>

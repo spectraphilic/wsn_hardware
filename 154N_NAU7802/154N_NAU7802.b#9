@@ -184,7 +184,7 @@
 <layer number="255" name="routoute" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <board>
-<fusionsync huburn="a.cGVyc29uYWw6dWUyODA4MjMx" projecturn="a.cGVyc29uYWw6dWUyODA4MjMxIzIwMTYxMjA1NTM5MTI5MzE" f3durn="urn:adsk.wipprod:dm.lineage:bewJx8gxQdqwT-_4LAB94g" pcbguid="4d8371a8-d246-44fa-b9ef-5599df867c9a" lastpulledtime="" lastsyncedchangeguid="4bebdda3-d316-3a68-b5e8-3aa0437b82fe"/>
+<fusionsync huburn="a.cGVyc29uYWw6dWUyODA4MjMx" projecturn="a.cGVyc29uYWw6dWUyODA4MjMxIzIwMTYxMjA1NTM5MTI5MzE" f3durn="urn:adsk.wipprod:dm.lineage:bewJx8gxQdqwT-_4LAB94g" pcbguid="4d8371a8-d246-44fa-b9ef-5599df867c9a" lastpulledtime="" lastsyncedchangeguid="cddd3a08-09e2-3ab2-d826-04cf15efc079"/>
 <plain>
 <wire x1="0" y1="0" x2="36.195" y2="0" width="0" layer="20"/>
 <wire x1="36.195" y1="0" x2="36.195" y2="21.59" width="0" layer="20"/>
@@ -3555,6 +3555,7 @@ by exp-lbrs.ulp</description>
 <description language="de">
 
 
+
 &lt;p&gt;
 &lt;b&gt;Eurocircuits-EAGLE design rules&lt;/b&gt;&lt;br&gt;
 &lt;br&gt;
@@ -3577,6 +3578,7 @@ If you need lower minimum values, please use a different Eurocircuits-EAGLE desi
 Your Eurocircuits Team
 </description>
 <description language="en">
+
 
 
 &lt;p&gt;
@@ -3658,7 +3660,7 @@ Your Eurocircuits Team
 <param name="srMinRoundness" value="0mil"/>
 <param name="srMaxRoundness" value="0mil"/>
 <param name="slThermalIsolate" value="0.2mm"/>
-<param name="slThermalsForVias" value="1"/>
+<param name="slThermalsForVias" value="0"/>
 <param name="dpMaxLengthDifference" value="10mm"/>
 <param name="dpGapFactor" value="2.5"/>
 <param name="checkAngle" value="0"/>
@@ -3853,7 +3855,7 @@ Your Eurocircuits Team
 <attribute name="PROD_ID" value="IC-14299" x="14.605" y="32.385" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="10.795" y="18.415" size="0.6096" layer="27" font="vector" ratio="20" rot="R180" align="bottom-center"/>
 </element>
-<element name="U4" library="154N_NAU7802" package="SPARKFUN-IC-AMPLIFIERS_SO14" override_package3d_urn="urn:adsk.eagle:package:24850255/2" override_package_urn="urn:adsk.eagle:footprint:24850256/1" value="LMV324" x="27.94" y="10.795" smashed="yes">
+<element name="U4" library="154N_NAU7802" package="SPARKFUN-IC-AMPLIFIERS_SO14" override_package3d_urn="urn:adsk.eagle:package:24850255/4" override_package_urn="urn:adsk.eagle:footprint:24850256/1" value="LMV324" x="27.94" y="10.795" smashed="yes">
 <attribute name="NAME" x="33.8455" y="11.1125" size="0.6096" layer="25" font="vector" ratio="20" rot="R180" align="bottom-center"/>
 <attribute name="PROD_ID" value="IC-08227" x="48.26" y="-0.635" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="31.115" y="11.1125" size="0.6096" layer="27" font="vector" ratio="20" rot="R180" align="bottom-center"/>
@@ -3940,6 +3942,9 @@ Your Eurocircuits Team
 <via x="17.018" y="10.795" extent="1-16" drill="0.35"/>
 <contactref element="J5" pad="2"/>
 <contactref element="J4" pad="5"/>
+<via x="33.3375" y="12.7" extent="1-16" drill="0.35"/>
+<via x="21.1455" y="8.89" extent="1-16" drill="0.35"/>
+<via x="23.368" y="8.89" extent="1-16" drill="0.35"/>
 <wire x1="24.13" y1="18.415" x2="24.13" y2="25.0825" width="0" layer="19" extent="1-1"/>
 <wire x1="24.13" y1="-3.4925" x2="24.13" y2="3.175" width="0" layer="19" extent="1-1"/>
 </signal>
@@ -3947,13 +3952,13 @@ Your Eurocircuits Team
 <contactref element="U3" pad="13"/>
 <contactref element="R3" pad="1"/>
 <contactref element="J1" pad="1"/>
-<wire x1="4.7625" y1="10.4775" x2="5.715" y2="11.43" width="0.254" layer="1"/>
+<wire x1="5.08" y1="10.795" x2="5.715" y2="11.43" width="0.254" layer="1"/>
 <wire x1="5.715" y1="11.43" x2="8.095" y2="11.43" width="0.254" layer="1"/>
-<wire x1="4.7625" y1="3.175" x2="4.7625" y2="4.445" width="0.254" layer="1"/>
-<wire x1="4.7625" y1="4.445" x2="4.7625" y2="10.4775" width="0.254" layer="1"/>
-<wire x1="3.175" y1="4.445" x2="4.7625" y2="4.445" width="0.254" layer="1"/>
+<wire x1="5.08" y1="2.8575" x2="5.08" y2="4.445" width="0.254" layer="1"/>
+<wire x1="5.08" y1="4.445" x2="5.08" y2="10.795" width="0.254" layer="1"/>
+<wire x1="3.175" y1="4.445" x2="5.08" y2="4.445" width="0.254" layer="1"/>
 <wire x1="9.945" y1="1.524" x2="6.4135" y2="1.524" width="0.254" layer="1"/>
-<wire x1="6.4135" y1="1.524" x2="4.7625" y2="3.175" width="0.254" layer="1"/>
+<wire x1="6.4135" y1="1.524" x2="5.08" y2="2.8575" width="0.254" layer="1"/>
 </signal>
 <signal name="SDA">
 <contactref element="U3" pad="14"/>
