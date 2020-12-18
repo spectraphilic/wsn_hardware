@@ -4056,9 +4056,9 @@ Your Eurocircuits Team
 <signal name="N$11">
 <contactref element="U3" pad="6"/>
 <contactref element="C10" pad="1"/>
-<wire x1="13.495" y1="13.97" x2="13.97" y2="13.97" width="0.254" layer="1"/>
-<wire x1="15.66" y1="15.66" x2="15.66" y2="15.875" width="0.254" layer="1"/>
-<wire x1="13.97" y1="13.97" x2="15.66" y2="15.66" width="0.254" layer="1"/>
+<wire x1="13.495" y1="13.97" x2="14.2875" y2="13.97" width="0.254" layer="1"/>
+<wire x1="15.66" y1="15.3425" x2="15.66" y2="15.875" width="0.254" layer="1"/>
+<wire x1="14.2875" y1="13.97" x2="15.66" y2="15.3425" width="0.254" layer="1"/>
 </signal>
 <signal name="A+">
 <contactref element="U4" pad="5"/>

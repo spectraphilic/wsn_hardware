@@ -4112,7 +4112,6 @@ Your Eurocircuits Team
 </signal>
 <signal name="GAIN_B-">
 <contactref element="U4" pad="13"/>
-<wire x1="22.225" y1="13.97" x2="22.86" y2="14.605" width="0.254" layer="1"/>
 <wire x1="25.4" y1="14.605" x2="22.86" y2="14.605" width="0.254" layer="1"/>
 <wire x1="25.4" y1="14.605" x2="26.035" y2="13.97" width="0.254" layer="1"/>
 <wire x1="26.035" y1="13.97" x2="26.035" y2="13.495" width="0.254" layer="1"/>
@@ -4126,8 +4125,9 @@ Your Eurocircuits Team
 <wire x1="34.29" y1="16.8275" x2="34.29" y2="18.415" width="0.254" layer="1"/>
 <contactref element="J4" pad="1"/>
 <contactref element="R7" pad="1"/>
+<wire x1="22.86" y1="14.605" x2="22.225" y2="13.97" width="0.254" layer="1"/>
+<wire x1="22.225" y1="13.97" x2="22.225" y2="13.55" width="0.254" layer="1"/>
 <wire x1="34.29" y1="18.415" x2="34.29" y2="25.0825" width="0" layer="19" extent="1-1"/>
-<wire x1="22.225" y1="13.55" x2="22.225" y2="13.97" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GAIN_B+">
 <contactref element="U4" pad="9"/>

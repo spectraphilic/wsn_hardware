@@ -1,0 +1,21 @@
+# 'EAGLE Version 9.6.2 Copyright (c) 1988-2020 Autodesk, Inc.;
+
+SET UNDO_LOG OFF;
+# Migrate parts to 'C:/Users/johnhh/Documents/GitHub/wsn_hardware/SpotOn/MLX_FIGARO/MLX_FIGARO.lbr'
+USE -*;
+USE 'C:/Users/johnhh/Documents/GitHub/wsn_hardware/SpotOn/MLX_FIGARO/MLX_FIGARO.lbr';
+#
+# SHEET 1 - MIGRATE PARTS
+#
+EDIT .s1
+REPLACE GND7 GND;
+REPLACE IC3 MLX90614ESF-BAA-000-TU;
+REPLACE J1 CONN_041X04_NO_SILK;
+REPLACE J2 CONN_041X04_NO_SILK;
+REPLACE R2 R-EU_0207/7;
+REPLACE SUPPLY8 3.3V;
+REPLACE U$3 TG2600;
+EDIT .s1
+SET UNDO_LOG ON;
+# Put all libraries back into use
+USE *;

@@ -201,7 +201,7 @@ by exp-lbrs.ulp</description>
 &lt;/ul&gt;</description>
 <circle x="0" y="0" radius="4.55" width="0.127" layer="51"/>
 <circle x="0" y="0" radius="4.699" width="0.2032" layer="21"/>
-<circle x="0" y="0" radius="2.6" width="0.127" layer="51"/>
+<circle x="-6.35" y="0" radius="2.6" width="0.127" layer="51"/>
 <circle x="0" y="0" radius="4.55" width="0.127" layer="51"/>
 <circle x="0" y="0" radius="4.699" width="0.2032" layer="21"/>
 <wire x1="3.6985" y1="-2.9391" x2="4.1227" y2="-3.3632" width="0.2032" layer="21"/>
@@ -217,11 +217,12 @@ by exp-lbrs.ulp</description>
 <hole x="2.54" y="0" drill="0.65"/>
 <smd name="1" x="2.54" y="0" dx="1.27" dy="1.27" layer="16" roundness="100"/>
 <hole x="0" y="2.54" drill="0.65"/>
-<smd name="2" x="0" y="2.54" dx="1.27" dy="1.27" layer="16" roundness="100"/>
+<smd name="2" x="0" y="3.429" dx="0.8128" dy="0.4064" layer="16" rot="R90"/>
 <hole x="-2.54" y="0" drill="0.65"/>
 <smd name="3" x="-2.54" y="0" dx="1.27" dy="1.27" layer="16" roundness="100"/>
 <hole x="0" y="-2.54" drill="0.65"/>
 <smd name="4" x="0" y="-2.54" dx="1.27" dy="1.27" layer="16" roundness="100"/>
+<circle x="0" y="2.54" radius="0.508" width="0.508" layer="16"/>
 </package>
 <package name="SPARKFUN-CAPACITORS_0402">
 <description>&lt;p&gt;&lt;b&gt;Generic 1005 (0402) package&lt;/b&gt;&lt;/p&gt;
@@ -776,6 +777,12 @@ Commonly used for small ceramic capacitors. Like our 0.1uF (http://www.sparkfun.
 </gates>
 <devices>
 <device name="" package="LAGOPUS_A_2_TO-39">
+<connects>
+<connect gate="G$1" pin="PWM/SDA" pad="2"/>
+<connect gate="G$1" pin="SCL/VZ" pad="1"/>
+<connect gate="G$1" pin="VDD" pad="3"/>
+<connect gate="G$1" pin="VSS" pad="4"/>
+</connects>
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="COMP-09719"/>

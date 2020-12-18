@@ -3950,6 +3950,7 @@ Your Eurocircuits Team
 <via x="21.1455" y="8.89" extent="1-16" drill="0.35"/>
 <via x="23.368" y="8.89" extent="1-16" drill="0.35"/>
 <contactref element="C1" pad="2"/>
+<via x="23.368" y="6.985" extent="1-16" drill="0.35"/>
 <wire x1="24.13" y1="18.415" x2="24.13" y2="25.0825" width="0" layer="19" extent="1-1"/>
 <wire x1="24.13" y1="-3.4925" x2="24.13" y2="3.175" width="0" layer="19" extent="1-1"/>
 </signal>
