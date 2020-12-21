@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.2">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -3240,6 +3240,193 @@ Source: http://ww1.microchip.com/downloads/en/DeviceDoc/21314g.pdf</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="NAU7802SGI">
+<description>&lt;24 Bit Analog to Digital Converter 2 Input 1 Sigma-Delta 16-SOP&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by SamacSys&lt;/author&gt;</description>
+<packages>
+<package name="SOIC127P600X175-16N">
+<description>&lt;b&gt;16L SOP  150 mil&lt;/b&gt;&lt;br&gt;
+</description>
+<smd name="1" x="-2.712" y="4.445" dx="1.525" dy="0.7" layer="1"/>
+<smd name="2" x="-2.712" y="3.175" dx="1.525" dy="0.7" layer="1"/>
+<smd name="3" x="-2.712" y="1.905" dx="1.525" dy="0.7" layer="1"/>
+<smd name="4" x="-2.712" y="0.635" dx="1.525" dy="0.7" layer="1"/>
+<smd name="5" x="-2.712" y="-0.635" dx="1.525" dy="0.7" layer="1"/>
+<smd name="6" x="-2.712" y="-1.905" dx="1.525" dy="0.7" layer="1"/>
+<smd name="7" x="-2.712" y="-3.175" dx="1.525" dy="0.7" layer="1"/>
+<smd name="8" x="-2.712" y="-4.445" dx="1.525" dy="0.7" layer="1"/>
+<smd name="9" x="2.712" y="-4.445" dx="1.525" dy="0.7" layer="1"/>
+<smd name="10" x="2.712" y="-3.175" dx="1.525" dy="0.7" layer="1"/>
+<smd name="11" x="2.712" y="-1.905" dx="1.525" dy="0.7" layer="1"/>
+<smd name="12" x="2.712" y="-0.635" dx="1.525" dy="0.7" layer="1"/>
+<smd name="13" x="2.712" y="0.635" dx="1.525" dy="0.7" layer="1"/>
+<smd name="14" x="2.712" y="1.905" dx="1.525" dy="0.7" layer="1"/>
+<smd name="15" x="2.712" y="3.175" dx="1.525" dy="0.7" layer="1"/>
+<smd name="16" x="2.712" y="4.445" dx="1.525" dy="0.7" layer="1"/>
+<text x="0" y="0" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="0" y="0" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<wire x1="-3.725" y1="5.25" x2="3.725" y2="5.25" width="0.05" layer="51"/>
+<wire x1="3.725" y1="5.25" x2="3.725" y2="-5.25" width="0.05" layer="51"/>
+<wire x1="3.725" y1="-5.25" x2="-3.725" y2="-5.25" width="0.05" layer="51"/>
+<wire x1="-3.725" y1="-5.25" x2="-3.725" y2="5.25" width="0.05" layer="51"/>
+<wire x1="-1.95" y1="4.95" x2="1.95" y2="4.95" width="0.1" layer="51"/>
+<wire x1="1.95" y1="4.95" x2="1.95" y2="-4.95" width="0.1" layer="51"/>
+<wire x1="1.95" y1="-4.95" x2="-1.95" y2="-4.95" width="0.1" layer="51"/>
+<wire x1="-1.95" y1="-4.95" x2="-1.95" y2="4.95" width="0.1" layer="51"/>
+<wire x1="-1.95" y1="3.68" x2="-0.68" y2="4.95" width="0.1" layer="51"/>
+<wire x1="-1.6" y1="4.95" x2="1.6" y2="4.95" width="0.2" layer="21"/>
+<wire x1="1.6" y1="4.95" x2="1.6" y2="-4.95" width="0.2" layer="21"/>
+<wire x1="1.6" y1="-4.95" x2="-1.6" y2="-4.95" width="0.2" layer="21"/>
+<wire x1="-1.6" y1="-4.95" x2="-1.6" y2="4.95" width="0.2" layer="21"/>
+<wire x1="-3.475" y1="5.145" x2="-1.95" y2="5.145" width="0.2" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="NAU7802SGI">
+<wire x1="5.08" y1="2.54" x2="30.48" y2="2.54" width="0.254" layer="94"/>
+<wire x1="30.48" y1="-20.32" x2="30.48" y2="2.54" width="0.254" layer="94"/>
+<wire x1="30.48" y1="-20.32" x2="5.08" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="-20.32" width="0.254" layer="94"/>
+<text x="31.75" y="7.62" size="1.778" layer="95" align="center-left">&gt;NAME</text>
+<text x="31.75" y="5.08" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
+<pin name="REFP" x="0" y="0" length="middle"/>
+<pin name="VIN1N" x="0" y="-2.54" length="middle"/>
+<pin name="VIN1P" x="0" y="-5.08" length="middle"/>
+<pin name="VIN2N" x="0" y="-7.62" length="middle"/>
+<pin name="VIN2P" x="0" y="-10.16" length="middle"/>
+<pin name="VBG" x="0" y="-12.7" length="middle"/>
+<pin name="REFN" x="0" y="-15.24" length="middle"/>
+<pin name="AVSS" x="0" y="-17.78" length="middle"/>
+<pin name="AVDD/LDO" x="35.56" y="0" length="middle" rot="R180"/>
+<pin name="DVDD" x="35.56" y="-2.54" length="middle" rot="R180"/>
+<pin name="SDIO" x="35.56" y="-5.08" length="middle" rot="R180"/>
+<pin name="SCLK" x="35.56" y="-7.62" length="middle" rot="R180"/>
+<pin name="DRDY" x="35.56" y="-10.16" length="middle" rot="R180"/>
+<pin name="XOUT" x="35.56" y="-12.7" length="middle" rot="R180"/>
+<pin name="XIN" x="35.56" y="-15.24" length="middle" rot="R180"/>
+<pin name="DVSS" x="35.56" y="-17.78" length="middle" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="NAU7802SGI" prefix="IC">
+<description>&lt;b&gt;24 Bit Analog to Digital Converter 2 Input 1 Sigma-Delta 16-SOP&lt;/b&gt;&lt;p&gt;
+Source: &lt;a href="https://www.nuvoton.com/resource-files/NAU7802 Data Sheet V1.7.pdf"&gt; Datasheet &lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="NAU7802SGI" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOIC127P600X175-16N">
+<connects>
+<connect gate="G$1" pin="AVDD/LDO" pad="16"/>
+<connect gate="G$1" pin="AVSS" pad="8"/>
+<connect gate="G$1" pin="DRDY" pad="12"/>
+<connect gate="G$1" pin="DVDD" pad="15"/>
+<connect gate="G$1" pin="DVSS" pad="9"/>
+<connect gate="G$1" pin="REFN" pad="7"/>
+<connect gate="G$1" pin="REFP" pad="1"/>
+<connect gate="G$1" pin="SCLK" pad="13"/>
+<connect gate="G$1" pin="SDIO" pad="14"/>
+<connect gate="G$1" pin="VBG" pad="6"/>
+<connect gate="G$1" pin="VIN1N" pad="2"/>
+<connect gate="G$1" pin="VIN1P" pad="3"/>
+<connect gate="G$1" pin="VIN2N" pad="4"/>
+<connect gate="G$1" pin="VIN2P" pad="5"/>
+<connect gate="G$1" pin="XIN" pad="10"/>
+<connect gate="G$1" pin="XOUT" pad="11"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DESCRIPTION" value="24 Bit Analog to Digital Converter 2 Input 1 Sigma-Delta 16-SOP" constant="no"/>
+<attribute name="HEIGHT" value="1.75mm" constant="no"/>
+<attribute name="MANUFACTURER_NAME" value="Nuvoton" constant="no"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="NAU7802SGI" constant="no"/>
+<attribute name="RS_PART_NUMBER" value="" constant="no"/>
+<attribute name="RS_PRICE-STOCK" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="CAY16-1003F4LF">
+<description>&lt;Bourns CAY16 Series 100k +/-1% Isolated SMT Resistor Array, 4 Resistors 1206 Package&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by SamacSys&lt;/author&gt;</description>
+<packages>
+<package name="CAY16-J4">
+<description>&lt;b&gt;CAY16-J4&lt;/b&gt;&lt;br&gt;
+</description>
+<smd name="1" x="-1.2" y="-0.85" dx="0.9" dy="0.425" layer="1" rot="R90"/>
+<smd name="2" x="-1.2" y="0.85" dx="0.9" dy="0.425" layer="1" rot="R90"/>
+<smd name="3" x="-0.4" y="-0.85" dx="0.9" dy="0.425" layer="1" rot="R90"/>
+<smd name="4" x="-0.4" y="0.85" dx="0.9" dy="0.425" layer="1" rot="R90"/>
+<smd name="5" x="0.4" y="-0.85" dx="0.9" dy="0.425" layer="1" rot="R90"/>
+<smd name="6" x="0.4" y="0.85" dx="0.9" dy="0.425" layer="1" rot="R90"/>
+<smd name="7" x="1.2" y="-0.85" dx="0.9" dy="0.425" layer="1" rot="R90"/>
+<smd name="8" x="1.2" y="0.85" dx="0.9" dy="0.425" layer="1" rot="R90"/>
+<text x="1.943" y="0.029" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="1.943" y="0.029" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<wire x1="-1.6" y1="0.8" x2="1.6" y2="0.8" width="0.2" layer="51"/>
+<wire x1="1.6" y1="0.8" x2="1.6" y2="-0.8" width="0.2" layer="51"/>
+<wire x1="1.6" y1="-0.8" x2="-1.6" y2="-0.8" width="0.2" layer="51"/>
+<wire x1="-1.6" y1="-0.8" x2="-1.6" y2="0.8" width="0.2" layer="51"/>
+<wire x1="-1.6" y1="0.8" x2="-1.6" y2="-0.8" width="0.2" layer="21"/>
+<wire x1="1.6" y1="0.8" x2="1.6" y2="-0.8" width="0.2" layer="21"/>
+<circle x="-1.219" y="-1.484" radius="0.047" width="0.2" layer="25"/>
+</package>
+</packages>
+<symbols>
+<symbol name="CAY16-1003F4LF">
+<wire x1="5.08" y1="2.54" x2="22.86" y2="2.54" width="0.254" layer="94"/>
+<wire x1="22.86" y1="-10.16" x2="22.86" y2="2.54" width="0.254" layer="94"/>
+<wire x1="22.86" y1="-10.16" x2="5.08" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="-10.16" width="0.254" layer="94"/>
+<text x="24.13" y="7.62" size="1.778" layer="95" align="center-left">&gt;NAME</text>
+<text x="24.13" y="5.08" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
+<pin name="R1_1" x="0" y="0" length="middle"/>
+<pin name="R1_2" x="27.94" y="0" length="middle" rot="R180"/>
+<pin name="R2_1" x="0" y="-2.54" length="middle"/>
+<pin name="R2_2" x="27.94" y="-2.54" length="middle" rot="R180"/>
+<pin name="R3_1" x="0" y="-5.08" length="middle"/>
+<pin name="R3_2" x="27.94" y="-5.08" length="middle" rot="R180"/>
+<pin name="R4_1" x="0" y="-7.62" length="middle"/>
+<pin name="R4_2" x="27.94" y="-7.62" length="middle" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="CAY16-1003F4LF" prefix="RN">
+<description>&lt;b&gt;Bourns CAY16 Series 100k +/-1% Isolated SMT Resistor Array, 4 Resistors 1206 Package&lt;/b&gt;&lt;p&gt;
+Source: &lt;a href="http://uk.rs-online.com/web/p/products/7884026P"&gt; Datasheet &lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="CAY16-1003F4LF" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="CAY16-J4">
+<connects>
+<connect gate="G$1" pin="R1_1" pad="1"/>
+<connect gate="G$1" pin="R1_2" pad="2"/>
+<connect gate="G$1" pin="R2_1" pad="3"/>
+<connect gate="G$1" pin="R2_2" pad="4"/>
+<connect gate="G$1" pin="R3_1" pad="5"/>
+<connect gate="G$1" pin="R3_2" pad="6"/>
+<connect gate="G$1" pin="R4_1" pad="7"/>
+<connect gate="G$1" pin="R4_2" pad="8"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DESCRIPTION" value="Bourns CAY16 Series 100k +/-1% Isolated SMT Resistor Array, 4 Resistors 1206 Package" constant="no"/>
+<attribute name="HEIGHT" value="mm" constant="no"/>
+<attribute name="MANUFACTURER_NAME" value="Bourns" constant="no"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="CAY16-1003F4LF" constant="no"/>
+<attribute name="RS_PART_NUMBER" value="7884026P" constant="no"/>
+<attribute name="RS_PRICE-STOCK" value="http://uk.rs-online.com/web/p/products/7884026P" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -3294,6 +3481,8 @@ Source: http://ww1.microchip.com/downloads/en/DeviceDoc/21314g.pdf</description>
 <part name="IC1" library="linear" library_urn="urn:adsk.eagle:library:262" deviceset="MCP604" device="SL" package3d_urn="urn:adsk.eagle:package:16406/2"/>
 <part name="SUPPLY4" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="3.3V" device=""/>
 <part name="GND3" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
+<part name="IC2" library="NAU7802SGI" deviceset="NAU7802SGI" device=""/>
+<part name="RN1" library="CAY16-1003F4LF" deviceset="CAY16-1003F4LF" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -3464,28 +3653,36 @@ resistors from I2C bus</text>
 <instance part="SUPPLY3" gate="G$1" x="81.28" y="93.98" smashed="yes">
 <attribute name="VALUE" x="81.28" y="96.774" size="1.778" layer="96" font="vector" align="bottom-center"/>
 </instance>
-<instance part="IC1" gate="A" x="-7.62" y="182.88" smashed="yes">
-<attribute name="NAME" x="-5.08" y="186.055" size="1.778" layer="95"/>
-<attribute name="VALUE" x="-5.08" y="177.8" size="1.778" layer="96"/>
+<instance part="IC1" gate="A" x="-2.54" y="228.6" smashed="yes">
+<attribute name="NAME" x="0" y="231.775" size="1.778" layer="95"/>
+<attribute name="VALUE" x="0" y="223.52" size="1.778" layer="96"/>
 </instance>
-<instance part="IC1" gate="P" x="58.42" y="147.32" smashed="yes"/>
-<instance part="IC1" gate="B" x="-7.62" y="167.64" smashed="yes">
-<attribute name="NAME" x="-5.08" y="170.815" size="1.778" layer="95"/>
-<attribute name="VALUE" x="-5.08" y="162.56" size="1.778" layer="96"/>
+<instance part="IC1" gate="P" x="83.82" y="241.3" smashed="yes"/>
+<instance part="IC1" gate="B" x="-2.54" y="213.36" smashed="yes">
+<attribute name="NAME" x="0" y="216.535" size="1.778" layer="95"/>
+<attribute name="VALUE" x="0" y="208.28" size="1.778" layer="96"/>
 </instance>
-<instance part="IC1" gate="C" x="-7.62" y="137.16" smashed="yes">
-<attribute name="NAME" x="-5.08" y="140.335" size="1.778" layer="95"/>
-<attribute name="VALUE" x="-5.08" y="132.08" size="1.778" layer="96"/>
+<instance part="IC1" gate="C" x="-2.54" y="180.34" smashed="yes">
+<attribute name="NAME" x="0" y="183.515" size="1.778" layer="95"/>
+<attribute name="VALUE" x="0" y="175.26" size="1.778" layer="96"/>
 </instance>
-<instance part="IC1" gate="D" x="-7.62" y="152.4" smashed="yes">
-<attribute name="NAME" x="-5.08" y="155.575" size="1.778" layer="95"/>
-<attribute name="VALUE" x="-5.08" y="147.32" size="1.778" layer="96"/>
+<instance part="IC1" gate="D" x="-2.54" y="195.58" smashed="yes">
+<attribute name="NAME" x="0" y="198.755" size="1.778" layer="95"/>
+<attribute name="VALUE" x="0" y="190.5" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY4" gate="G$1" x="58.42" y="160.02" smashed="yes">
-<attribute name="VALUE" x="58.42" y="162.814" size="1.778" layer="96" font="vector" align="bottom-center"/>
+<instance part="SUPPLY4" gate="G$1" x="83.82" y="254" smashed="yes">
+<attribute name="VALUE" x="83.82" y="256.794" size="1.778" layer="96" font="vector" align="bottom-center"/>
 </instance>
-<instance part="GND3" gate="1" x="58.42" y="132.08" smashed="yes">
-<attribute name="VALUE" x="58.42" y="131.826" size="1.778" layer="96" font="vector" align="top-center"/>
+<instance part="GND3" gate="1" x="83.82" y="226.06" smashed="yes">
+<attribute name="VALUE" x="83.82" y="225.806" size="1.778" layer="96" font="vector" align="top-center"/>
+</instance>
+<instance part="IC2" gate="G$1" x="78.74" y="208.28" smashed="yes">
+<attribute name="NAME" x="110.49" y="215.9" size="1.778" layer="95" align="center-left"/>
+<attribute name="VALUE" x="110.49" y="213.36" size="1.778" layer="96" align="center-left"/>
+</instance>
+<instance part="RN1" gate="G$1" x="20.32" y="208.28" smashed="yes">
+<attribute name="NAME" x="44.45" y="215.9" size="1.778" layer="95" align="center-left"/>
+<attribute name="VALUE" x="44.45" y="213.36" size="1.778" layer="96" align="center-left"/>
 </instance>
 </instances>
 <busses>
@@ -3560,7 +3757,7 @@ resistors from I2C bus</text>
 </segment>
 <segment>
 <pinref part="IC1" gate="P" pin="V-"/>
-<wire x1="58.42" y1="139.7" x2="58.42" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="233.68" x2="83.82" y2="228.6" width="0.1524" layer="91"/>
 <pinref part="GND3" gate="1" pin="GND"/>
 </segment>
 </net>
@@ -3625,7 +3822,7 @@ resistors from I2C bus</text>
 </segment>
 <segment>
 <pinref part="IC1" gate="P" pin="V+"/>
-<wire x1="58.42" y1="154.94" x2="58.42" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="248.92" x2="83.82" y2="254" width="0.1524" layer="91"/>
 <pinref part="SUPPLY4" gate="G$1" pin="3.3V"/>
 </segment>
 </net>
@@ -3657,6 +3854,11 @@ resistors from I2C bus</text>
 <label x="-60.96" y="27.94" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="J4" gate="G$1" pin="6"/>
 </segment>
+<segment>
+<label x="-20.32" y="182.88" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="IC1" gate="C" pin="+IN"/>
+<wire x1="-10.16" y1="182.88" x2="-20.32" y2="182.88" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="B-" class="0">
 <segment>
@@ -3673,6 +3875,11 @@ resistors from I2C bus</text>
 <wire x1="-58.42" y1="35.56" x2="-60.96" y2="35.56" width="0.1524" layer="91"/>
 <label x="-60.96" y="35.56" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="J4" gate="G$1" pin="3"/>
+</segment>
+<segment>
+<wire x1="-10.16" y1="198.12" x2="-17.78" y2="198.12" width="0.1524" layer="91"/>
+<label x="-17.78" y="198.12" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="IC1" gate="D" pin="+IN"/>
 </segment>
 </net>
 <net name="VDDA" class="0">
@@ -3748,6 +3955,11 @@ resistors from I2C bus</text>
 <label x="-60.96" y="91.44" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="J5" gate="G$1" pin="1"/>
 </segment>
+<segment>
+<wire x1="-10.16" y1="215.9" x2="-17.78" y2="215.9" width="0.1524" layer="91"/>
+<label x="-17.78" y="215.9" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="IC1" gate="B" pin="+IN"/>
+</segment>
 </net>
 <net name="A-" class="0">
 <segment>
@@ -3764,6 +3976,11 @@ resistors from I2C bus</text>
 <wire x1="-58.42" y1="83.82" x2="-60.96" y2="83.82" width="0.1524" layer="91"/>
 <label x="-60.96" y="83.82" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="J5" gate="G$1" pin="4"/>
+</segment>
+<segment>
+<wire x1="-10.16" y1="231.14" x2="-17.78" y2="231.14" width="0.1524" layer="91"/>
+<label x="-17.78" y="231.14" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="IC1" gate="A" pin="+IN"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -3801,6 +4018,15 @@ resistors from I2C bus</text>
 <label x="-60.96" y="81.28" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="J5" gate="G$1" pin="5"/>
 </segment>
+<segment>
+<wire x1="-10.16" y1="210.82" x2="-17.78" y2="210.82" width="0.1524" layer="91"/>
+<label x="-17.78" y="210.82" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="IC1" gate="B" pin="-IN"/>
+<pinref part="RN1" gate="G$1" pin="R2_1"/>
+<wire x1="-10.16" y1="210.82" x2="-10.16" y2="205.74" width="0.1524" layer="91"/>
+<wire x1="-10.16" y1="205.74" x2="20.32" y2="205.74" width="0.1524" layer="91"/>
+<junction x="-10.16" y="210.82"/>
+</segment>
 </net>
 <net name="GAIN_B-" class="0">
 <segment>
@@ -3821,6 +4047,17 @@ resistors from I2C bus</text>
 <label x="-60.96" y="40.64" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="J4" gate="G$1" pin="1"/>
 </segment>
+<segment>
+<wire x1="-10.16" y1="193.04" x2="-17.78" y2="193.04" width="0.1524" layer="91"/>
+<label x="-17.78" y="193.04" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="IC1" gate="D" pin="-IN"/>
+<wire x1="-10.16" y1="193.04" x2="-10.16" y2="187.96" width="0.1524" layer="91"/>
+<junction x="-10.16" y="193.04"/>
+<wire x1="-10.16" y1="187.96" x2="12.7" y2="187.96" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="187.96" x2="12.7" y2="200.66" width="0.1524" layer="91"/>
+<pinref part="RN1" gate="G$1" pin="R4_1"/>
+<wire x1="12.7" y1="200.66" x2="20.32" y2="200.66" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="GAIN_B+" class="0">
 <segment>
@@ -3840,6 +4077,17 @@ resistors from I2C bus</text>
 <wire x1="-58.42" y1="38.1" x2="-60.96" y2="38.1" width="0.1524" layer="91"/>
 <label x="-60.96" y="38.1" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="J4" gate="G$1" pin="2"/>
+</segment>
+<segment>
+<label x="-20.32" y="177.8" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="IC1" gate="C" pin="-IN"/>
+<wire x1="-10.16" y1="177.8" x2="-10.16" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="-10.16" y1="177.8" x2="-20.32" y2="177.8" width="0.1524" layer="91"/>
+<junction x="-10.16" y="177.8"/>
+<wire x1="-10.16" y1="172.72" x2="17.78" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="172.72" x2="17.78" y2="203.2" width="0.1524" layer="91"/>
+<pinref part="RN1" gate="G$1" pin="R3_1"/>
+<wire x1="17.78" y1="203.2" x2="20.32" y2="203.2" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -3950,6 +4198,68 @@ resistors from I2C bus</text>
 <wire x1="-58.42" y1="78.74" x2="-60.96" y2="78.74" width="0.1524" layer="91"/>
 <label x="-60.96" y="78.74" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="J5" gate="G$1" pin="6"/>
+</segment>
+<segment>
+<wire x1="-10.16" y1="226.06" x2="-17.78" y2="226.06" width="0.1524" layer="91"/>
+<label x="-17.78" y="226.06" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="IC1" gate="A" pin="-IN"/>
+<wire x1="-10.16" y1="226.06" x2="-10.16" y2="220.98" width="0.1524" layer="91"/>
+<wire x1="-10.16" y1="220.98" x2="15.24" y2="220.98" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="220.98" x2="15.24" y2="208.28" width="0.1524" layer="91"/>
+<pinref part="RN1" gate="G$1" pin="R1_1"/>
+<wire x1="15.24" y1="208.28" x2="20.32" y2="208.28" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$5" class="0">
+<segment>
+<pinref part="RN1" gate="G$1" pin="R1_2"/>
+<wire x1="48.26" y1="208.28" x2="48.26" y2="228.6" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="A" pin="OUT"/>
+<wire x1="48.26" y1="228.6" x2="5.08" y2="228.6" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="208.28" x2="66.04" y2="208.28" width="0.1524" layer="91"/>
+<junction x="48.26" y="208.28"/>
+<wire x1="66.04" y1="208.28" x2="66.04" y2="205.74" width="0.1524" layer="91"/>
+<pinref part="IC2" gate="G$1" pin="VIN1N"/>
+<wire x1="66.04" y1="205.74" x2="78.74" y2="205.74" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$7" class="0">
+<segment>
+<pinref part="IC1" gate="B" pin="OUT"/>
+<wire x1="5.08" y1="213.36" x2="53.34" y2="213.36" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="213.36" x2="53.34" y2="205.74" width="0.1524" layer="91"/>
+<pinref part="RN1" gate="G$1" pin="R2_2"/>
+<wire x1="53.34" y1="205.74" x2="48.26" y2="205.74" width="0.1524" layer="91"/>
+<pinref part="IC2" gate="G$1" pin="VIN1P"/>
+<wire x1="78.74" y1="203.2" x2="60.96" y2="203.2" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="203.2" x2="60.96" y2="205.74" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="205.74" x2="53.34" y2="205.74" width="0.1524" layer="91"/>
+<junction x="53.34" y="205.74"/>
+</segment>
+</net>
+<net name="N$8" class="0">
+<segment>
+<pinref part="IC1" gate="D" pin="OUT"/>
+<wire x1="53.34" y1="195.58" x2="5.08" y2="195.58" width="0.1524" layer="91"/>
+<pinref part="IC2" gate="G$1" pin="VIN2N"/>
+<wire x1="78.74" y1="200.66" x2="53.34" y2="200.66" width="0.1524" layer="91"/>
+<pinref part="RN1" gate="G$1" pin="R4_2"/>
+<wire x1="53.34" y1="200.66" x2="48.26" y2="200.66" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="195.58" x2="53.34" y2="200.66" width="0.1524" layer="91"/>
+<junction x="53.34" y="200.66"/>
+</segment>
+</net>
+<net name="N$16" class="0">
+<segment>
+<pinref part="IC1" gate="C" pin="OUT"/>
+<wire x1="55.88" y1="180.34" x2="5.08" y2="180.34" width="0.1524" layer="91"/>
+<pinref part="IC2" gate="G$1" pin="VIN2P"/>
+<wire x1="78.74" y1="198.12" x2="55.88" y2="198.12" width="0.1524" layer="91"/>
+<pinref part="RN1" gate="G$1" pin="R3_2"/>
+<wire x1="48.26" y1="203.2" x2="55.88" y2="203.2" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="203.2" x2="55.88" y2="198.12" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="180.34" x2="55.88" y2="198.12" width="0.1524" layer="91"/>
+<junction x="55.88" y="198.12"/>
 </segment>
 </net>
 </nets>

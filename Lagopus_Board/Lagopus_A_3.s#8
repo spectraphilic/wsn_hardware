@@ -1731,99 +1731,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </deviceset>
 </devicesets>
 </library>
-<library name="Lagopus_A_3">
-<description>Generated from &lt;b&gt;Lagopus_A_3.sch&lt;/b&gt;&lt;p&gt;
-by exp-lbrs.ulp</description>
-<packages>
-<package name="LAGOPUS_A_2_TO-39">
-<description>&lt;h3&gt;TO-39 4-Pin PTH&lt;/h3&gt;
-&lt;p&gt;&lt;a href="https://www.sparkfun.com/datasheets/Sensors/Temperature/SEN-09570-datasheet-3901090614M005.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Specifications:
-&lt;ul&gt;
-&lt;li&gt;Pin Count: 4&lt;/li&gt;
-&lt;li&gt;Diameter: 9 mm&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Devices Using:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;MLX90614&lt;/li&gt;
-&lt;/ul&gt;</description>
-<circle x="0" y="0" radius="4.55" width="0.127" layer="51"/>
-<circle x="0" y="0" radius="4.699" width="0.2032" layer="21"/>
-<circle x="0" y="0" radius="2.6" width="0.127" layer="51"/>
-<circle x="0" y="0" radius="4.55" width="0.127" layer="51"/>
-<circle x="0" y="0" radius="4.699" width="0.2032" layer="21"/>
-<wire x1="3.6985" y1="-2.9391" x2="4.1227" y2="-3.3632" width="0.2032" layer="21"/>
-<wire x1="2.8489" y1="-3.7631" x2="3.2986" y2="-4.2128" width="0.2032" layer="21"/>
-<wire x1="4.1327" y1="-3.3732" x2="3.3085" y2="-4.1973" width="0.2032" layer="21"/>
-<wire x1="3.5207" y1="-2.9137" x2="3.9449" y2="-3.3378" width="0.127" layer="51"/>
-<wire x1="3.9803" y1="-3.3732" x2="3.3085" y2="-4.0449" width="0.127" layer="51"/>
-<wire x1="2.8489" y1="-3.5853" x2="3.2732" y2="-4.0096" width="0.127" layer="51"/>
-<text x="-4.826" y="0" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center">&gt;NAME</text>
-<text x="4.826" y="0" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center">&gt;VALUE</text>
-<text x="-4.826" y="0" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center">&gt;NAME</text>
-<text x="4.826" y="0" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center">&gt;VALUE</text>
-<hole x="2.54" y="0" drill="0.65"/>
-<smd name="1" x="3.429" y="0" dx="0.8128" dy="0.4064" layer="16"/>
-<hole x="0" y="2.54" drill="0.65"/>
-<smd name="2" x="0" y="3.429" dx="0.8128" dy="0.4064" layer="16" rot="R90"/>
-<hole x="-2.54" y="0" drill="0.65"/>
-<smd name="3" x="-3.429" y="0" dx="0.8128" dy="0.4064" layer="16" rot="R180"/>
-<hole x="0" y="-2.54" drill="0.65"/>
-<smd name="4" x="0" y="-3.429" dx="0.8128" dy="0.4064" layer="16" rot="R90"/>
-<circle x="0" y="2.54" radius="0.508" width="0.508" layer="16"/>
-<circle x="0" y="-2.54" radius="0.508" width="0.508" layer="16"/>
-<circle x="2.54" y="0" radius="0.508" width="0.508" layer="16"/>
-<circle x="-2.54" y="0" radius="0.508" width="0.508" layer="16"/>
-</package>
-</packages>
-<symbols>
-<symbol name="LAGOPUS_A_2_MLX90614">
-<description>&lt;h3&gt;Melexis MLX90614 Infrared (IR) Thermometer&lt;/h3&gt;
-&lt;p&gt;The MLX90614 is a passive infrared (PIR) I&lt;sup&gt;2&lt;/sup&gt;C temperature sensor.It is designed for non-contact temperature sensing. An internal 17-bit ADC and a powerful DSP contribute to the MLX90614’s high accuracy and resolution. It has a huge number of applications including body temperature measurment and movement detection.&lt;/p&gt;</description>
-<wire x1="-10.16" y1="5.08" x2="-10.16" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="-5.08" x2="10.16" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-5.08" x2="10.16" y2="5.08" width="0.254" layer="94"/>
-<wire x1="10.16" y1="5.08" x2="-10.16" y2="5.08" width="0.254" layer="94"/>
-<pin name="PWM/SDA" x="15.24" y="-2.54" length="middle" rot="R180"/>
-<pin name="SCL/VZ" x="15.24" y="2.54" length="middle" rot="R180"/>
-<pin name="VDD" x="-15.24" y="2.54" length="middle"/>
-<pin name="VSS" x="-15.24" y="-2.54" length="middle"/>
-<text x="-10.16" y="5.334" size="1.778" layer="95" font="vector">&gt;Name</text>
-<text x="-10.16" y="-5.334" size="1.778" layer="96" font="vector" align="top-left">&gt;Value</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="LAGOPUS_A_2_MLX90614" prefix="U">
-<description>&lt;h3&gt;Melexis MLX90614 Infrared (IR) Thermometer&lt;/h3&gt;
-&lt;p&gt;The MLX90614 is a passive infrared (PIR) I&lt;sup&gt;2&lt;/sup&gt;C temperature sensor.It is designed for non-contact temperature sensing. An internal 17-bit ADC and a powerful DSP contribute to the MLX90614’s high accuracy and resolution. It has a huge number of applications including body temperature measurment and movement detection.&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://www.sparkfun.com/datasheets/Sensors/Temperature/SEN-09570-datasheet-3901090614M005.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
-&lt;h4&gt;SparkFun Products&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/9570"&gt;Infrared Thermometer - MLX90614&lt;/a&gt; (SEN-09570)&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/10740"&gt;SparkFun IR Thermometer Evaluation Board - MLX90614 &lt;/a&gt; (SEN-10740)&lt;/li&gt;
-&lt;/ul&gt;</description>
-<gates>
-<gate name="G$1" symbol="LAGOPUS_A_2_MLX90614" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="LAGOPUS_A_2_TO-39">
-<connects>
-<connect gate="G$1" pin="PWM/SDA" pad="2"/>
-<connect gate="G$1" pin="SCL/VZ" pad="1"/>
-<connect gate="G$1" pin="VDD" pad="3"/>
-<connect gate="G$1" pin="VSS" pad="4"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="COMP-09719"/>
-<attribute name="SF_ID" value="SEN-09570"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="microbuilder">
 <description>&lt;h2&gt;&lt;b&gt;microBuilder.eu&lt;/b&gt; Eagle Footprint Library&lt;/h2&gt;
 
@@ -2584,40 +2491,40 @@ Source: &lt;a href="http://uk.rs-online.com/web/p/products/1773132P"&gt; Datashe
 <package name="MLX90614ESFBAA000TU">
 <description>&lt;b&gt;MLX90614ESF-BAA-000-TU&lt;/b&gt;&lt;br&gt;
 </description>
-<pad name="1" x="0" y="0" drill="0.69" diameter="1.2" stop="no"/>
-<pad name="2" x="2.54" y="-2.54" drill="0.69" diameter="1.2" stop="no"/>
-<pad name="3" x="5.08" y="0" drill="0.69" diameter="1.2" stop="no"/>
-<pad name="4" x="2.54" y="2.54" drill="0.69" diameter="1.2" stop="no"/>
-<text x="2.54" y="-6.35" size="1.27" layer="25" align="center">&gt;NAME</text>
-<text x="2.54" y="6.35" size="1.27" layer="27" align="center">&gt;VALUE</text>
-<wire x1="6.913" y1="0" x2="-1.833" y2="0" width="0.2" layer="51" curve="180"/>
-<wire x1="-1.833" y1="0" x2="6.913" y2="0" width="0.2" layer="51" curve="180"/>
-<wire x1="6.913" y1="0" x2="-1.833" y2="0" width="0.1" layer="21" curve="180"/>
-<wire x1="-1.833" y1="0" x2="6.913" y2="0" width="0.1" layer="21" curve="180"/>
-<wire x1="-0.86" y1="2.8" x2="-1.46" y2="3.4" width="0.2" layer="51"/>
-<wire x1="-1.46" y1="3.4" x2="-0.86" y2="4" width="0.2" layer="51"/>
-<wire x1="-0.86" y1="4" x2="-0.26" y2="3.4" width="0.2" layer="51"/>
-<wire x1="-0.26" y1="3.4" x2="-0.86" y2="4" width="0.1" layer="21"/>
-<wire x1="-0.86" y1="4" x2="-1.46" y2="3.4" width="0.1" layer="21"/>
-<wire x1="-1.46" y1="3.4" x2="-0.86" y2="2.8" width="0.1" layer="21"/>
-<circle x="2.54" y="2.54" radius="0.7" width="0" layer="30"/>
-<circle x="0" y="0" radius="0.7" width="0" layer="30"/>
-<circle x="2.54" y="-2.54" radius="0.7" width="0" layer="30"/>
-<circle x="5.08" y="0" radius="0.7" width="0" layer="30"/>
+<pad name="1" x="-2.54" y="0" drill="0.69" diameter="1.2" stop="no"/>
+<pad name="2" x="0" y="-2.54" drill="0.69" diameter="1.2" stop="no"/>
+<pad name="3" x="2.54" y="0" drill="0.69" diameter="1.2" stop="no"/>
+<pad name="4" x="0" y="2.54" drill="0.69" diameter="1.2" stop="no"/>
+<text x="0" y="-6.35" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="0" y="6.35" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<wire x1="4.373" y1="0" x2="-4.373" y2="0" width="0.2" layer="51" curve="180"/>
+<wire x1="-4.373" y1="0" x2="4.373" y2="0" width="0.2" layer="51" curve="180"/>
+<wire x1="4.373" y1="0" x2="-4.373" y2="0" width="0.1" layer="21" curve="180"/>
+<wire x1="-4.373" y1="0" x2="4.373" y2="0" width="0.1" layer="21" curve="180"/>
+<wire x1="-3.4" y1="2.8" x2="-4" y2="3.4" width="0.2" layer="51"/>
+<wire x1="-4" y1="3.4" x2="-3.4" y2="4" width="0.2" layer="51"/>
+<wire x1="-3.4" y1="4" x2="-2.8" y2="3.4" width="0.2" layer="51"/>
+<wire x1="-2.8" y1="3.4" x2="-3.4" y2="4" width="0.1" layer="21"/>
+<wire x1="-3.4" y1="4" x2="-4" y2="3.4" width="0.1" layer="21"/>
+<wire x1="-4" y1="3.4" x2="-3.4" y2="2.8" width="0.1" layer="21"/>
+<circle x="-2.54" y="0" radius="0.6" width="0" layer="30"/>
+<circle x="0" y="2.54" radius="0.6" width="0" layer="30"/>
+<circle x="2.54" y="0" radius="0.6" width="0" layer="30"/>
+<circle x="0" y="-2.54" radius="0.6" width="0" layer="30"/>
 </package>
 </packages>
 <symbols>
 <symbol name="MLX90614ESF-BAA-000-TU">
-<wire x1="5.08" y1="10.16" x2="25.4" y2="10.16" width="0.254" layer="94"/>
-<wire x1="25.4" y1="-15.24" x2="25.4" y2="10.16" width="0.254" layer="94"/>
-<wire x1="25.4" y1="-15.24" x2="5.08" y2="-15.24" width="0.254" layer="94"/>
-<wire x1="5.08" y1="10.16" x2="5.08" y2="-15.24" width="0.254" layer="94"/>
-<text x="26.67" y="15.24" size="1.778" layer="95" align="center-left">&gt;NAME</text>
-<text x="26.67" y="12.7" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
-<pin name="SCL/VZ" x="0" y="0" length="middle"/>
-<pin name="PWM/SDA" x="15.24" y="-20.32" length="middle" direction="pwr" rot="R90"/>
-<pin name="VDD" x="30.48" y="0" length="middle" rot="R180"/>
-<pin name="VSS" x="15.24" y="15.24" length="middle" direction="pwr" rot="R270"/>
+<wire x1="-10.16" y1="5.08" x2="10.16" y2="5.08" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-5.08" x2="10.16" y2="5.08" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-5.08" x2="-10.16" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="5.08" x2="-10.16" y2="-5.08" width="0.254" layer="94"/>
+<text x="-8.89" y="-7.62" size="1.778" layer="95" align="center-left">&gt;NAME</text>
+<text x="-8.89" y="7.62" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
+<pin name="SCL/VZ" x="15.24" y="-2.54" length="middle" rot="R180"/>
+<pin name="PWM/SDA" x="15.24" y="2.54" length="middle" direction="pwr" rot="R180"/>
+<pin name="VDD" x="-15.24" y="2.54" length="middle"/>
+<pin name="VSS" x="-15.24" y="-2.54" length="middle" direction="pwr"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -2643,6 +2550,82 @@ Source: &lt;a href="http://uk.rs-online.com/web/p/products/1942939"&gt; Datashee
 <attribute name="MANUFACTURER_PART_NUMBER" value="MLX90614ESF-BAA-000-TU" constant="no"/>
 <attribute name="RS_PART_NUMBER" value="1942939" constant="no"/>
 <attribute name="RS_PRICE-STOCK" value="http://uk.rs-online.com/web/p/products/1942939" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="CAY16-1002F4LF">
+<description>&lt;Resistor Arrays 10K 1% Convex 4 resist. Bourns CAY16 Series 10k +/-1% Isolated SMT Resistor Array, 4 Resistors, 0.25W total 1206 Package Convex&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by SamacSys&lt;/author&gt;</description>
+<packages>
+<package name="CAY-16-F4">
+<description>&lt;b&gt;CAY-16-f4&lt;/b&gt;&lt;br&gt;
+</description>
+<smd name="1" x="-0.9" y="-1.2" dx="0.95" dy="0.55" layer="1"/>
+<smd name="2" x="-0.9" y="-0.4" dx="0.95" dy="0.55" layer="1"/>
+<smd name="3" x="-0.9" y="0.4" dx="0.95" dy="0.55" layer="1"/>
+<smd name="4" x="-0.9" y="1.2" dx="0.95" dy="0.55" layer="1"/>
+<smd name="5" x="0.9" y="-1.2" dx="0.95" dy="0.55" layer="1"/>
+<smd name="6" x="0.9" y="-0.4" dx="0.95" dy="0.55" layer="1"/>
+<smd name="7" x="0.9" y="0.4" dx="0.95" dy="0.55" layer="1"/>
+<smd name="8" x="0.9" y="1.2" dx="0.95" dy="0.55" layer="1"/>
+<text x="-0.286" y="0.139" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="-0.286" y="0.139" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<wire x1="-0.8" y1="1.6" x2="0.8" y2="1.6" width="0.254" layer="51"/>
+<wire x1="0.8" y1="1.6" x2="0.8" y2="-1.6" width="0.254" layer="51"/>
+<wire x1="0.8" y1="-1.6" x2="-0.8" y2="-1.6" width="0.254" layer="51"/>
+<wire x1="-0.8" y1="-1.6" x2="-0.8" y2="1.6" width="0.254" layer="51"/>
+</package>
+</packages>
+<symbols>
+<symbol name="CAY16-1002F4LF">
+<wire x1="5.08" y1="2.54" x2="15.24" y2="2.54" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-10.16" x2="15.24" y2="2.54" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-10.16" x2="5.08" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="-10.16" width="0.254" layer="94"/>
+<text x="16.51" y="7.62" size="1.778" layer="95" align="center-left">&gt;NAME</text>
+<text x="16.51" y="5.08" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
+<pin name="1" x="0" y="-7.62" length="middle"/>
+<pin name="2" x="0" y="-5.08" length="middle"/>
+<pin name="3" x="0" y="-2.54" length="middle"/>
+<pin name="4" x="0" y="0" length="middle"/>
+<pin name="5" x="20.32" y="-7.62" length="middle" rot="R180"/>
+<pin name="6" x="20.32" y="-5.08" length="middle" rot="R180"/>
+<pin name="7" x="20.32" y="-2.54" length="middle" rot="R180"/>
+<pin name="8" x="20.32" y="0" length="middle" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="CAY16-1002F4LF" prefix="RN">
+<description>&lt;b&gt;Resistor Arrays 10K 1% Convex 4 resist. Bourns CAY16 Series 10k +/-1% Isolated SMT Resistor Array, 4 Resistors, 0.25W total 1206 Package Convex&lt;/b&gt;&lt;p&gt;
+Source: &lt;a href="http://uk.rs-online.com/web/p/products/7408767P"&gt; Datasheet &lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="CAY16-1002F4LF" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="CAY-16-F4">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="8" pad="8"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="ALLIED_NUMBER" value="70276325" constant="no"/>
+<attribute name="DESCRIPTION" value="Resistor Arrays 10K 1% Convex 4 resist. Bourns CAY16 Series 10k +/-1% Isolated SMT Resistor Array, 4 Resistors, 0.25W total 1206 Package Convex" constant="no"/>
+<attribute name="HEIGHT" value="mm" constant="no"/>
+<attribute name="MANUFACTURER_NAME" value="Bourns" constant="no"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="CAY16-1002F4LF" constant="no"/>
+<attribute name="RS_PART_NUMBER" value="7408767P" constant="no"/>
+<attribute name="RS_PRICE-STOCK" value="http://uk.rs-online.com/web/p/products/7408767P" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -2685,7 +2668,6 @@ Source: &lt;a href="http://uk.rs-online.com/web/p/products/1942939"&gt; Datashee
 <part name="C22" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="0.1UF" device="-0603-25V-(+80/-20%)" package3d_urn="urn:adsk.eagle:package:37414/1" value="0.1uF"/>
 <part name="R11" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="10KOHM" device="-0603-1/10W-1%" package3d_urn="urn:adsk.eagle:package:39650/1" value="10k"/>
 <part name="JP2" library="SparkFun-Jumpers" library_urn="urn:adsk.eagle:library:528" deviceset="JUMPER-SMT_3_NO" device="_SILK" package3d_urn="urn:adsk.eagle:package:39285/1"/>
-<part name="U2" library="Lagopus_A_3" deviceset="LAGOPUS_A_2_MLX90614" device="" value="MLX90614ESF-BAA-000"/>
 <part name="P+1" library="SparkFun" deviceset="3.3V" device=""/>
 <part name="GND7" library="SparkFun" deviceset="GND" device=""/>
 <part name="U$22" library="microbuilder" deviceset="GND" device=""/>
@@ -2746,6 +2728,7 @@ Source: &lt;a href="http://uk.rs-online.com/web/p/products/1942939"&gt; Datashee
 <part name="GND2" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
 <part name="IC2" library="MIC5247-1.8YM5-TR" deviceset="MIC5247-1.8YM5-TR" device=""/>
 <part name="IC3" library="MLX90614ESF-BAA-000-TU" deviceset="MLX90614ESF-BAA-000-TU" device=""/>
+<part name="RN1" library="CAY16-1002F4LF" deviceset="CAY16-1002F4LF" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2880,10 +2863,6 @@ I2C pullups from bus</text>
 <instance part="JP2" gate="G$1" x="78.74" y="393.7" smashed="yes" rot="R270">
 <attribute name="NAME" x="79.121" y="391.16" size="1.778" layer="95" font="vector" rot="R270"/>
 <attribute name="VALUE" x="78.359" y="391.16" size="1.778" layer="96" font="vector" rot="R270" align="top-left"/>
-</instance>
-<instance part="U2" gate="G$1" x="114.3" y="462.28" smashed="yes">
-<attribute name="NAME" x="104.14" y="467.614" size="1.778" layer="95" font="vector"/>
-<attribute name="VALUE" x="104.14" y="456.946" size="1.778" layer="96" font="vector" align="top-left"/>
 </instance>
 <instance part="P+1" gate="G$1" x="93.98" y="467.36" smashed="yes">
 <attribute name="VALUE" x="92.964" y="470.916" size="1.778" layer="96"/>
@@ -3111,9 +3090,13 @@ I2C pullups from bus</text>
 <attribute name="NAME" x="227.33" y="424.18" size="1.778" layer="95" align="center-left"/>
 <attribute name="VALUE" x="224.79" y="408.94" size="1.778" layer="96" align="center-left"/>
 </instance>
-<instance part="IC3" gate="G$1" x="-22.86" y="469.9" smashed="yes">
-<attribute name="NAME" x="3.81" y="485.14" size="1.778" layer="95" align="center-left"/>
-<attribute name="VALUE" x="3.81" y="482.6" size="1.778" layer="96" align="center-left"/>
+<instance part="IC3" gate="G$1" x="114.3" y="462.28" smashed="yes">
+<attribute name="NAME" x="105.41" y="469.9" size="1.778" layer="95" align="center-left"/>
+<attribute name="VALUE" x="105.41" y="454.66" size="1.778" layer="96" align="center-left"/>
+</instance>
+<instance part="RN1" gate="G$1" x="332.74" y="490.22" smashed="yes" rot="R90">
+<attribute name="NAME" x="325.12" y="506.73" size="1.778" layer="95" rot="R90" align="center-left"/>
+<attribute name="VALUE" x="327.66" y="506.73" size="1.778" layer="96" rot="R90" align="center-left"/>
 </instance>
 </instances>
 <busses>
@@ -3161,8 +3144,8 @@ I2C pullups from bus</text>
 <segment>
 <wire x1="93.98" y1="464.82" x2="93.98" y2="467.36" width="0.1524" layer="91"/>
 <pinref part="P+1" gate="G$1" pin="3.3V"/>
-<pinref part="U2" gate="G$1" pin="VDD"/>
 <wire x1="93.98" y1="464.82" x2="99.06" y2="464.82" width="0.1524" layer="91"/>
+<pinref part="IC3" gate="G$1" pin="VDD"/>
 </segment>
 <segment>
 <pinref part="C1" gate="G$1" pin="1"/>
@@ -3295,8 +3278,8 @@ I2C pullups from bus</text>
 <segment>
 <wire x1="93.98" y1="459.74" x2="93.98" y2="457.2" width="0.1524" layer="91"/>
 <pinref part="GND7" gate="1" pin="GND"/>
-<pinref part="U2" gate="G$1" pin="VSS"/>
 <wire x1="93.98" y1="459.74" x2="99.06" y2="459.74" width="0.1524" layer="91"/>
+<pinref part="IC3" gate="G$1" pin="VSS"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="GND"/>
@@ -3412,9 +3395,9 @@ I2C pullups from bus</text>
 <label x="86.36" y="375.92" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
 <segment>
-<label x="132.08" y="464.82" size="1.27" layer="95" xref="yes"/>
-<pinref part="U2" gate="G$1" pin="SCL/VZ"/>
-<wire x1="132.08" y1="464.82" x2="129.54" y2="464.82" width="0.1524" layer="91"/>
+<label x="134.62" y="459.74" size="1.27" layer="95" xref="yes"/>
+<wire x1="134.62" y1="459.74" x2="129.54" y2="459.74" width="0.1524" layer="91"/>
+<pinref part="IC3" gate="G$1" pin="SCL/VZ"/>
 </segment>
 <segment>
 <wire x1="243.84" y1="561.34" x2="259.08" y2="561.34" width="0.1524" layer="91"/>
@@ -3458,9 +3441,9 @@ I2C pullups from bus</text>
 <label x="71.12" y="375.92" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
 <segment>
-<label x="132.08" y="459.74" size="1.27" layer="95" xref="yes"/>
-<pinref part="U2" gate="G$1" pin="PWM/SDA"/>
-<wire x1="132.08" y1="459.74" x2="129.54" y2="459.74" width="0.1524" layer="91"/>
+<label x="134.62" y="464.82" size="1.27" layer="95" xref="yes"/>
+<wire x1="134.62" y1="464.82" x2="129.54" y2="464.82" width="0.1524" layer="91"/>
+<pinref part="IC3" gate="G$1" pin="PWM/SDA"/>
 </segment>
 <segment>
 <wire x1="259.08" y1="566.42" x2="243.84" y2="566.42" width="0.1524" layer="91"/>

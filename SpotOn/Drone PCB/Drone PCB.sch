@@ -7845,6 +7845,9 @@ diameter 5 mm, horizontal, grid 12.7 mm</description>
 <part name="JP15" library="SparkFun-Connectors" deviceset="M04" device="PTH"/>
 <part name="GND13" library="SparkFun" deviceset="GND" device=""/>
 <part name="P+1" library="SparkFun" deviceset="VCC" device=""/>
+<part name="GND5" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="JP3" library="SparkFun-Connectors" deviceset="M07" device=""/>
+<part name="SUPPLY1" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7899,6 +7902,11 @@ diameter 5 mm, horizontal, grid 12.7 mm</description>
 <wire x1="393.7" y1="93.98" x2="271.78" y2="93.98" width="0.1524" layer="94"/>
 <wire x1="271.78" y1="93.98" x2="271.78" y2="30.48" width="0.1524" layer="94"/>
 <wire x1="271.78" y1="30.48" x2="393.7" y2="30.48" width="0.1524" layer="94"/>
+<wire x1="162.56" y1="-71.12" x2="162.56" y2="-17.78" width="0.1524" layer="94"/>
+<wire x1="162.56" y1="-17.78" x2="193.04" y2="-17.78" width="0.1524" layer="94"/>
+<wire x1="193.04" y1="-17.78" x2="193.04" y2="-71.12" width="0.1524" layer="94"/>
+<wire x1="193.04" y1="-71.12" x2="162.56" y2="-71.12" width="0.1524" layer="94"/>
+<text x="165.1" y="-22.86" size="1.778" layer="94">SCD30</text>
 </plain>
 <instances>
 <instance part="J3" gate="G$1" x="43.18" y="15.24" smashed="yes" rot="R180">
@@ -8101,6 +8109,14 @@ diameter 5 mm, horizontal, grid 12.7 mm</description>
 <attribute name="VALUE" x="406.4" y="203.2" size="1.778" layer="96"/>
 </instance>
 <instance part="P+1" gate="1" x="408.94" y="226.06" smashed="yes"/>
+<instance part="GND5" gate="1" x="170.18" y="-58.42" smashed="yes">
+<attribute name="VALUE" x="167.64" y="-60.96" size="1.778" layer="96"/>
+</instance>
+<instance part="JP3" gate="G$1" x="182.88" y="-48.26" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="187.96" y="-58.42" size="1.778" layer="96" rot="MR0"/>
+<attribute name="NAME" x="187.96" y="-34.798" size="1.778" layer="95" rot="MR0"/>
+</instance>
+<instance part="SUPPLY1" gate="G$1" x="170.18" y="-30.48" smashed="yes"/>
 </instances>
 <busses>
 </busses>
@@ -8213,6 +8229,18 @@ diameter 5 mm, horizontal, grid 12.7 mm</description>
 <pinref part="JP15" gate="G$1" pin="2"/>
 <pinref part="GND13" gate="1" pin="GND"/>
 </segment>
+<segment>
+<pinref part="JP3" gate="G$1" pin="6"/>
+<label x="172.72" y="-40.64" size="1.778" layer="95"/>
+<wire x1="177.8" y1="-40.64" x2="170.18" y2="-40.64" width="0.1524" layer="91"/>
+<pinref part="GND5" gate="1" pin="GND"/>
+<wire x1="170.18" y1="-40.64" x2="170.18" y2="-53.34" width="0.1524" layer="91"/>
+<pinref part="JP3" gate="G$1" pin="1"/>
+<wire x1="170.18" y1="-53.34" x2="170.18" y2="-55.88" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="-53.34" x2="177.8" y2="-53.34" width="0.1524" layer="91"/>
+<label x="172.72" y="-53.34" size="1.778" layer="95"/>
+<junction x="170.18" y="-53.34"/>
+</segment>
 </net>
 <net name="SCL" class="0">
 <segment>
@@ -8250,6 +8278,11 @@ diameter 5 mm, horizontal, grid 12.7 mm</description>
 <wire x1="297.18" y1="78.74" x2="304.8" y2="78.74" width="0.1524" layer="91"/>
 <label x="297.18" y="78.74" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<pinref part="JP3" gate="G$1" pin="5"/>
+<wire x1="172.72" y1="-43.18" x2="177.8" y2="-43.18" width="0.1524" layer="91"/>
+<label x="172.72" y="-43.18" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="SDA" class="0">
 <segment>
@@ -8286,6 +8319,11 @@ diameter 5 mm, horizontal, grid 12.7 mm</description>
 <pinref part="MS2" gate="G$1" pin="GPIOSDA"/>
 <wire x1="297.18" y1="81.28" x2="304.8" y2="81.28" width="0.1524" layer="91"/>
 <label x="297.18" y="81.28" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="JP3" gate="G$1" pin="4"/>
+<wire x1="172.72" y1="-45.72" x2="177.8" y2="-45.72" width="0.1524" layer="91"/>
+<label x="172.72" y="-45.72" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="A3" class="0">
@@ -8337,6 +8375,14 @@ diameter 5 mm, horizontal, grid 12.7 mm</description>
 <pinref part="JP15" gate="G$1" pin="1"/>
 <pinref part="P+1" gate="1" pin="VCC"/>
 <label x="408.94" y="229.616" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="SUPPLY1" gate="G$1" pin="3.3V"/>
+<label x="169.672" y="-27.178" size="1.778" layer="95"/>
+<pinref part="JP3" gate="G$1" pin="7"/>
+<wire x1="170.18" y1="-38.1" x2="170.18" y2="-30.48" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="-38.1" x2="170.18" y2="-38.1" width="0.1524" layer="91"/>
+<label x="172.72" y="-38.1" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="5V" class="0">
@@ -8909,6 +8955,20 @@ diameter 5 mm, horizontal, grid 12.7 mm</description>
 <wire x1="365.76" y1="238.76" x2="426.72" y2="238.76" width="0.1524" layer="91"/>
 <wire x1="426.72" y1="238.76" x2="426.72" y2="198.12" width="0.1524" layer="91"/>
 <wire x1="426.72" y1="198.12" x2="365.76" y2="198.12" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="RDY" class="0">
+<segment>
+<pinref part="JP3" gate="G$1" pin="3"/>
+<wire x1="172.72" y1="-48.26" x2="177.8" y2="-48.26" width="0.1524" layer="91"/>
+<label x="172.72" y="-48.26" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="PWM" class="0">
+<segment>
+<pinref part="JP3" gate="G$1" pin="2"/>
+<wire x1="177.8" y1="-50.8" x2="172.72" y2="-50.8" width="0.1524" layer="91"/>
+<label x="172.72" y="-50.8" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
