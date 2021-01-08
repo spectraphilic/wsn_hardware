@@ -146,7 +146,7 @@
 <layer number="195" name="mNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="196" name="mValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="199" name="Contour" color="7" fill="1" visible="no" active="yes"/>
-<layer number="200" name="200bmp" color="14" fill="10" visible="no" active="yes"/>
+<layer number="200" name="200bmp" color="14" fill="10" visible="yes" active="yes"/>
 <layer number="201" name="201bmp" color="13" fill="1" visible="no" active="yes"/>
 <layer number="202" name="202bmp" color="3" fill="1" visible="no" active="yes"/>
 <layer number="203" name="203bmp" color="4" fill="10" visible="no" active="yes"/>
@@ -8199,10 +8199,10 @@ einem neuen Namen ab.</description>
 <contactref element="R5" pad="2"/>
 <wire x1="6.8453" y1="17.0053" x2="4.3434" y2="17.0053" width="0.1778" layer="1"/>
 <wire x1="4.3434" y1="17.0053" x2="3.937" y2="16.5989" width="0.1778" layer="1"/>
-<wire x1="6.8453" y1="17.0053" x2="7.1882" y2="16.6624" width="0.1778" layer="1"/>
-<wire x1="7.1882" y1="15.0452" x2="7.14" y2="14.997" width="0.1778" layer="1"/>
+<wire x1="6.8453" y1="17.0053" x2="7.7216" y2="16.129" width="0.1778" layer="1"/>
+<wire x1="7.7216" y1="15.5786" x2="7.14" y2="14.997" width="0.1778" layer="1"/>
 <wire x1="7.14" y1="14.362" x2="7.14" y2="14.997" width="0.1778" layer="1"/>
-<wire x1="7.1882" y1="16.6624" x2="7.1882" y2="15.0452" width="0.1778" layer="1"/>
+<wire x1="7.7216" y1="16.129" x2="7.7216" y2="15.5786" width="0.1778" layer="1"/>
 </signal>
 <signal name="A1">
 <contactref element="JP1" pad="2"/>
@@ -8283,9 +8283,9 @@ einem neuen Namen ab.</description>
 <wire x1="6.275259375" y1="6.65161875" x2="6.275259375" y2="6.210509375" width="0.1778" layer="1"/>
 <wire x1="6.275259375" y1="6.210509375" x2="6.0191" y2="5.95435" width="0.1778" layer="1"/>
 <wire x1="6.0191" y1="4.0125" x2="5.8928" y2="3.8862" width="0.1778" layer="1"/>
-<wire x1="5.8928" y1="3.8862" x2="5.6388" y2="3.8862" width="0.1778" layer="1"/>
-<wire x1="4.6482" y1="3.0226" x2="4.7752" y2="3.0226" width="0.1778" layer="1"/>
-<wire x1="5.6388" y1="3.8862" x2="4.7752" y2="3.0226" width="0.1778" layer="1"/>
+<wire x1="5.8928" y1="3.8862" x2="5.0292" y2="3.8862" width="0.1778" layer="1"/>
+<wire x1="5.0292" y1="3.8862" x2="4.6482" y2="3.5052" width="0.1778" layer="1"/>
+<wire x1="4.6482" y1="3.5052" x2="4.6482" y2="3.0226" width="0.1778" layer="1"/>
 <via x="4.6482" y="3.0226" extent="1-16" drill="0.3937"/>
 <wire x1="4.6482" y1="3.1496" x2="5.2832" y2="3.7846" width="0.1778" layer="16"/>
 <wire x1="4.6482" y1="3.0226" x2="4.6482" y2="3.1496" width="0.1778" layer="16"/>
@@ -8586,6 +8586,8 @@ einem neuen Namen ab.</description>
 <approved hash="4,1,63cfcf2bcfb38f0c"/>
 <approved hash="19,1,0f1b0c8333f13069"/>
 <approved hash="19,1,60bf63a152d351cd"/>
+<approved hash="4,1,1ba5b6b423e1ff2d"/>
+<approved hash="4,1,03873eb223fe7f08"/>
 <approved hash="19,16,968683d06353e389"/>
 <approved hash="23,1,fc0a404d46b4481f"/>
 <approved hash="4,1,0c2ffaed93359ca3"/>
