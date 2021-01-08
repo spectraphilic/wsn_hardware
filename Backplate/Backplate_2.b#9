@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="5" unitdist="mm" unit="mm" style="dots" multiple="1" display="yes" altdistance="0.001" altunitdist="mm" altunit="mm"/>
@@ -232,10 +232,7 @@
 <dimension x1="112.361" y1="26.708" x2="81.881" y2="26.708" x3="97.121" y3="31.788" textsize="1.778" layer="51" dtype="horizontal"/>
 <dimension x1="66.641" y1="-36.792" x2="66.641" y2="-72.352" x3="69.181" y3="-54.572" textsize="1.778" layer="51" dtype="vertical"/>
 <dimension x1="67.911" y1="36.868" x2="67.911" y2="72.428" x3="66.641" y3="54.648" textsize="1.778" layer="51" dtype="vertical"/>
-<wire x1="15" y1="-15" x2="15" y2="15" width="0.1524" layer="20"/>
-<wire x1="25" y1="15" x2="25" y2="-15" width="0.1524" layer="20"/>
-<wire x1="15" y1="15" x2="25" y2="15" width="0.1524" layer="20" curve="-180"/>
-<wire x1="25" y1="-15" x2="15" y2="-15" width="0.1524" layer="20" curve="-180"/>
+<wire x1="20" y1="-15" x2="20" y2="15" width="10" layer="46"/>
 </plain>
 <libraries>
 <library name="Backplate_2">
@@ -256,8 +253,6 @@ by exp-lbrs.ulp</description>
 <wire x1="55" y1="47.5" x2="55" y2="55" width="3" layer="46"/>
 <wire x1="0" y1="47.5" x2="0" y2="55" width="3" layer="46"/>
 <text x="27.8" y="32.9" size="1.778" layer="21" align="center">Battery</text>
-<wire x1="30" y1="0" x2="22.5" y2="0" width="3" layer="46"/>
-<wire x1="30" y1="66" x2="22.5" y2="66" width="3" layer="46"/>
 </package>
 <package name="WASPMOTE_V1.5">
 <description>WaspMote v1.5
@@ -270,10 +265,10 @@ by exp-lbrs.ulp</description>
 <wire x1="44.45" y1="50.8" x2="73.66" y2="50.8" width="0.127" layer="21"/>
 <wire x1="73.66" y1="50.8" x2="73.66" y2="0" width="0.127" layer="21"/>
 <wire x1="73.66" y1="0" x2="0" y2="0" width="0.127" layer="21"/>
+<wire x1="41.91" y1="50.8" x2="44.45" y2="50.8" width="0.127" layer="22"/>
 <wire x1="1.27" y1="46.99" x2="6.35" y2="46.99" width="0.127" layer="22"/>
 <wire x1="0" y1="0" x2="0" y2="50.8" width="0.127" layer="22"/>
 <wire x1="0" y1="50.8" x2="41.91" y2="50.8" width="0.127" layer="22"/>
-<wire x1="41.91" y1="50.8" x2="44.45" y2="50.8" width="0.127" layer="22"/>
 <wire x1="44.45" y1="50.8" x2="73.66" y2="50.8" width="0.127" layer="22"/>
 <wire x1="73.66" y1="50.8" x2="73.66" y2="0" width="0.127" layer="22"/>
 <wire x1="73.66" y1="0" x2="0" y2="0" width="0.127" layer="22"/>
@@ -333,52 +328,6 @@ by exp-lbrs.ulp</description>
 <text x="76.2" y="8.89" size="1.778" layer="21" rot="R90" align="center">SD-CARD</text>
 <hole x="2.54" y="7.62" drill="3.2"/>
 <hole x="69.85" y="46.99" drill="3.2"/>
-</package>
-<package name="1725672-4-2.54">
-<description>&lt;b&gt;1725672-4-2.54&lt;/b&gt;&lt;br&gt;</description>
-<circle x="-2.497" y="0.031" radius="0.218209375" width="0.4" layer="25"/>
-<wire x1="-1.5" y1="3.1" x2="9.12" y2="3.1" width="0.2" layer="21"/>
-<wire x1="9.12" y1="3.1" x2="9.12" y2="-3.1" width="0.2" layer="21"/>
-<wire x1="9.12" y1="-3.1" x2="-1.5" y2="-3.1" width="0.2" layer="21"/>
-<wire x1="-1.5" y1="-3.1" x2="-1.5" y2="3.1" width="0.2" layer="21"/>
-<wire x1="-1.5" y1="3.1" x2="9.12" y2="3.1" width="0.2" layer="51"/>
-<wire x1="9.12" y1="3.1" x2="9.12" y2="-3.1" width="0.2" layer="51"/>
-<wire x1="9.12" y1="-3.1" x2="-1.5" y2="-3.1" width="0.2" layer="51"/>
-<wire x1="-1.5" y1="-3.1" x2="-1.5" y2="3.1" width="0.2" layer="51"/>
-<pad name="1" x="0" y="0" drill="1.1" diameter="1.65"/>
-<pad name="2" x="2.54" y="0" drill="1.1" diameter="1.65"/>
-<pad name="3" x="5.08" y="0" drill="1.1" diameter="1.65"/>
-<pad name="4" x="7.62" y="0" drill="1.1" diameter="1.65"/>
-<text x="3.408159375" y="-4.11943125" size="1.27" layer="25" align="center">&gt;NAME</text>
-<text x="3.408159375" y="4.77056875" size="1.27" layer="27" align="center">&gt;VALUE</text>
-<wire x1="0" y1="0" x2="0" y2="-2.54" width="0.127" layer="51"/>
-<wire x1="2.54" y1="0" x2="2.54" y2="-2.54" width="0.127" layer="51"/>
-<wire x1="5.08" y1="0" x2="5.08" y2="-2.54" width="0.127" layer="51"/>
-<wire x1="7.62" y1="0" x2="7.62" y2="-2.54" width="0.127" layer="51"/>
-</package>
-<package name="1725669">
-<description>&lt;b&gt;1725669&lt;/b&gt;&lt;br&gt;</description>
-<wire x1="-1.5" y1="3.1" x2="6.58" y2="3.1" width="0.2" layer="21"/>
-<wire x1="6.58" y1="3.1" x2="6.58" y2="-3.1" width="0.2" layer="21"/>
-<wire x1="6.58" y1="-3.1" x2="-1.5" y2="-3.1" width="0.2" layer="21"/>
-<wire x1="-1.5" y1="-3.1" x2="-1.5" y2="3.1" width="0.2" layer="21"/>
-<wire x1="-1.5" y1="3.1" x2="6.58" y2="3.1" width="0.2" layer="51"/>
-<wire x1="6.58" y1="3.1" x2="6.58" y2="-3.1" width="0.2" layer="51"/>
-<wire x1="6.58" y1="-3.1" x2="-1.5" y2="-3.1" width="0.2" layer="51"/>
-<wire x1="-1.5" y1="-3.1" x2="-1.5" y2="3.1" width="0.2" layer="51"/>
-<wire x1="-2.06" y1="0" x2="-2.26" y2="0" width="0.2" layer="21" curve="180"/>
-<wire x1="-2.26" y1="0" x2="-2.06" y2="0" width="0.2" layer="21" curve="180"/>
-<pad name="1" x="0" y="0" drill="1.1" diameter="1.65"/>
-<pad name="2" x="2.54" y="0" drill="1.1" diameter="1.65"/>
-<pad name="3" x="5.08" y="0" drill="1.1" diameter="1.65"/>
-<text x="2.54" y="-5.08" size="1.27" layer="25" align="center">&gt;NAME</text>
-<text x="2.54" y="5.08" size="1.27" layer="27" align="center">&gt;VALUE</text>
-<hole x="0" y="-2.54" drill="1.1"/>
-<hole x="2.54" y="-2.54" drill="1.1"/>
-<hole x="5.08" y="-2.54" drill="1.1"/>
-<wire x1="0" y1="0" x2="0" y2="-2.54" width="0.127" layer="51"/>
-<wire x1="2.54" y1="0" x2="2.54" y2="-2.54" width="0.127" layer="51"/>
-<wire x1="5.08" y1="0" x2="5.08" y2="-2.54" width="0.127" layer="51"/>
 </package>
 </packages>
 </library>
@@ -577,28 +526,6 @@ design rules under a new name.</description>
 <elements>
 <element name="U$12" library="Backplate_2" package="WASPMOTE_V1.5" value="WASPMOTE_V1.5" x="31.081" y="36.868" smashed="yes" rot="R270"/>
 <element name="U$1" library="Backplate_2" package="BATTERY" value="BATTERY" x="-90.839" y="-32.982" smashed="yes"/>
-<element name="J1" library="Backplate_2" package="1725669" value="1725669" x="-80" y="55" smashed="yes">
-<attribute name="ALLIED_NUMBER" value="70054336" x="-80" y="55" size="1.778" layer="27" display="off"/>
-<attribute name="DESCRIPTION" value="3 way PCB vertical mount terminal,2.54mm 3 way PCB vertical mount terminal,2.54mm" x="-80" y="55" size="1.778" layer="27" display="off"/>
-<attribute name="HEIGHT" value="8.5mm" x="-80" y="55" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER_NAME" value="Phoenix Contact" x="-80" y="55" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="1725669" x="-80" y="55" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-77.46" y="55" size="1.27" layer="25" align="center"/>
-<attribute name="RS_PART_NUMBER" value="3909039" x="-80" y="55" size="1.778" layer="27" display="off"/>
-<attribute name="RS_PRICE-STOCK" value="https://uk.rs-online.com/web/p/products/3909039" x="-80" y="55" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-77.46" y="55" size="1.27" layer="27" align="center"/>
-</element>
-<element name="J2" library="Backplate_2" package="1725672-4-2.54" value="1725672" x="-95" y="55" smashed="yes">
-<attribute name="ALLIED_NUMBER" value="70054337" x="-95" y="55" size="1.778" layer="27" display="off"/>
-<attribute name="DESCRIPTION" value="4 way vertical PCB terminal,6A 63V Phoenix Contact Non-Fused Terminal Block, 4 Way, Solder Terminals, 26 ??? 20 AWG Through Hole, Nylon, 63 V" x="-95" y="55" size="1.778" layer="27" display="off"/>
-<attribute name="HEIGHT" value="mm" x="-95" y="55" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER_NAME" value="Phoenix Contact" x="-95" y="55" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="1725672" x="-95" y="55" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-91.591840625" y="53.42056875" size="1.27" layer="25" align="center"/>
-<attribute name="RS_PART_NUMBER" value="3924476" x="-95" y="55" size="1.778" layer="27" display="off"/>
-<attribute name="RS_PRICE-STOCK" value="https://uk.rs-online.com/web/p/products/3924476" x="-95" y="55" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-91.591840625" y="53.42056875" size="1.27" layer="27" align="center"/>
-</element>
 </elements>
 <signals>
 </signals>

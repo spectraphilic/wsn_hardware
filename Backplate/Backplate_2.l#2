@@ -199,20 +199,19 @@ by exp-lbrs.ulp</description>
 <wire x1="6.58" y1="3.1" x2="6.58" y2="-3.1" width="0.2" layer="51"/>
 <wire x1="6.58" y1="-3.1" x2="-1.5" y2="-3.1" width="0.2" layer="51"/>
 <wire x1="-1.5" y1="-3.1" x2="-1.5" y2="3.1" width="0.2" layer="51"/>
-<wire x1="-2.5" y1="4.1" x2="7.58" y2="4.1" width="0.1" layer="51"/>
-<wire x1="7.58" y1="4.1" x2="7.58" y2="-4.1" width="0.1" layer="51"/>
-<wire x1="7.58" y1="-4.1" x2="-2.5" y2="-4.1" width="0.1" layer="51"/>
-<wire x1="-2.5" y1="-4.1" x2="-2.5" y2="4.1" width="0.1" layer="51"/>
 <wire x1="-2.06" y1="0" x2="-2.26" y2="0" width="0.2" layer="21" curve="180"/>
 <wire x1="-2.26" y1="0" x2="-2.06" y2="0" width="0.2" layer="21" curve="180"/>
 <pad name="1" x="0" y="0" drill="1.1" diameter="1.65"/>
 <pad name="2" x="2.54" y="0" drill="1.1" diameter="1.65"/>
 <pad name="3" x="5.08" y="0" drill="1.1" diameter="1.65"/>
-<text x="2.54" y="0" size="1.27" layer="25" align="center">&gt;NAME</text>
-<text x="2.54" y="0" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<text x="2.54" y="-5.08" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="2.54" y="5.08" size="1.27" layer="27" align="center">&gt;VALUE</text>
 <hole x="0" y="-2.54" drill="1.1"/>
 <hole x="2.54" y="-2.54" drill="1.1"/>
 <hole x="5.08" y="-2.54" drill="1.1"/>
+<wire x1="0" y1="0" x2="0" y2="-2.54" width="0.127" layer="51"/>
+<wire x1="2.54" y1="0" x2="2.54" y2="-2.54" width="0.127" layer="51"/>
+<wire x1="5.08" y1="0" x2="5.08" y2="-2.54" width="0.127" layer="51"/>
 </package>
 <package name="1725672-4-2.54">
 <description>&lt;b&gt;1725672-4-2.54&lt;/b&gt;&lt;br&gt;</description>
