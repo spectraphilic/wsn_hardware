@@ -220,8 +220,6 @@ john.hulth@geo.uio.no</text>
 <text x="-87.63" y="-50.8" size="2.54" layer="25" align="center">CELL-</text>
 <text x="-8.128" y="-50.8" size="2.54" layer="25" align="center">GND</text>
 <text x="-8.128" y="50.8" size="2.54" layer="25" align="center">GND</text>
-<dimension x1="-115" y1="37" x2="115" y2="37" x3="0" y3="62.865" textsize="1.778" layer="48"/>
-<dimension x1="106.5" y1="55" x2="106.5" y2="-55" x3="129" y3="0" textsize="1.778" layer="48"/>
 <wire x1="69" y1="35.5" x2="114" y2="35.5" width="0.254" layer="21" style="longdash"/>
 <wire x1="114" y1="35.5" x2="114" y2="-9.5" width="0.254" layer="21" style="longdash"/>
 <wire x1="114" y1="-9.5" x2="69" y2="-9.5" width="0.254" layer="21" style="longdash"/>

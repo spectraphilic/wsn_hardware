@@ -243,6 +243,8 @@ john.hulth@geo.uio.no</text>
 <wire x1="-82" y1="-55" x2="-82" y2="-45" width="0" layer="20"/>
 <wire x1="-82" y1="-45" x2="-14" y2="-45" width="0" layer="20"/>
 <wire x1="-14" y1="-45" x2="-14" y2="-55" width="0" layer="20"/>
+<dimension x1="-115" y1="37" x2="115" y2="37" x3="0" y3="72" textsize="1.778" layer="48"/>
+<dimension x1="106.5" y1="55" x2="106.5" y2="-55" x3="133" y3="0" textsize="1.778" layer="48"/>
 </plain>
 <libraries>
 <library name="UIO-John">

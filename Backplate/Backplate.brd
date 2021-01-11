@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.0.0">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="1" unitdist="mm" unit="mm" style="dots" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -67,8 +68,8 @@
 <layer number="58" name="bCAD" color="7" fill="1" visible="no" active="no"/>
 <layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
-<layer number="88" name="SimResults" color="9" fill="1" visible="yes" active="yes"/>
-<layer number="89" name="SimProbes" color="9" fill="1" visible="yes" active="yes"/>
+<layer number="88" name="SimResults" color="9" fill="1" visible="no" active="no"/>
+<layer number="89" name="SimProbes" color="9" fill="1" visible="no" active="no"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="no" active="no"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="no" active="no"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="no" active="no"/>
@@ -3541,10 +3542,14 @@ design rules under a new name.</description>
 <param name="slThermalsForVias" value="0"/>
 <param name="dpMaxLengthDifference" value="10mm"/>
 <param name="dpGapFactor" value="2.5"/>
-<param name="checkGrid" value="0"/>
 <param name="checkAngle" value="0"/>
 <param name="checkFont" value="1"/>
 <param name="checkRestrict" value="1"/>
+<param name="checkStop" value="0"/>
+<param name="checkValues" value="0"/>
+<param name="checkNames" value="1"/>
+<param name="checkWireStubs" value="1"/>
+<param name="checkPolygonWidth" value="0"/>
 <param name="useDiameter" value="13"/>
 <param name="maxErrors" value="50"/>
 </designrules>
@@ -3645,89 +3650,126 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="U$1" library="UIO-John" package="UIO-LOGO-BL" value="" x="34.32" y="-39.675"/>
-<element name="B2" library="UIO-John" package="18650_BATTERY_HOLDER" value="18650_BATTERY" x="-24" y="0"/>
-<element name="B3" library="UIO-John" package="18650_BATTERY_HOLDER" value="18650_BATTERY" x="-48" y="0"/>
-<element name="B4" library="UIO-John" package="18650_BATTERY_HOLDER" value="18650_BATTERY" x="-72" y="0"/>
-<element name="B1" library="UIO-John" package="18650_BATTERY_HOLDER" value="18650_BATTERY" x="-96" y="0"/>
-<element name="B5" library="UIO-John" package="18650_BATTERY_HOLDER" value="18650_BATTERY" x="0" y="0"/>
-<element name="U$12" library="UIO-John" package="WASPMOTE_V1.5" value="WASPMOTE_V1.5" x="14" y="-25"/>
-<element name="F1" library="SparkFun-Fuses" package="PTH" value="72V/0.25A" x="-97" y="48" rot="R90">
+<element name="U$1" library="UIO-John" package="UIO-LOGO-BL" value="" x="34.32" y="-39.675" smashed="yes"/>
+<element name="B2" library="UIO-John" package="18650_BATTERY_HOLDER" value="18650_BATTERY" x="-24" y="0" smashed="yes"/>
+<element name="B3" library="UIO-John" package="18650_BATTERY_HOLDER" value="18650_BATTERY" x="-48" y="0" smashed="yes"/>
+<element name="B4" library="UIO-John" package="18650_BATTERY_HOLDER" value="18650_BATTERY" x="-72" y="0" smashed="yes"/>
+<element name="B1" library="UIO-John" package="18650_BATTERY_HOLDER" value="18650_BATTERY" x="-96" y="0" smashed="yes"/>
+<element name="B5" library="UIO-John" package="18650_BATTERY_HOLDER" value="18650_BATTERY" x="0" y="0" smashed="yes"/>
+<element name="U$12" library="UIO-John" package="WASPMOTE_V1.5" value="WASPMOTE_V1.5" x="14" y="-25" smashed="yes"/>
+<element name="F1" library="SparkFun-Fuses" package="PTH" value="72V/0.25A" x="-97" y="48" smashed="yes" rot="R90">
+<attribute name="NAME" x="-98.778" y="48" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
 <attribute name="PROD_ID" value="RES-08490" x="-97" y="48" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="-95.222" y="48" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
 </element>
-<element name="F2" library="SparkFun-Fuses" package="1206" value="6V/0.75A" x="-93" y="48" rot="R90">
+<element name="F2" library="SparkFun-Fuses" package="1206" value="6V/0.75A" x="-93" y="48" smashed="yes" rot="R90">
+<attribute name="NAME" x="-94.143" y="48" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
 <attribute name="PROD_ID" value="RES-11150" x="-93" y="48" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="-91.857" y="48" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
 </element>
-<element name="F3" library="SparkFun-Fuses" package="PTH" value="72V/0.25A" x="-25" y="48" rot="R90">
+<element name="F3" library="SparkFun-Fuses" package="PTH" value="72V/0.25A" x="-25" y="48" smashed="yes" rot="R90">
+<attribute name="NAME" x="-26.778" y="48" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
 <attribute name="PROD_ID" value="RES-08490" x="-25" y="48" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="-23.222" y="48" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
 </element>
-<element name="F4" library="SparkFun-Fuses" package="1206" value="6V/0.75A" x="-21" y="48" rot="R90">
+<element name="F4" library="SparkFun-Fuses" package="1206" value="6V/0.75A" x="-21" y="48" smashed="yes" rot="R90">
+<attribute name="NAME" x="-22.143" y="48" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
 <attribute name="PROD_ID" value="RES-11150" x="-28" y="42" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="-19.857" y="48" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
 </element>
-<element name="F5" library="SparkFun-Fuses" package="PTH" value="72V/0.25A" x="-49" y="48" rot="R90">
+<element name="F5" library="SparkFun-Fuses" package="PTH" value="72V/0.25A" x="-49" y="48" smashed="yes" rot="R90">
+<attribute name="NAME" x="-50.778" y="48" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
 <attribute name="PROD_ID" value="RES-08490" x="-49" y="48" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="-47.222" y="48" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
 </element>
-<element name="F6" library="SparkFun-Fuses" package="1206" value="6V/0.75A" x="-45" y="48" rot="R90">
+<element name="F6" library="SparkFun-Fuses" package="1206" value="6V/0.75A" x="-45" y="48" smashed="yes" rot="R90">
+<attribute name="NAME" x="-46.143" y="48" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
 <attribute name="PROD_ID" value="RES-11150" x="-52" y="42" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="-43.857" y="48" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
 </element>
-<element name="F7" library="SparkFun-Fuses" package="PTH" value="72V/0.25A" x="-73" y="48" rot="R90">
+<element name="F7" library="SparkFun-Fuses" package="PTH" value="72V/0.25A" x="-73" y="48" smashed="yes" rot="R90">
+<attribute name="NAME" x="-74.778" y="48" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
 <attribute name="PROD_ID" value="RES-08490" x="-73" y="48" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="-71.222" y="48" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
 </element>
-<element name="F8" library="SparkFun-Fuses" package="1206" value="6V/0.75A" x="-69" y="48" rot="R90">
+<element name="F8" library="SparkFun-Fuses" package="1206" value="6V/0.75A" x="-69" y="48" smashed="yes" rot="R90">
+<attribute name="NAME" x="-70.143" y="48" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
 <attribute name="PROD_ID" value="RES-11150" x="-76" y="42" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="-67.857" y="48" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
 </element>
-<element name="F9" library="SparkFun-Fuses" package="PTH" value="72V/0.25A" x="-1" y="48" rot="R90">
+<element name="F9" library="SparkFun-Fuses" package="PTH" value="72V/0.25A" x="-1" y="48" smashed="yes" rot="R90">
+<attribute name="NAME" x="-2.778" y="48" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
 <attribute name="PROD_ID" value="RES-08490" x="-1" y="48" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="0.778" y="48" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
 </element>
-<element name="F10" library="SparkFun-Fuses" package="1206" value="6V/0.75A" x="3" y="48" rot="R90">
+<element name="F10" library="SparkFun-Fuses" package="1206" value="6V/0.75A" x="3" y="48" smashed="yes" rot="R90">
+<attribute name="NAME" x="1.857" y="48" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
 <attribute name="PROD_ID" value="RES-11150" x="-4" y="42" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="4.143" y="48" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
 </element>
-<element name="Q1" library="UIO-John" package="WSON-6" value="BQ2970" x="-2.032" y="-51.943" rot="R90">
+<element name="Q1" library="UIO-John" package="WSON-6" value="BQ2970" x="-2.032" y="-51.943" smashed="yes" rot="R90">
 <attribute name="MPN" value="BQ2970" x="-2.032" y="-51.943" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="Q2" library="UIO-John" package="CSD16406Q3" value="CSD16406Q3" x="7.62" y="-51.689" rot="R270">
+<element name="Q2" library="UIO-John" package="CSD16406Q3" value="CSD16406Q3" x="7.62" y="-51.689" smashed="yes" rot="R270">
 <attribute name="MPN" value="CSD16406Q3" x="7.62" y="-51.689" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="Q3" library="UIO-John" package="CSD16406Q3" value="CSD16406Q3" x="7.62" y="-47.371" rot="R270">
+<element name="Q3" library="UIO-John" package="CSD16406Q3" value="CSD16406Q3" x="7.62" y="-47.371" smashed="yes" rot="R270">
 <attribute name="MPN" value="CSD16406Q3" x="7.62" y="-47.371" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="C1" library="Seeed-Capacitor" package="C0603" value="1uf" x="1.778" y="-47.625">
+<element name="C1" library="Seeed-Capacitor" package="C0603" value="1uf" x="1.778" y="-47.625" smashed="yes">
 <attribute name="MPN" value="CC0603KRX7R8BB105" x="1.778" y="-47.625" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="1.524" y="-46.355" size="0.635" layer="33" ratio="10" rot="R270"/>
+<attribute name="NAME" x="2.667" y="-46.355" size="0.889" layer="25" ratio="11" rot="R270"/>
+<attribute name="VALUE" x="0.1905" y="-46.355" size="0.635" layer="27" ratio="10" rot="R270"/>
 </element>
-<element name="R1" library="Seeed-Resistor" package="R0603" value="330R" x="-1.016" y="-48.387" rot="R270">
+<element name="R1" library="Seeed-Resistor" package="R0603" value="330R" x="-1.016" y="-48.387" smashed="yes" rot="R270">
 <attribute name="MPN" value="RC0603FR-07330RL" x="-1.016" y="-48.387" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="-2.921" y="-47.371" size="0.889" layer="25" ratio="11"/>
+<attribute name="VALUE" x="-2.621" y="-49.822" size="0.635" layer="27" ratio="10"/>
 </element>
-<element name="R2" library="Seeed-Resistor" package="R0603" value="2.2K" x="1.778" y="-51.689">
+<element name="R2" library="Seeed-Resistor" package="R0603" value="2.2K" x="1.778" y="-51.689" smashed="yes">
 <attribute name="MPN" value="RC0603JR-072K2L" x="1.778" y="-51.689" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="0.762" y="-53.594" size="0.889" layer="25" ratio="11" rot="R90"/>
+<attribute name="VALUE" x="3.213" y="-53.294" size="0.635" layer="27" ratio="10" rot="R90"/>
 </element>
-<element name="R3" library="Seeed-Resistor" package="R0603" value="4.7M" x="3.81" y="-47.625" rot="R180">
+<element name="R3" library="Seeed-Resistor" package="R0603" value="4.7M" x="3.81" y="-47.625" smashed="yes" rot="R180">
 <attribute name="MPN" value="RC0603JR-074M7L" x="3.81" y="-47.625" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="4.826" y="-45.72" size="0.889" layer="25" ratio="11" rot="R270"/>
+<attribute name="VALUE" x="2.375" y="-46.02" size="0.635" layer="27" ratio="10" rot="R270"/>
 </element>
-<element name="R4" library="Seeed-Resistor" package="R0603" value="4.7M" x="3.81" y="-51.689">
+<element name="R4" library="Seeed-Resistor" package="R0603" value="4.7M" x="3.81" y="-51.689" smashed="yes">
 <attribute name="MPN" value="RC0603JR-074M7L" x="3.81" y="-51.689" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="2.794" y="-53.594" size="0.889" layer="25" ratio="11" rot="R90"/>
+<attribute name="VALUE" x="5.245" y="-53.294" size="0.635" layer="27" ratio="10" rot="R90"/>
 </element>
-<element name="J2" library="SparkFun-Connectors" package="SCREWTERMINAL-3.5MM-2_LOCK" value="" x="26.67" y="-50.8">
+<element name="J2" library="SparkFun-Connectors" package="SCREWTERMINAL-3.5MM-2_LOCK" value="" x="26.67" y="-50.8" smashed="yes">
+<attribute name="NAME" x="25.4" y="-48.26" size="0.6096" layer="25" font="vector" ratio="20"/>
 <attribute name="PROD_ID" value="CONN-08399" x="26.67" y="-50.8" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="25.4" y="-49.53" size="0.6096" layer="27" font="vector" ratio="20"/>
 </element>
-<element name="X1" library="con-molex" package="22-23-2041" value="Batt/Sun" x="17.78" y="-50.8" rot="R180">
-<attribute name="MPN" value="22-23-2041" x="17.78" y="-50.8" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="OC_NEWARK" value="38C0355" x="17.78" y="-50.8" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="X1" library="con-molex" package="22-23-2041" value="Batt/Sun" x="17.78" y="-50.8" smashed="yes" rot="R180">
 <attribute name="MF" value="MOLEX" x="17.78" y="-50.8" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="22-23-2041" x="17.78" y="-50.8" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="17.78" y="-54.61" size="1.27" layer="25" ratio="10" rot="R180" align="bottom-center"/>
 <attribute name="OC_FARNELL" value="1462920" x="17.78" y="-50.8" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="OC_NEWARK" value="38C0355" x="17.78" y="-50.8" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" x="17.78" y="-45.72" size="1.27" layer="27" ratio="10" rot="R180" align="center"/>
 </element>
-<element name="X3" library="con-molex" package="22-23-2041" value="USB" x="27.305" y="36.195">
-<attribute name="OC_FARNELL" value="1462920" x="27.305" y="36.195" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="22-23-2041" x="27.305" y="36.195" size="1.778" layer="27" display="off"/>
-<attribute name="OC_NEWARK" value="38C0355" x="27.305" y="36.195" size="1.778" layer="27" display="off"/>
+<element name="X3" library="con-molex" package="22-23-2041" value="USB" x="27.305" y="36.195" smashed="yes">
 <attribute name="MF" value="MOLEX" x="27.305" y="36.195" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="22-23-2041" x="27.305" y="36.195" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="27.305" y="40.005" size="1.27" layer="25" ratio="10" align="bottom-center"/>
+<attribute name="OC_FARNELL" value="1462920" x="27.305" y="36.195" size="1.778" layer="27" display="off"/>
+<attribute name="OC_NEWARK" value="38C0355" x="27.305" y="36.195" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="27.305" y="31.115" size="1.27" layer="27" ratio="10" align="center"/>
 </element>
-<element name="J1" library="UIO-John" package="1MM_FPC" value="USB_FTP" x="88.9" y="-45.72" rot="R180"/>
+<element name="J1" library="UIO-John" package="1MM_FPC" value="USB_FTP" x="88.9" y="-45.72" smashed="yes" rot="R180"/>
 <element name="X2" library="con-molex" package="22-23-2041" value="Batt Pack" x="-59" y="51" smashed="yes">
 <attribute name="MF" value="MOLEX" x="-59" y="51" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="22-23-2041" x="-59" y="51" size="1.778" layer="27" display="off"/>
-<attribute name="OC_NEWARK" value="38C0355" x="-59" y="51" size="1.778" layer="27" display="off"/>
-<attribute name="OC_FARNELL" value="1462920" x="-59" y="51" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="-59" y="54.81" size="1.27" layer="25" ratio="10" align="bottom-center"/>
+<attribute name="OC_FARNELL" value="1462920" x="-59" y="51" size="1.778" layer="27" display="off"/>
+<attribute name="OC_NEWARK" value="38C0355" x="-59" y="51" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="-59" y="43.92" size="1.27" layer="27" ratio="10" align="center"/>
 </element>
 </elements>
@@ -4101,6 +4143,13 @@ design rules under a new name.</description>
 <wire x1="29.21" y1="-26.035" x2="29.21" y2="27.305" width="0.6096" layer="1"/>
 </signal>
 </signals>
+<mfgpreviewcolors>
+<mfgpreviewcolor name="soldermaskcolor" color="0xC8008000"/>
+<mfgpreviewcolor name="silkscreencolor" color="0xFFFEFEFE"/>
+<mfgpreviewcolor name="backgroundcolor" color="0xFF282828"/>
+<mfgpreviewcolor name="coppercolor" color="0xFFFFBF00"/>
+<mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
+</mfgpreviewcolors>
 </board>
 </drawing>
 <compatibility>

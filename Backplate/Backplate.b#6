@@ -191,7 +191,7 @@
 <wire x1="66" y1="-55" x2="106.5" y2="-55" width="0" layer="20"/>
 <wire x1="106.5" y1="-55" x2="106.5" y2="-37" width="0" layer="20"/>
 <wire x1="106.5" y1="37" x2="106.5" y2="55" width="0" layer="20"/>
-<wire x1="106.5" y1="55" x2="66" y2="55" width="0" layer="20"/>
+<wire x1="106.5" y1="55" x2="85" y2="55" width="0" layer="20"/>
 <text x="48.32" y="-38.675" size="1.778" layer="21">(c) 2018
 john.hulth@geo.uio.no</text>
 <text x="48.32" y="-31.675" size="1.778" layer="21">Backplate V1.1</text>
@@ -200,11 +200,10 @@ john.hulth@geo.uio.no</text>
 <wire x1="-106.5" y1="-37" x2="-106.5" y2="-55" width="0" layer="20"/>
 <hole x="101.25" y="-49.3" drill="3.2"/>
 <hole x="101.25" y="49.3" drill="3.2"/>
-<hole x="109" y="0" drill="3.2"/>
 <hole x="-101.25" y="49.3" drill="3.2"/>
 <hole x="-101.25" y="-49.3" drill="3.2"/>
-<hole x="109" y="20" drill="3.2"/>
-<hole x="109" y="-20" drill="3.2"/>
+<hole x="111" y="33" drill="3.2"/>
+<hole x="111" y="-7" drill="3.2"/>
 <wire x1="106.5" y1="37" x2="115" y2="37" width="0" layer="20"/>
 <wire x1="115" y1="37" x2="115" y2="-37" width="0" layer="20"/>
 <wire x1="115" y1="-37" x2="106.5" y2="-37" width="0" layer="20"/>
@@ -222,19 +221,17 @@ john.hulth@geo.uio.no</text>
 <text x="-8.128" y="50.8" size="2.54" layer="25" align="center">GND</text>
 <dimension x1="-115" y1="37" x2="115" y2="37" x3="0" y3="62.865" textsize="1.778" layer="48"/>
 <dimension x1="106.5" y1="55" x2="106.5" y2="-55" x3="129" y3="0" textsize="1.778" layer="48"/>
-<wire x1="67" y1="22.5" x2="112" y2="22.5" width="0.254" layer="21" style="longdash"/>
-<wire x1="112" y1="22.5" x2="112" y2="-22.5" width="0.254" layer="21" style="longdash"/>
-<wire x1="112" y1="-22.5" x2="67" y2="-22.5" width="0.254" layer="21" style="longdash"/>
-<wire x1="67" y1="-22.5" x2="67" y2="22.5" width="0.254" layer="21" style="longdash"/>
-<text x="106" y="0" size="1.778" layer="21" rot="R270" align="center">IRIDIUM</text>
-<circle x="99" y="10" radius="3.81" width="0.45" layer="51"/>
-<circle x="99" y="30" radius="3.81" width="0.45" layer="51"/>
+<wire x1="69" y1="35.5" x2="114" y2="35.5" width="0.254" layer="21" style="longdash"/>
+<wire x1="114" y1="35.5" x2="114" y2="-9.5" width="0.254" layer="21" style="longdash"/>
+<wire x1="114" y1="-9.5" x2="69" y2="-9.5" width="0.254" layer="21" style="longdash"/>
+<wire x1="69" y1="-9.5" x2="69" y2="35.5" width="0.254" layer="21" style="longdash"/>
+<text x="110" y="14" size="1.778" layer="21" rot="R270" align="center">IRIDIUM</text>
 <wire x1="66" y1="-55" x2="66" y2="-41" width="0" layer="20"/>
 <wire x1="66" y1="-41" x2="33.86" y2="-41" width="0" layer="20"/>
 <wire x1="33.86" y1="-41" x2="33.86" y2="-55" width="0" layer="20"/>
 <wire x1="11" y1="55" x2="11" y2="41" width="0" layer="20"/>
-<wire x1="66" y1="41" x2="11" y2="41" width="0" layer="20"/>
-<wire x1="66" y1="55" x2="66" y2="41" width="0" layer="20"/>
+<wire x1="85" y1="41" x2="11" y2="41" width="0" layer="20"/>
+<wire x1="85" y1="55" x2="85" y2="41" width="0" layer="20"/>
 <wire x1="72" y1="25.73" x2="42" y2="25.73" width="1.27" layer="46"/>
 <wire x1="42" y1="-19" x2="72" y2="-19" width="1.27" layer="46"/>
 <wire x1="42" y1="2" x2="42" y2="-19" width="1.27" layer="46"/>
