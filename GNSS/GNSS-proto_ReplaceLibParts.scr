@@ -1,0 +1,15 @@
+# 'EAGLE Version 9.6.2 Copyright (c) 1988-2020 Autodesk, Inc.;
+
+SET UNDO_LOG OFF;
+# Migrate parts to 'C:/Users/johnhh/Documents/GitHub/wsn_hardware/GNSS/GNSS-proto.lbr'
+USE -*;
+USE 'C:/Users/johnhh/Documents/GitHub/wsn_hardware/GNSS/GNSS-proto.lbr';
+#
+# SHEET 1 - MIGRATE PARTS
+#
+EDIT .s1
+REPLACE U5 173010535;
+EDIT .s1
+SET UNDO_LOG ON;
+# Put all libraries back into use
+USE *;

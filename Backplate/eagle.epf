@@ -10,11 +10,12 @@ UsedLibrary="M:/pc/Dokumenter/GitHub/wsn_hardware/Libraries/UIO-John.lbr"
 UsedLibrary="Backplate_2.lbr"
 UsedLibrary="//kant/geo-geohyd-u1/johnhh/pc/Dokumenter/GitHub/wsn_hardware/Libraries/DesignSpark/1725669.lbr"
 UsedLibrary="//kant/geo-geohyd-u1/johnhh/pc/Dokumenter/GitHub/wsn_hardware/Libraries/DesignSpark/1725672.lbr"
+UsedLibrary="C:/Users/johnhh/Documents/GitHub/wsn_hardware/154N_NAU7802/154N_NAU7802_TH.lbr"
 
 [Win_1]
 Type="Control Panel"
 Number=0
 
 [Desktop]
-Screen="3120 1920"
+Screen="3286 1190"
 Window="Win_1"
