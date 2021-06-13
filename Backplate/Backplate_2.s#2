@@ -254,8 +254,8 @@ by exp-lbrs.ulp</description>
 <wire x1="44.45" y1="50.8" x2="44.45" y2="20.32" width="0.127" layer="21"/>
 <wire x1="44.45" y1="20.32" x2="41.91" y2="20.32" width="0.127" layer="21"/>
 <wire x1="41.91" y1="20.32" x2="41.91" y2="50.8" width="0.127" layer="21"/>
-<wire x1="53.34" y1="52.07" x2="53.34" y2="71.12" width="0.127" layer="21"/>
-<wire x1="66.04" y1="52.07" x2="66.04" y2="71.12" width="0.127" layer="21"/>
+<wire x1="53.34" y1="52.07" x2="53.34" y2="71.12" width="0.127" layer="51"/>
+<wire x1="66.04" y1="52.07" x2="66.04" y2="71.12" width="0.127" layer="51"/>
 <pad name="1RX" x="43.18" y="46.99" drill="1.016"/>
 <pad name="1TX" x="43.18" y="49.53" drill="1.016"/>
 <pad name="2RX" x="43.18" y="44.45" drill="1.016"/>
@@ -323,30 +323,6 @@ by exp-lbrs.ulp</description>
 <pad name="4" x="7.62" y="0" drill="1.1" diameter="1.65"/>
 <text x="3.408159375" y="-4.11943125" size="1.27" layer="25" align="center">&gt;NAME</text>
 <text x="3.408159375" y="4.77056875" size="1.27" layer="27" align="center">&gt;VALUE</text>
-</package>
-<package name="1725669">
-<description>&lt;b&gt;1725669&lt;/b&gt;&lt;br&gt;</description>
-<wire x1="-1.5" y1="3.1" x2="6.58" y2="3.1" width="0.2" layer="21"/>
-<wire x1="6.58" y1="3.1" x2="6.58" y2="-3.1" width="0.2" layer="21"/>
-<wire x1="6.58" y1="-3.1" x2="-1.5" y2="-3.1" width="0.2" layer="21"/>
-<wire x1="-1.5" y1="-3.1" x2="-1.5" y2="3.1" width="0.2" layer="21"/>
-<wire x1="-1.5" y1="3.1" x2="6.58" y2="3.1" width="0.2" layer="51"/>
-<wire x1="6.58" y1="3.1" x2="6.58" y2="-3.1" width="0.2" layer="51"/>
-<wire x1="6.58" y1="-3.1" x2="-1.5" y2="-3.1" width="0.2" layer="51"/>
-<wire x1="-1.5" y1="-3.1" x2="-1.5" y2="3.1" width="0.2" layer="51"/>
-<wire x1="-2.06" y1="0" x2="-2.26" y2="0" width="0.2" layer="21" curve="180"/>
-<wire x1="-2.26" y1="0" x2="-2.06" y2="0" width="0.2" layer="21" curve="180"/>
-<wire x1="0" y1="0" x2="0" y2="-2.54" width="0.127" layer="51"/>
-<wire x1="2.54" y1="0" x2="2.54" y2="-2.54" width="0.127" layer="51"/>
-<wire x1="5.08" y1="0" x2="5.08" y2="-2.54" width="0.127" layer="51"/>
-<pad name="1" x="0" y="0" drill="1.1" diameter="1.65"/>
-<pad name="2" x="2.54" y="0" drill="1.1" diameter="1.65"/>
-<pad name="3" x="5.08" y="0" drill="1.1" diameter="1.65"/>
-<text x="2.54" y="-5.08" size="1.27" layer="25" align="center">&gt;NAME</text>
-<text x="2.54" y="5.08" size="1.27" layer="27" align="center">&gt;VALUE</text>
-<hole x="0" y="-2.54" drill="1.1"/>
-<hole x="2.54" y="-2.54" drill="1.1"/>
-<hole x="5.08" y="-2.54" drill="1.1"/>
 </package>
 <package name="POWER_JACK_PTH">
 <description>&lt;h3&gt;DC Barrel Power Jack/Connector PTH&lt;/h3&gt;
@@ -445,17 +421,6 @@ by exp-lbrs.ulp</description>
 <pin name="2" x="0" y="-2.54" length="middle"/>
 <pin name="3" x="0" y="-5.08" length="middle"/>
 <pin name="4" x="0" y="-7.62" length="middle"/>
-<text x="16.51" y="7.62" size="1.778" layer="95" align="center-left">&gt;NAME</text>
-<text x="16.51" y="5.08" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
-</symbol>
-<symbol name="1725669">
-<wire x1="5.08" y1="2.54" x2="15.24" y2="2.54" width="0.254" layer="94"/>
-<wire x1="15.24" y1="-7.62" x2="15.24" y2="2.54" width="0.254" layer="94"/>
-<wire x1="15.24" y1="-7.62" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="5.08" y1="2.54" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
-<pin name="1" x="0" y="0" length="middle"/>
-<pin name="2" x="0" y="-2.54" length="middle"/>
-<pin name="3" x="0" y="-5.08" length="middle"/>
 <text x="16.51" y="7.62" size="1.778" layer="95" align="center-left">&gt;NAME</text>
 <text x="16.51" y="5.08" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
 </symbol>
@@ -559,33 +524,6 @@ Source: &lt;a href="https://www.phoenixcontact.com/online/portal/us?uri=pxc-oc-i
 <attribute name="MANUFACTURER_PART_NUMBER" value="1725672" constant="no"/>
 <attribute name="RS_PART_NUMBER" value="3924476" constant="no"/>
 <attribute name="RS_PRICE-STOCK" value="https://uk.rs-online.com/web/p/products/3924476" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="1725669" prefix="J">
-<description>&lt;b&gt;3 way PCB vertical mount terminal,2.54mm 3 way PCB vertical mount terminal,2.54mm&lt;/b&gt;&lt;p&gt;
-Source: &lt;a href="https://www.phoenixcontact.com/online/portal/gb?uri=pxc-oc-itemdetail:pid=1725669&amp;library=gben&amp;tab=1"&gt; Datasheet &lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="1725669" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="1725669">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="ALLIED_NUMBER" value="70054336" constant="no"/>
-<attribute name="DESCRIPTION" value="3 way PCB vertical mount terminal,2.54mm 3 way PCB vertical mount terminal,2.54mm" constant="no"/>
-<attribute name="HEIGHT" value="8.5mm" constant="no"/>
-<attribute name="MANUFACTURER_NAME" value="Phoenix Contact" constant="no"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="1725669" constant="no"/>
-<attribute name="RS_PART_NUMBER" value="3909039" constant="no"/>
-<attribute name="RS_PRICE-STOCK" value="https://uk.rs-online.com/web/p/products/3909039" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -1104,7 +1042,6 @@ Updated by Yingchun,Shan 2019-10-16
 <parts>
 <part name="U$12" library="Backplate_2" deviceset="WASPMOTE_V1.5" device=""/>
 <part name="U$1" library="Backplate_2" deviceset="BATTERY" device=""/>
-<part name="J1" library="Backplate_2" deviceset="1725669" device=""/>
 <part name="J2" library="Backplate_2" deviceset="1725672" device=""/>
 <part name="J3" library="154N_NAU7802_TH" deviceset="1725698" device=""/>
 <part name="Q1" library="154N_NAU7802_TH" deviceset="QTPY" device=""/>
@@ -1115,6 +1052,7 @@ Updated by Yingchun,Shan 2019-10-16
 <part name="J9" library="Wurth_Connectors_WR-PHD" library_urn="urn:adsk.eagle:library:14804658" deviceset="6130XX21021_61301221021" device="" package3d_urn="urn:adsk.eagle:package:14805470/2"/>
 <part name="J10" library="Wurth_Connectors_WR-PHD" library_urn="urn:adsk.eagle:library:14804658" deviceset="6130XX21021_61301221021" device="" package3d_urn="urn:adsk.eagle:package:14805470/2"/>
 <part name="J11" library="Wurth_Connectors_WR-PHD" library_urn="urn:adsk.eagle:library:14804658" deviceset="6130XX21021_61301221021" device="" package3d_urn="urn:adsk.eagle:package:14805470/2"/>
+<part name="J1" library="Backplate_2" deviceset="1725672" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1123,10 +1061,6 @@ Updated by Yingchun,Shan 2019-10-16
 <instances>
 <instance part="U$12" gate="G$1" x="50.8" y="43.18" smashed="yes"/>
 <instance part="U$1" gate="G$1" x="142.24" y="33.02" smashed="yes"/>
-<instance part="J1" gate="G$1" x="-55.88" y="22.86" smashed="yes">
-<attribute name="NAME" x="-39.37" y="30.48" size="1.778" layer="95" align="center-left"/>
-<attribute name="VALUE" x="-39.37" y="27.94" size="1.778" layer="96" align="center-left"/>
-</instance>
 <instance part="J2" gate="G$1" x="38.1" y="2.54" smashed="yes">
 <attribute name="NAME" x="54.61" y="10.16" size="1.778" layer="95" align="center-left"/>
 <attribute name="VALUE" x="54.61" y="7.62" size="1.778" layer="96" align="center-left"/>
@@ -1163,6 +1097,10 @@ Updated by Yingchun,Shan 2019-10-16
 <instance part="J11" gate="G$1" x="-30.48" y="134.62" smashed="yes">
 <attribute name="NAME" x="-21.5" y="134.97" size="1.016" layer="95"/>
 <attribute name="VALUE" x="-21.36" y="132.75" size="1.016" layer="96"/>
+</instance>
+<instance part="J1" gate="G$1" x="-55.88" y="22.86" smashed="yes">
+<attribute name="NAME" x="-39.37" y="30.48" size="1.778" layer="95" align="center-left"/>
+<attribute name="VALUE" x="-39.37" y="27.94" size="1.778" layer="96" align="center-left"/>
 </instance>
 </instances>
 <busses>
@@ -1309,6 +1247,18 @@ Updated by Yingchun,Shan 2019-10-16
 <label x="-60.96" y="17.78" size="1.27" layer="95" rot="R180" xref="yes"/>
 <wire x1="-60.96" y1="17.78" x2="-55.88" y2="17.78" width="0.1524" layer="91"/>
 <pinref part="J1" gate="G$1" pin="3"/>
+</segment>
+</net>
+<net name="RX_A7" class="0">
+<segment>
+<wire x1="-30.48" y1="40.64" x2="-25.4" y2="40.64" width="0.1524" layer="91"/>
+<label x="-25.4" y="40.64" size="1.27" layer="95" xref="yes"/>
+<pinref part="Q1" gate="1" pin="RX/A7/D7"/>
+</segment>
+<segment>
+<label x="-60.96" y="15.24" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="-60.96" y1="15.24" x2="-55.88" y2="15.24" width="0.1524" layer="91"/>
+<pinref part="J1" gate="G$1" pin="4"/>
 </segment>
 </net>
 </nets>

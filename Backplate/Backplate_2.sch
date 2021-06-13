@@ -244,25 +244,18 @@ by exp-lbrs.ulp</description>
 <wire x1="6.35" y1="46.99" x2="6.35" y2="16.51" width="0.127" layer="22"/>
 <wire x1="6.35" y1="16.51" x2="1.27" y2="16.51" width="0.127" layer="22"/>
 <wire x1="1.27" y1="16.51" x2="1.27" y2="46.99" width="0.127" layer="22"/>
-<wire x1="44.45" y1="50.8" x2="44.45" y2="20.32" width="0.127" layer="22"/>
-<wire x1="41.91" y1="20.32" x2="41.91" y2="50.8" width="0.127" layer="22"/>
-<wire x1="44.45" y1="20.32" x2="41.91" y2="20.32" width="0.127" layer="22"/>
 <wire x1="1.27" y1="46.99" x2="6.35" y2="46.99" width="0.127" layer="21"/>
 <wire x1="6.35" y1="46.99" x2="6.35" y2="16.51" width="0.127" layer="21"/>
 <wire x1="6.35" y1="16.51" x2="1.27" y2="16.51" width="0.127" layer="21"/>
 <wire x1="1.27" y1="16.51" x2="1.27" y2="46.99" width="0.127" layer="21"/>
-<wire x1="44.45" y1="50.8" x2="44.45" y2="20.32" width="0.127" layer="21"/>
-<wire x1="44.45" y1="20.32" x2="41.91" y2="20.32" width="0.127" layer="21"/>
-<wire x1="41.91" y1="20.32" x2="41.91" y2="50.8" width="0.127" layer="21"/>
 <wire x1="53.34" y1="52.07" x2="53.34" y2="71.12" width="0.127" layer="51"/>
 <wire x1="66.04" y1="52.07" x2="66.04" y2="71.12" width="0.127" layer="51"/>
-<pad name="1RX" x="43.18" y="46.99" drill="1.016"/>
-<pad name="1TX" x="43.18" y="49.53" drill="1.016"/>
-<pad name="2RX" x="43.18" y="44.45" drill="1.016"/>
-<pad name="2TX" x="43.18" y="41.91" drill="1.016"/>
+<wire x1="22.86" y1="52.07" x2="58.42" y2="52.07" width="0" layer="46"/>
+<wire x1="58.42" y1="52.07" x2="58.42" y2="6.35" width="0" layer="46"/>
+<wire x1="58.42" y1="6.35" x2="22.86" y2="6.35" width="0" layer="46"/>
+<wire x1="22.86" y1="6.35" x2="22.86" y2="52.07" width="0" layer="46"/>
 <pad name="3V3@1" x="5.08" y="45.72" drill="1.016"/>
 <pad name="3V3@2" x="2.54" y="22.86" drill="1.016"/>
-<pad name="3V3@3" x="43.18" y="26.67" drill="1.016"/>
 <pad name="5V" x="5.08" y="20.32" drill="1.016"/>
 <pad name="A1" x="5.08" y="22.86" drill="1.016"/>
 <pad name="A2" x="2.54" y="25.4" drill="1.016"/>
@@ -272,7 +265,6 @@ by exp-lbrs.ulp</description>
 <pad name="A6" x="2.54" y="30.48" drill="1.016"/>
 <pad name="A7" x="5.08" y="30.48" drill="1.016"/>
 <pad name="ANALOG" x="2.54" y="45.72" drill="1.016"/>
-<pad name="BATTERY" x="43.18" y="39.37" drill="1.016"/>
 <pad name="D1" x="5.08" y="33.02" drill="1.016"/>
 <pad name="D2" x="2.54" y="35.56" drill="1.016"/>
 <pad name="D3" x="5.08" y="35.56" drill="1.016"/>
@@ -282,25 +274,15 @@ by exp-lbrs.ulp</description>
 <pad name="D7" x="5.08" y="40.64" drill="1.016"/>
 <pad name="D8" x="2.54" y="43.18" drill="1.016"/>
 <pad name="GND" x="5.08" y="43.18" drill="1.016"/>
-<pad name="GND_2" x="43.18" y="36.83" drill="1.016"/>
 <pad name="GPS_POW" x="2.54" y="20.32" drill="1.016"/>
-<pad name="MISO" x="43.18" y="21.59" drill="1.016"/>
-<pad name="MOSI" x="43.18" y="24.13" drill="1.016"/>
 <pad name="RES" x="2.54" y="33.02" drill="1.016"/>
-<pad name="RXD1" x="43.18" y="31.75" drill="1.016"/>
-<pad name="SCK" x="43.18" y="34.29" drill="1.016"/>
 <pad name="SCL" x="5.08" y="17.78" drill="1.016"/>
 <pad name="SDA" x="2.54" y="17.78" drill="1.016"/>
-<pad name="TXD1" x="43.18" y="29.21" drill="1.016"/>
 <text x="11.43" y="-2.54" size="1.27" layer="51" rot="R180">WaspMote v1.5</text>
 <text x="64.77" y="-2.54" size="1.778" layer="48" align="center">USB</text>
 <text x="76.2" y="8.89" size="1.778" layer="51" rot="R90" align="center">SD-CARD</text>
 <hole x="2.54" y="7.62" drill="3.2"/>
 <hole x="69.85" y="46.99" drill="3.2"/>
-<wire x1="22.86" y1="52.07" x2="58.42" y2="52.07" width="0" layer="46"/>
-<wire x1="58.42" y1="52.07" x2="58.42" y2="6.35" width="0" layer="46"/>
-<wire x1="58.42" y1="6.35" x2="22.86" y2="6.35" width="0" layer="46"/>
-<wire x1="22.86" y1="6.35" x2="22.86" y2="52.07" width="0" layer="46"/>
 </package>
 <package name="1725672-4-2.54">
 <description>&lt;b&gt;1725672-4-2.54&lt;/b&gt;&lt;br&gt;</description>
@@ -334,32 +316,29 @@ by exp-lbrs.ulp</description>
 &lt;p&gt;Example device(s):
 &lt;ul&gt;&lt;li&gt;POWER_JACK&lt;/li&gt;
 &lt;/ul&gt;&lt;/p&gt;</description>
+<circle x="-8.77" y="10.12" radius="0.5" width="1.27" layer="21"/>
+<circle x="-3.77" y="10.12" radius="1.5" width="0.3048" layer="21"/>
+<circle x="-14.77" y="10.12" radius="1.5" width="0.3048" layer="21"/>
+<wire x1="0" y1="0" x2="0" y2="8.5" width="0.127" layer="21"/>
+<wire x1="0" y1="8.5" x2="9" y2="8.5" width="0.127" layer="21"/>
+<wire x1="9" y1="8.5" x2="9" y2="0" width="0.127" layer="21"/>
+<wire x1="9" y1="0" x2="0" y2="0" width="0.127" layer="21"/>
+<wire x1="0" y1="-2" x2="-30" y2="-2" width="0" layer="46"/>
+<wire x1="-30" y1="-2" x2="-30" y2="7" width="0" layer="46"/>
+<wire x1="-30" y1="7" x2="0" y2="7" width="0" layer="46"/>
+<wire x1="0" y1="7" x2="0" y2="-2" width="0" layer="46"/>
+<wire x1="-7.77" y1="8.37" x2="-7.77" y2="11.87" width="0.3048" layer="21" curve="-239.4897"/>
+<wire x1="-8.77" y1="10.12" x2="-5.27" y2="10.12" width="0.3048" layer="21"/>
+<wire x1="-13.27" y1="10.12" x2="-10.77" y2="10.12" width="0.3048" layer="21"/>
+<wire x1="-15.47" y1="10.12" x2="-14.07" y2="10.12" width="0.3048" layer="21"/>
+<wire x1="-3.77" y1="9.42" x2="-3.77" y2="10.82" width="0.3048" layer="21"/>
+<wire x1="-4.47" y1="10.12" x2="-3.07" y2="10.12" width="0.3048" layer="21"/>
 <pad name="GND" x="8" y="7.5" drill="1.8" diameter="2.54" rot="R270"/>
 <pad name="GNDBREAK" x="8" y="4" drill="1.8" diameter="2.54"/>
 <pad name="PWR" x="8" y="0" drill="1.8" diameter="2.54" rot="R270"/>
 <text x="1.6284" y="1.3288" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
 <text x="1.7474" y="6.3128" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
-<wire x1="0" y1="0" x2="0" y2="8.5" width="0.127" layer="21"/>
-<wire x1="0" y1="8.5" x2="9" y2="8.5" width="0.127" layer="21"/>
-<wire x1="9" y1="8.5" x2="9" y2="0" width="0.127" layer="21"/>
-<wire x1="9" y1="0" x2="0" y2="0" width="0.127" layer="21"/>
 <hole x="3" y="4" drill="1.3"/>
-<wire x1="0" y1="0" x2="-15.5" y2="0" width="0.127" layer="51" style="shortdash"/>
-<wire x1="0" y1="5" x2="-15.5" y2="5" width="0.127" layer="51" style="shortdash"/>
-<wire x1="-15.5" y1="5" x2="-15.5" y2="0" width="0.127" layer="51" style="shortdash"/>
-<circle x="-7.5" y="2.5" radius="0.5" width="1.27" layer="21"/>
-<wire x1="-6.5" y1="0.75" x2="-6.5" y2="4.25" width="0.3048" layer="21" curve="-239.4897"/>
-<circle x="-2.5" y="2.5" radius="1.5" width="0.3048" layer="21"/>
-<wire x1="-7.5" y1="2.5" x2="-4" y2="2.5" width="0.3048" layer="21"/>
-<wire x1="-12" y1="2.5" x2="-9.5" y2="2.5" width="0.3048" layer="21"/>
-<circle x="-13.5" y="2.5" radius="1.5" width="0.3048" layer="21"/>
-<wire x1="-14.2" y1="2.5" x2="-12.8" y2="2.5" width="0.3048" layer="21"/>
-<wire x1="-2.5" y1="1.8" x2="-2.5" y2="3.2" width="0.3048" layer="21"/>
-<wire x1="-3.2" y1="2.5" x2="-1.8" y2="2.5" width="0.3048" layer="21"/>
-<wire x1="0" y1="-2" x2="-30" y2="-2" width="0" layer="46"/>
-<wire x1="-30" y1="-2" x2="-30" y2="7" width="0" layer="46"/>
-<wire x1="-30" y1="7" x2="0" y2="7" width="0" layer="46"/>
-<wire x1="0" y1="7" x2="0" y2="-2" width="0" layer="46"/>
 </package>
 </packages>
 <symbols>
@@ -387,11 +366,6 @@ by exp-lbrs.ulp</description>
 <pin name="A6" x="40.64" y="7.62" length="middle" rot="R180"/>
 <pin name="A7" x="40.64" y="12.7" length="middle" rot="R180"/>
 <pin name="ANALOG" x="40.64" y="17.78" length="middle" rot="R180"/>
-<pin name="AUX_1RX" x="-20.32" y="-25.4" length="middle" rot="R90"/>
-<pin name="AUX_1TX" x="-25.4" y="-25.4" length="middle" rot="R90"/>
-<pin name="AUX_2RX" x="-10.16" y="-25.4" length="middle" rot="R90"/>
-<pin name="AUX_2TX" x="-15.24" y="-25.4" length="middle" rot="R90"/>
-<pin name="BATTERY" x="15.24" y="-25.4" length="middle" rot="R90"/>
 <pin name="D1" x="-40.64" y="-17.78" length="middle"/>
 <pin name="D2" x="-40.64" y="-12.7" length="middle"/>
 <pin name="D3" x="-40.64" y="-7.62" length="middle"/>
@@ -402,14 +376,9 @@ by exp-lbrs.ulp</description>
 <pin name="D8" x="-40.64" y="17.78" length="middle"/>
 <pin name="GND" x="20.32" y="-25.4" length="middle" rot="R90"/>
 <pin name="GPS_POW" x="-5.08" y="-25.4" length="middle" rot="R90"/>
-<pin name="MISO" x="-5.08" y="25.4" length="middle" rot="R270"/>
-<pin name="MOSI" x="-10.16" y="25.4" length="middle" rot="R270"/>
 <pin name="RESERVED" x="20.32" y="25.4" length="middle" rot="R270"/>
-<pin name="RXD1" x="-20.32" y="25.4" length="middle" rot="R270"/>
-<pin name="SCK" x="-25.4" y="25.4" length="middle" rot="R270"/>
 <pin name="SCL" x="5.08" y="25.4" length="middle" rot="R270"/>
 <pin name="SDA" x="0" y="25.4" length="middle" rot="R270"/>
-<pin name="TXD1" x="-15.24" y="25.4" length="middle" rot="R270"/>
 <text x="0" y="0" size="2.54" layer="94" align="center">WaspMote v1.5</text>
 </symbol>
 <symbol name="1725672">
@@ -461,7 +430,7 @@ by exp-lbrs.ulp</description>
 <devices>
 <device name="" package="WASPMOTE_V1.5">
 <connects>
-<connect gate="G$1" pin="3V3" pad="3V3@1 3V3@2 3V3@3"/>
+<connect gate="G$1" pin="3V3" pad="3V3@1 3V3@2"/>
 <connect gate="G$1" pin="5V" pad="5V"/>
 <connect gate="G$1" pin="A1" pad="A1"/>
 <connect gate="G$1" pin="A2" pad="A2"/>
@@ -471,11 +440,6 @@ by exp-lbrs.ulp</description>
 <connect gate="G$1" pin="A6" pad="A6"/>
 <connect gate="G$1" pin="A7" pad="A7"/>
 <connect gate="G$1" pin="ANALOG" pad="ANALOG"/>
-<connect gate="G$1" pin="AUX_1RX" pad="1RX"/>
-<connect gate="G$1" pin="AUX_1TX" pad="1TX"/>
-<connect gate="G$1" pin="AUX_2RX" pad="2RX"/>
-<connect gate="G$1" pin="AUX_2TX" pad="2TX"/>
-<connect gate="G$1" pin="BATTERY" pad="BATTERY"/>
 <connect gate="G$1" pin="D1" pad="D1"/>
 <connect gate="G$1" pin="D2" pad="D2"/>
 <connect gate="G$1" pin="D3" pad="D3"/>
@@ -484,16 +448,11 @@ by exp-lbrs.ulp</description>
 <connect gate="G$1" pin="D6" pad="D6"/>
 <connect gate="G$1" pin="D7" pad="D7"/>
 <connect gate="G$1" pin="D8" pad="D8"/>
-<connect gate="G$1" pin="GND" pad="GND GND_2"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
 <connect gate="G$1" pin="GPS_POW" pad="GPS_POW"/>
-<connect gate="G$1" pin="MISO" pad="MISO"/>
-<connect gate="G$1" pin="MOSI" pad="MOSI"/>
 <connect gate="G$1" pin="RESERVED" pad="RES"/>
-<connect gate="G$1" pin="RXD1" pad="RXD1"/>
-<connect gate="G$1" pin="SCK" pad="SCK"/>
 <connect gate="G$1" pin="SCL" pad="SCL"/>
 <connect gate="G$1" pin="SDA" pad="SDA"/>
-<connect gate="G$1" pin="TXD1" pad="TXD1"/>
 </connects>
 <technologies>
 <technology name=""/>

@@ -297,6 +297,10 @@ by exp-lbrs.ulp</description>
 <text x="76.2" y="8.89" size="1.778" layer="21" rot="R90" align="center">SD-CARD</text>
 <hole x="2.54" y="7.62" drill="3.2"/>
 <hole x="69.85" y="46.99" drill="3.2"/>
+<wire x1="22.86" y1="52.07" x2="58.42" y2="52.07" width="0" layer="46"/>
+<wire x1="58.42" y1="52.07" x2="58.42" y2="6.35" width="0" layer="46"/>
+<wire x1="58.42" y1="6.35" x2="22.86" y2="6.35" width="0" layer="46"/>
+<wire x1="22.86" y1="6.35" x2="22.86" y2="52.07" width="0" layer="46"/>
 </package>
 <package name="1725672-4-2.54">
 <description>&lt;b&gt;1725672-4-2.54&lt;/b&gt;&lt;br&gt;</description>
