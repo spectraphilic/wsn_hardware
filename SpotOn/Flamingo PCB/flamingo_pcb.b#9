@@ -365,21 +365,21 @@ FeatherWing</text>
 <text x="139.169" y="-9.142" size="1.016" layer="21" font="vector" ratio="15" rot="R180">GND</text>
 <text x="139.169" y="-6.602" size="1.016" layer="21" font="vector" ratio="15" rot="R180">VCC</text>
 <dimension x1="89" y1="130.5" x2="89" y2="103" x3="93" y3="116.75" textsize="1.778" layer="1"/>
-<wire x1="247.2" y1="155.82" x2="234.5" y2="155.82" width="0.2032" layer="20"/>
-<wire x1="234.5" y1="155.82" x2="234.5" y2="135.5" width="0.2032" layer="20"/>
-<wire x1="234.5" y1="135.5" x2="247.2" y2="135.5" width="0.2032" layer="20"/>
-<wire x1="247.2" y1="135.5" x2="247.2" y2="155.82" width="0.2032" layer="20"/>
-<text x="236.88125" y="153.28" size="0.8128" layer="21" font="vector" ratio="15" align="center-left">GND</text>
-<text x="236.88125" y="150.74" size="0.8128" layer="21" font="vector" ratio="15" align="center-left">3.3V</text>
-<text x="236.913" y="148.2" size="0.8128" layer="21" font="vector" ratio="15" align="center-left">SDA</text>
-<text x="236.913" y="145.66" size="0.8128" layer="21" font="vector" ratio="15" align="center-left">SCL</text>
-<text x="244.3425" y="149.7875" size="0.8128" layer="21" font="vector" ratio="15" rot="R90" align="center-left">3.3V</text>
-<text x="244.3425" y="152.9625" size="0.8128" layer="21" font="vector" ratio="15" rot="R90" align="center-left">GND</text>
-<text x="244.3425" y="149.31125" size="0.8128" layer="21" font="vector" ratio="15" rot="R270" align="center-left">SCK</text>
-<text x="244.3425" y="144.39" size="0.8128" layer="21" font="vector" ratio="15" rot="R90" align="center-left">SDO</text>
-<text x="244.3425" y="143.834375" size="0.8128" layer="21" font="vector" ratio="15" rot="R270" align="center-left">SDI</text>
-<text x="244.3425" y="141.05625" size="0.8128" layer="21" font="vector" ratio="15" rot="R270" align="center-left">!CS</text>
-<text x="241.43625" y="146.135" size="1.27" layer="21" font="vector" ratio="15" distance="10" rot="R90" align="center-left">BME
+<wire x1="215.2" y1="103.32" x2="202.5" y2="103.32" width="0.2032" layer="20"/>
+<wire x1="202.5" y1="103.32" x2="202.5" y2="83" width="0.2032" layer="20"/>
+<wire x1="202.5" y1="83" x2="215.2" y2="83" width="0.2032" layer="20"/>
+<wire x1="215.2" y1="83" x2="215.2" y2="103.32" width="0.2032" layer="20"/>
+<text x="204.88125" y="100.78" size="0.8128" layer="21" font="vector" ratio="15" align="center-left">GND</text>
+<text x="204.88125" y="98.24" size="0.8128" layer="21" font="vector" ratio="15" align="center-left">3.3V</text>
+<text x="204.913" y="95.7" size="0.8128" layer="21" font="vector" ratio="15" align="center-left">SDA</text>
+<text x="204.913" y="93.16" size="0.8128" layer="21" font="vector" ratio="15" align="center-left">SCL</text>
+<text x="212.3425" y="97.2875" size="0.8128" layer="21" font="vector" ratio="15" rot="R90" align="center-left">3.3V</text>
+<text x="212.3425" y="100.4625" size="0.8128" layer="21" font="vector" ratio="15" rot="R90" align="center-left">GND</text>
+<text x="212.3425" y="96.81125" size="0.8128" layer="21" font="vector" ratio="15" rot="R270" align="center-left">SCK</text>
+<text x="212.3425" y="91.89" size="0.8128" layer="21" font="vector" ratio="15" rot="R90" align="center-left">SDO</text>
+<text x="212.3425" y="91.334375" size="0.8128" layer="21" font="vector" ratio="15" rot="R270" align="center-left">SDI</text>
+<text x="212.3425" y="88.55625" size="0.8128" layer="21" font="vector" ratio="15" rot="R270" align="center-left">!CS</text>
+<text x="209.43625" y="93.635" size="1.27" layer="21" font="vector" ratio="15" distance="10" rot="R90" align="center-left">BME
 280</text>
 </plain>
 <libraries>
@@ -1100,13 +1100,13 @@ design rules under a new name.</description>
 <attribute name="RS_PRICE-STOCK" value="https://uk.rs-online.com/web/p/products/3924476" x="28.5" y="5" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="32.408159375" y="6.92056875" size="1.27" layer="27" align="center"/>
 </element>
-<element name="STANDOFF1" library="SparkFun-Electromechanical" package="STAND-OFF" value="STAND-OFF" x="240.85" y="138.04" smashed="yes"/>
-<element name="JP10" library="SparkFun-Connectors" package="1X04_NO_SILK" value="" x="235.77" y="153.28" smashed="yes" rot="R270">
-<attribute name="VALUE" x="232.595" y="154.55" size="1.27" layer="27" rot="R270"/>
+<element name="STANDOFF1" library="SparkFun-Electromechanical" package="STAND-OFF" value="STAND-OFF" x="208.85" y="85.54" smashed="yes"/>
+<element name="JP10" library="SparkFun-Connectors" package="1X04_NO_SILK" value="" x="203.77" y="100.78" smashed="yes" rot="R270">
+<attribute name="VALUE" x="200.595" y="102.05" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="JP12" library="SparkFun-Connectors" package="1X06_NO_SILK" value="" x="245.93" y="140.58" smashed="yes" rot="R90">
-<attribute name="PROD_ID" value="CONN-08437" x="245.93" y="140.58" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="249.105" y="139.31" size="1.27" layer="27" rot="R90"/>
+<element name="JP12" library="SparkFun-Connectors" package="1X06_NO_SILK" value="" x="213.93" y="88.08" smashed="yes" rot="R90">
+<attribute name="PROD_ID" value="CONN-08437" x="213.93" y="88.08" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="217.105" y="86.81" size="1.27" layer="27" rot="R90"/>
 </element>
 </elements>
 <signals>
@@ -1134,8 +1134,8 @@ design rules under a new name.</description>
 <wire x1="106.04" y1="94.43" x2="144.14" y2="86.81" width="0" layer="19" extent="1-1"/>
 <wire x1="81" y1="104.7" x2="106.04" y2="94.43" width="0" layer="19" extent="1-1"/>
 <wire x1="212.46" y1="-1.83" x2="213.03" y2="65.73" width="0" layer="19" extent="1-1"/>
-<wire x1="235.77" y1="153.28" x2="213.03" y2="65.73" width="0" layer="19" extent="1-1"/>
-<wire x1="245.93" y1="153.28" x2="235.77" y2="153.28" width="0" layer="19" extent="1-1"/>
+<wire x1="203.77" y1="100.78" x2="213.03" y2="65.73" width="0" layer="19" extent="1-1"/>
+<wire x1="213.93" y1="100.78" x2="203.77" y2="100.78" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="12V">
 <contactref element="J1" pad="4"/>
@@ -1282,8 +1282,8 @@ design rules under a new name.</description>
 <contactref element="MS2" pad="2"/>
 <contactref element="JP10" pad="2"/>
 <contactref element="JP12" pad="5"/>
-<wire x1="235.77" y1="150.74" x2="212.46" y2="-6.91" width="0" layer="19" extent="1-1"/>
-<wire x1="245.93" y1="150.74" x2="235.77" y2="150.74" width="0" layer="19" extent="1-1"/>
+<wire x1="203.77" y1="98.24" x2="212.46" y2="-6.91" width="0" layer="19" extent="1-1"/>
+<wire x1="213.93" y1="98.24" x2="203.77" y2="98.24" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$25">
 <contactref element="MS2" pad="1"/>
@@ -1377,12 +1377,12 @@ design rules under a new name.</description>
 <signal name="SDI/SDA">
 <contactref element="JP10" pad="3"/>
 <contactref element="JP12" pad="2"/>
-<wire x1="235.77" y1="148.2" x2="245.93" y2="143.12" width="0" layer="19" extent="1-1"/>
+<wire x1="203.77" y1="95.7" x2="213.93" y2="90.62" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SCK/SCL">
 <contactref element="JP12" pad="4"/>
 <contactref element="JP10" pad="4"/>
-<wire x1="235.77" y1="145.66" x2="245.93" y2="148.2" width="0" layer="19" extent="1-1"/>
+<wire x1="203.77" y1="93.16" x2="213.93" y2="95.7" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SDO/ADR">
 <contactref element="JP12" pad="3"/>

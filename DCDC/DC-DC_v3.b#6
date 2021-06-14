@@ -3247,6 +3247,24 @@ by exp-lbrs.ulp</description>
 </package>
 </packages>
 </library>
+<library name="XT60">
+<packages>
+<package name="XT60">
+<pad name="+" x="4.5" y="0" drill="5" diameter="6.2" shape="octagon"/>
+<pad name="-" x="11.5" y="0" drill="5" diameter="6.2" shape="octagon"/>
+<wire x1="0" y1="4" x2="12" y2="4" width="0.127" layer="21"/>
+<wire x1="15.5" y1="1.5" x2="15.5" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="12" y1="4" x2="15.5" y2="1.5" width="0.127" layer="21"/>
+<wire x1="15.5" y1="-1.5" x2="12" y2="-4" width="0.127" layer="21"/>
+<wire x1="12" y1="-4" x2="0" y2="-4" width="0.127" layer="21"/>
+<wire x1="0" y1="-4" x2="0" y2="4" width="0.127" layer="21"/>
+<text x="0" y="5.08" size="1.27" layer="25">&gt;NAME</text>
+<text x="0" y="-6.35" size="1.27" layer="27">&gt;VALUE</text>
+<text x="-2.57" y="0.08" size="2.54" layer="21" rot="R270" align="center">+</text>
+<text x="16.92" y="0.08" size="2.54" layer="21" rot="R270" align="center">-</text>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -3487,6 +3505,10 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <attribute name="RS_PART_NUMBER" value="3909045" x="3.175" y="20.32" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="RS_PRICE-STOCK" value="https://uk.rs-online.com/web/p/products/3909045" x="3.175" y="20.32" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="8.255" y="13.97" size="1.27" layer="27" rot="R270" align="center"/>
+</element>
+<element name="U$1" library="XT60" package="XT60" value="XT60" x="1.27" y="-19.05" smashed="yes" rot="R90">
+<attribute name="NAME" x="-3.81" y="-19.05" size="1.27" layer="25" rot="R90"/>
+<attribute name="VALUE" x="7.62" y="-19.05" size="1.27" layer="27" rot="R90"/>
 </element>
 </elements>
 <signals>
