@@ -6632,19 +6632,17 @@ This is the mechanical footprint for a #4 phillips button head screw. Use the ke
 <wire x1="73.66" y1="172.72" x2="60.96" y2="172.72" width="0.1524" layer="91"/>
 <label x="60.96" y="172.72" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="MS2" gate="G$1" pin="!RESET"/>
+<wire x1="147.32" y1="109.22" x2="147.32" y2="111.76" width="0.1524" layer="91"/>
+<label x="147.32" y="109.22" size="1.27" layer="95" rot="R270" xref="yes"/>
+</segment>
 </net>
 <net name="EN" class="0">
 <segment>
 <wire x1="17.78" y1="170.18" x2="38.1" y2="170.18" width="0.1524" layer="91"/>
 <pinref part="JP9" gate="G$1" pin="2"/>
 <label x="17.78" y="170.18" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$25" class="0">
-<segment>
-<pinref part="MS2" gate="G$1" pin="!RESET"/>
-<wire x1="147.32" y1="109.22" x2="147.32" y2="111.76" width="0.1524" layer="91"/>
-<label x="147.32" y="109.22" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
 </net>
 <net name="RST" class="0">
@@ -6654,14 +6652,14 @@ This is the mechanical footprint for a #4 phillips button head screw. Use the ke
 <label x="149.86" y="76.2" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="MS2" gate="G$1" pin="GPIO11"/>
-<wire x1="170.18" y1="162.56" x2="170.18" y2="154.94" width="0.1524" layer="91"/>
-<label x="170.18" y="162.56" size="1.27" layer="95" rot="R90" xref="yes"/>
-</segment>
-<segment>
 <wire x1="38.1" y1="160.02" x2="17.78" y2="160.02" width="0.1524" layer="91"/>
 <label x="17.78" y="160.02" size="1.778" layer="95"/>
 <pinref part="JP9" gate="G$1" pin="6"/>
+</segment>
+<segment>
+<pinref part="MS2" gate="G$1" pin="GPIO6"/>
+<wire x1="177.8" y1="162.56" x2="177.8" y2="154.94" width="0.1524" layer="91"/>
+<label x="177.8" y="162.56" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 <net name="CS" class="0">
@@ -6671,14 +6669,14 @@ This is the mechanical footprint for a #4 phillips button head screw. Use the ke
 <label x="149.86" y="78.74" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="MS2" gate="G$1" pin="GPIO10"/>
-<wire x1="172.72" y1="162.56" x2="172.72" y2="154.94" width="0.1524" layer="91"/>
-<label x="172.72" y="162.56" size="1.27" layer="95" rot="R90" xref="yes"/>
-</segment>
-<segment>
 <wire x1="17.78" y1="157.48" x2="38.1" y2="157.48" width="0.1524" layer="91"/>
 <label x="17.78" y="157.48" size="1.778" layer="95"/>
 <pinref part="JP9" gate="G$1" pin="7"/>
+</segment>
+<segment>
+<pinref part="MS2" gate="G$1" pin="GPIO5"/>
+<wire x1="180.34" y1="162.56" x2="180.34" y2="154.94" width="0.1524" layer="91"/>
+<label x="180.34" y="162.56" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 <net name="IRQ" class="0">
@@ -6688,14 +6686,14 @@ This is the mechanical footprint for a #4 phillips button head screw. Use the ke
 <label x="149.86" y="81.28" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="MS2" gate="G$1" pin="GPIO6"/>
-<wire x1="177.8" y1="162.56" x2="177.8" y2="154.94" width="0.1524" layer="91"/>
-<label x="177.8" y="162.56" size="1.27" layer="95" rot="R90" xref="yes"/>
-</segment>
-<segment>
 <wire x1="17.78" y1="152.4" x2="38.1" y2="152.4" width="0.1524" layer="91"/>
 <label x="17.78" y="152.4" size="1.778" layer="95"/>
 <pinref part="JP9" gate="G$1" pin="9"/>
+</segment>
+<segment>
+<pinref part="MS2" gate="G$1" pin="GPIO10"/>
+<wire x1="172.72" y1="162.56" x2="172.72" y2="154.94" width="0.1524" layer="91"/>
+<label x="172.72" y="162.56" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 <net name="ANT" class="0">
@@ -6808,13 +6806,6 @@ This is the mechanical footprint for a #4 phillips button head screw. Use the ke
 <label x="175.26" y="162.56" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
-<net name="E" class="0">
-<segment>
-<pinref part="MS2" gate="G$1" pin="GPIO5"/>
-<wire x1="180.34" y1="162.56" x2="180.34" y2="154.94" width="0.1524" layer="91"/>
-<label x="180.34" y="162.56" size="1.27" layer="95" rot="R90" xref="yes"/>
-</segment>
-</net>
 <net name="NC" class="0">
 <segment>
 <pinref part="MS2" gate="G$1" pin="NC"/>
@@ -6872,6 +6863,13 @@ This is the mechanical footprint for a #4 phillips button head screw. Use the ke
 <wire x1="101.6" y1="25.4" x2="104.14" y2="25.4" width="0.1524" layer="91"/>
 <pinref part="JP14" gate="G$1" pin="2"/>
 <label x="104.14" y="25.4" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="E" class="0">
+<segment>
+<pinref part="MS2" gate="G$1" pin="GPIO11"/>
+<wire x1="170.18" y1="162.56" x2="170.18" y2="154.94" width="0.1524" layer="91"/>
+<label x="170.18" y="162.56" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 </nets>
