@@ -1,0 +1,24 @@
+# 'EAGLE Version 9.6.2 Copyright (c) 1988-2020 Autodesk, Inc.;
+
+SET UNDO_LOG OFF;
+# Migrate parts to '//kant/geo-geohyd-u1/johnhh/pc/Dokumenter/GitHub/wsn_hardware/Ablamtometer/Ablatometer Keller 7LD.lbr'
+USE -*;
+USE '//kant/geo-geohyd-u1/johnhh/pc/Dokumenter/GitHub/wsn_hardware/Ablamtometer/Ablatometer Keller 7LD.lbr';
+#
+# SHEET 1 - MIGRATE PARTS
+#
+EDIT .s1
+REPLACE GND1 SUPPLY1_GND;
+REPLACE GND2 SUPPLY1_GND;
+REPLACE GND3 SUPPLY1_GND;
+REPLACE Q1 154N_NAU7802_TH_QTPY;
+REPLACE U$1 UIO-JOHN_KELLER_7LD;
+REPLACE U$2 MICROBUILDER_3.3V;
+REPLACE U$3 UIO-JOHN_WIRE_PADS;
+REPLACE U$4 MICROBUILDER_3.3V;
+REPLACE U$7 MICROBUILDER_3.3V;
+REPLACE U$8 MICROBUILDER_3.3V;
+EDIT .s1
+SET UNDO_LOG ON;
+# Put all libraries back into use
+USE *;

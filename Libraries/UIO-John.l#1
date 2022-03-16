@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -21959,46 +21959,69 @@
 <wire x1="8.5" y1="25.762" x2="8.5" y2="2.5" width="0.127" layer="21"/>
 <wire x1="8.5" y1="2.5" x2="-8.5" y2="2.5" width="0.127" layer="21"/>
 <wire x1="-8.5" y1="2.5" x2="-8.5" y2="25.762" width="0.127" layer="21"/>
-<pad name="101" x="-19.05" y="39.37" drill="1" diameter="1.52"/>
-<pad name="102" x="-19.05" y="36.83" drill="1" diameter="1.52"/>
-<pad name="103" x="-19.05" y="34.29" drill="1" diameter="1.52"/>
-<pad name="104" x="-19.05" y="31.75" drill="1" diameter="1.52"/>
-<pad name="105" x="-19.05" y="29.21" drill="1" diameter="1.52"/>
-<pad name="106" x="-19.05" y="26.67" drill="1" diameter="1.52"/>
-<pad name="107" x="-19.05" y="24.13" drill="1" diameter="1.52"/>
-<pad name="108" x="-19.05" y="21.59" drill="1" diameter="1.52"/>
-<pad name="109" x="-19.05" y="19.05" drill="1" diameter="1.52"/>
-<pad name="110" x="-19.05" y="16.51" drill="1" diameter="1.52"/>
-<pad name="111" x="-19.05" y="13.97" drill="1" diameter="1.52"/>
-<pad name="112" x="-19.05" y="11.43" drill="1" diameter="1.52"/>
-<pad name="113" x="-19.05" y="8.89" drill="1" diameter="1.52"/>
-<pad name="114" x="-19.05" y="6.35" drill="1" diameter="1.52"/>
-<pad name="115" x="-19.05" y="3.81" drill="1" diameter="1.52"/>
-<pad name="116" x="-19.05" y="1.27" drill="1" diameter="1.52"/>
-<pad name="117" x="-19.05" y="-1.27" drill="1" diameter="1.52"/>
-<pad name="118" x="-19.05" y="-3.81" drill="1" diameter="1.52"/>
-<pad name="119" x="-19.05" y="-6.35" drill="1" diameter="1.52"/>
-<pad name="138" x="19.05" y="39.37" drill="1" diameter="1.52"/>
-<pad name="137" x="19.05" y="36.83" drill="1" diameter="1.52"/>
-<pad name="136" x="19.05" y="34.29" drill="1" diameter="1.52"/>
-<pad name="135" x="19.05" y="31.75" drill="1" diameter="1.52"/>
-<pad name="134" x="19.05" y="29.21" drill="1" diameter="1.52"/>
-<pad name="133" x="19.05" y="26.67" drill="1" diameter="1.52"/>
-<pad name="132" x="19.05" y="24.13" drill="1" diameter="1.52"/>
-<pad name="131" x="19.05" y="21.59" drill="1" diameter="1.52"/>
-<pad name="130" x="19.05" y="19.05" drill="1" diameter="1.52"/>
-<pad name="129" x="19.05" y="16.51" drill="1" diameter="1.52"/>
-<pad name="128" x="19.05" y="13.97" drill="1" diameter="1.52"/>
-<pad name="127" x="19.05" y="11.43" drill="1" diameter="1.52"/>
-<pad name="126" x="19.05" y="8.89" drill="1" diameter="1.52"/>
-<pad name="125" x="19.05" y="6.35" drill="1" diameter="1.52"/>
-<pad name="124" x="19.05" y="3.81" drill="1" diameter="1.52"/>
-<pad name="123" x="19.05" y="1.27" drill="1" diameter="1.52"/>
-<pad name="122" x="19.05" y="-1.27" drill="1" diameter="1.52"/>
-<pad name="121" x="19.05" y="-3.81" drill="1" diameter="1.52"/>
-<dimension x1="-21.59" y1="-8.89" x2="21.59" y2="-8.89" x3="0" y3="-11.43" textsize="1.27" layer="21" unit="inch"/>
-<dimension x1="-21.59" y1="-8.89" x2="-21.59" y2="41.91" x3="-24.13" y3="16.51" textsize="1.27" layer="21" unit="inch"/>
-<pad name="120" x="19.05" y="-6.35" drill="1" diameter="1.52"/>
+<pad name="101" x="-19.05" y="34.29" drill="1" diameter="1.52"/>
+<pad name="102" x="-19.05" y="31.75" drill="1" diameter="1.52"/>
+<pad name="103" x="-19.05" y="29.21" drill="1" diameter="1.52"/>
+<pad name="104" x="-19.05" y="26.67" drill="1" diameter="1.52"/>
+<pad name="105" x="-19.05" y="24.13" drill="1" diameter="1.52"/>
+<pad name="106" x="-19.05" y="21.59" drill="1" diameter="1.52"/>
+<pad name="107" x="-19.05" y="19.05" drill="1" diameter="1.52"/>
+<pad name="108" x="-19.05" y="16.51" drill="1" diameter="1.52"/>
+<pad name="109" x="-19.05" y="13.97" drill="1" diameter="1.52"/>
+<pad name="110" x="-19.05" y="11.43" drill="1" diameter="1.52"/>
+<pad name="111" x="-19.05" y="8.89" drill="1" diameter="1.52"/>
+<pad name="112" x="-19.05" y="6.35" drill="1" diameter="1.52"/>
+<pad name="113" x="-19.05" y="3.81" drill="1" diameter="1.52"/>
+<pad name="114" x="-19.05" y="1.27" drill="1" diameter="1.52"/>
+<pad name="115" x="-19.05" y="-1.27" drill="1" diameter="1.52"/>
+<pad name="116" x="-19.05" y="-3.81" drill="1" diameter="1.52"/>
+<pad name="117" x="-19.05" y="-6.35" drill="1" diameter="1.52"/>
+<pad name="118" x="-19.05" y="-8.89" drill="1" diameter="1.52"/>
+<pad name="119" x="-19.05" y="-11.43" drill="1" diameter="1.52"/>
+<pad name="138" x="19.05" y="34.29" drill="1" diameter="1.52"/>
+<pad name="137" x="19.05" y="31.75" drill="1" diameter="1.52"/>
+<pad name="136" x="19.05" y="29.21" drill="1" diameter="1.52"/>
+<pad name="135" x="19.05" y="26.67" drill="1" diameter="1.52"/>
+<pad name="134" x="19.05" y="24.13" drill="1" diameter="1.52"/>
+<pad name="133" x="19.05" y="21.59" drill="1" diameter="1.52"/>
+<pad name="132" x="19.05" y="19.05" drill="1" diameter="1.52"/>
+<pad name="131" x="19.05" y="16.51" drill="1" diameter="1.52"/>
+<pad name="130" x="19.05" y="13.97" drill="1" diameter="1.52"/>
+<pad name="129" x="19.05" y="11.43" drill="1" diameter="1.52"/>
+<pad name="128" x="19.05" y="8.89" drill="1" diameter="1.52"/>
+<pad name="127" x="19.05" y="6.35" drill="1" diameter="1.52"/>
+<pad name="126" x="19.05" y="3.81" drill="1" diameter="1.52"/>
+<pad name="125" x="19.05" y="1.27" drill="1" diameter="1.52"/>
+<pad name="124" x="19.05" y="-1.27" drill="1" diameter="1.52"/>
+<pad name="123" x="19.05" y="-3.81" drill="1" diameter="1.52"/>
+<pad name="122" x="19.05" y="-6.35" drill="1" diameter="1.52"/>
+<pad name="121" x="19.05" y="-8.89" drill="1" diameter="1.52"/>
+<dimension x1="-21.59" y1="-13.97" x2="21.59" y2="-13.97" x3="0" y3="-16.51" textsize="1.27" layer="21" unit="inch"/>
+<dimension x1="-21.59" y1="-13.97" x2="-21.59" y2="36.83" x3="-24.13" y3="11.43" textsize="1.27" layer="21" unit="inch"/>
+<pad name="120" x="19.05" y="-11.43" drill="1" diameter="1.52"/>
+<wire x1="-21.59" y1="-13.97" x2="-21.59" y2="36.83" width="0.254" layer="21"/>
+<wire x1="-21.59" y1="36.83" x2="21.59" y2="36.83" width="0.254" layer="21"/>
+<wire x1="21.59" y1="36.83" x2="21.59" y2="-13.97" width="0.254" layer="21"/>
+<wire x1="21.59" y1="-13.97" x2="-21.59" y2="-13.97" width="0.254" layer="21"/>
+</package>
+<package name="KELLER_7LD">
+<circle x="0" y="0" radius="2.54" width="0.127" layer="21"/>
+<hole x="-2.54" y="0" drill="0.8"/>
+<hole x="-1.795" y="-1.795" drill="0.8"/>
+<hole x="0" y="-2.54" drill="0.8"/>
+<hole x="1.795" y="-1.795" drill="0.8"/>
+<hole x="2.54" y="0" drill="0.8"/>
+<smd name="EOC" x="-2.54" y="0" dx="1.397" dy="1.397" layer="1" roundness="100"/>
+<smd name="SDA" x="-1.795" y="-1.795" dx="1.397" dy="1.397" layer="1" roundness="100"/>
+<smd name="SUP" x="0" y="-2.54" dx="1.397" dy="1.397" layer="1" roundness="100"/>
+<smd name="SCL" x="1.795" y="-1.795" dx="1.397" dy="1.397" layer="1" roundness="100"/>
+<smd name="GND" x="2.54" y="0" dx="1.397" dy="1.397" layer="1" roundness="100"/>
+</package>
+<package name="WIRE_PADS">
+<smd name="3.3V" x="-2" y="0" dx="6.5" dy="2" layer="1" rot="R90"/>
+<smd name="GND" x="2" y="0" dx="6.5" dy="2" layer="1" rot="R90"/>
+<smd name="TX" x="6" y="0" dx="6.5" dy="2" layer="1" rot="R90"/>
+<smd name="RX" x="-6" y="0" dx="6.5" dy="2" layer="1" rot="R90"/>
 </package>
 </packages>
 <symbols>
@@ -39529,6 +39552,27 @@
 <text x="5.08" y="0" size="1.27" layer="94" rot="R270" align="center">Bulgin PX0413 6S PC</text>
 <pin name="6" x="-7.62" y="-12.7" length="middle"/>
 </symbol>
+<symbol name="KELLER_7LD">
+<wire x1="-5.08" y1="12.7" x2="-5.08" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-12.7" x2="5.08" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="5.08" y1="12.7" x2="-5.08" y2="12.7" width="0.254" layer="94"/>
+<pin name="EOC" x="-10.16" y="-5.08" length="middle"/>
+<pin name="SDA" x="-10.16" y="5.08" length="middle"/>
+<pin name="SUP" x="-10.16" y="10.16" length="middle"/>
+<pin name="SCL" x="-10.16" y="0" length="middle"/>
+<pin name="GND" x="-10.16" y="-10.16" length="middle"/>
+<wire x1="5.08" y1="-12.7" x2="5.08" y2="12.7" width="0.254" layer="94"/>
+</symbol>
+<symbol name="WIRE_PADS">
+<pin name="3.3V" x="-7.62" y="7.62" length="middle"/>
+<pin name="RX" x="-7.62" y="2.54" length="middle"/>
+<pin name="TX" x="-7.62" y="-2.54" length="middle"/>
+<pin name="GND" x="-7.62" y="-7.62" length="middle"/>
+<wire x1="-2.54" y1="10.16" x2="-2.54" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-10.16" x2="5.08" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-10.16" x2="5.08" y2="10.16" width="0.254" layer="94"/>
+<wire x1="5.08" y1="10.16" x2="-2.54" y2="10.16" width="0.254" layer="94"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="DS18B20_0.05">
@@ -39869,6 +39913,43 @@ Li-Ion/Li Polymer Advanced Single-Cell Battery Protector IC Family</description>
 <connect gate="G$1" pin="4" pad="4"/>
 <connect gate="G$1" pin="5" pad="5"/>
 <connect gate="G$1" pin="6" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="KELLER_7LD">
+<gates>
+<gate name="G$1" symbol="KELLER_7LD" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="KELLER_7LD">
+<connects>
+<connect gate="G$1" pin="EOC" pad="EOC"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="SCL" pad="SCL"/>
+<connect gate="G$1" pin="SDA" pad="SDA"/>
+<connect gate="G$1" pin="SUP" pad="SUP"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="WIRE_PADS">
+<gates>
+<gate name="G$1" symbol="WIRE_PADS" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="WIRE_PADS">
+<connects>
+<connect gate="G$1" pin="3.3V" pad="3.3V"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="RX" pad="RX"/>
+<connect gate="G$1" pin="TX" pad="TX"/>
 </connects>
 <technologies>
 <technology name=""/>
