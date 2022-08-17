@@ -367,11 +367,17 @@ by exp-lbrs.ulp</description>
 <hole x="0" y="-2.54" drill="0.8"/>
 <hole x="1.795" y="-1.795" drill="0.8"/>
 <hole x="2.54" y="0" drill="0.8"/>
-<smd name="EOC" x="-2.54" y="0.635" dx="1.27" dy="2.54" layer="1" roundness="100"/>
-<smd name="SDA" x="-1.795" y="-2.43" dx="1.27" dy="2.54" layer="1" roundness="100"/>
-<smd name="SUP" x="0" y="-3.175" dx="1.27" dy="2.54" layer="1" roundness="100"/>
-<smd name="SCL" x="1.795" y="-2.43" dx="1.27" dy="2.54" layer="1" roundness="100"/>
-<smd name="GND" x="2.54" y="0.635" dx="1.27" dy="2.54" layer="1" roundness="100"/>
+<smd name="EOC" x="-2.54" y="0" dx="1.397" dy="1.397" layer="1" roundness="100"/>
+<smd name="SDA" x="-1.795" y="-1.795" dx="1.397" dy="1.397" layer="1" roundness="100"/>
+<smd name="SUP" x="0" y="-2.54" dx="1.397" dy="1.397" layer="1" roundness="100"/>
+<smd name="SCL" x="1.795" y="-1.795" dx="1.397" dy="1.397" layer="1" roundness="100"/>
+<smd name="GND" x="2.54" y="0" dx="1.397" dy="1.397" layer="1" roundness="100"/>
+</package>
+<package name="WIRE_PADS">
+<smd name="3.3V" x="-2" y="0" dx="6" dy="2" layer="1" rot="R90"/>
+<smd name="GND" x="2" y="0" dx="6" dy="2" layer="1" rot="R90"/>
+<smd name="TX" x="6" y="0" dx="6" dy="2" layer="1" rot="R90"/>
+<smd name="RX" x="-6" y="0" dx="6" dy="2" layer="1" rot="R90"/>
 </package>
 </packages>
 <symbols>
@@ -385,6 +391,16 @@ by exp-lbrs.ulp</description>
 <pin name="SCL" x="-10.16" y="0" length="middle"/>
 <pin name="GND" x="-10.16" y="-10.16" length="middle"/>
 <wire x1="5.08" y1="-12.7" x2="5.08" y2="12.7" width="0.254" layer="94"/>
+</symbol>
+<symbol name="WIRE_PADS">
+<pin name="3.3V" x="-7.62" y="7.62" length="middle"/>
+<pin name="RX" x="-7.62" y="2.54" length="middle"/>
+<pin name="TX" x="-7.62" y="-2.54" length="middle"/>
+<pin name="GND" x="-7.62" y="-7.62" length="middle"/>
+<wire x1="-2.54" y1="10.16" x2="-2.54" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-10.16" x2="5.08" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-10.16" x2="5.08" y2="10.16" width="0.254" layer="94"/>
+<wire x1="5.08" y1="10.16" x2="-2.54" y2="10.16" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -400,6 +416,24 @@ by exp-lbrs.ulp</description>
 <connect gate="G$1" pin="SCL" pad="SCL"/>
 <connect gate="G$1" pin="SDA" pad="SDA"/>
 <connect gate="G$1" pin="SUP" pad="SUP"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="WIRE_PADS">
+<gates>
+<gate name="G$1" symbol="WIRE_PADS" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="WIRE_PADS">
+<connects>
+<connect gate="G$1" pin="3.3V" pad="3.3V"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="RX" pad="RX"/>
+<connect gate="G$1" pin="TX" pad="TX"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -430,6 +464,9 @@ by exp-lbrs.ulp</description>
 <part name="U$1" library="UIO-John" deviceset="KELLER_7LD" device=""/>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="U$2" library="microbuilder" deviceset="3.3V" device=""/>
+<part name="U$3" library="UIO-John" deviceset="WIRE_PADS" device=""/>
+<part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="U$4" library="microbuilder" deviceset="3.3V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -450,6 +487,11 @@ by exp-lbrs.ulp</description>
 <attribute name="VALUE" x="104.14" y="27.94" size="1.778" layer="96" rot="MR0"/>
 </instance>
 <instance part="U$2" gate="G$1" x="101.6" y="60.96" smashed="yes"/>
+<instance part="U$3" gate="G$1" x="111.76" y="-10.16" smashed="yes"/>
+<instance part="GND3" gate="1" x="93.98" y="-22.86" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="96.52" y="-25.4" size="1.778" layer="96" rot="MR0"/>
+</instance>
+<instance part="U$4" gate="G$1" x="93.98" y="2.54" smashed="yes"/>
 </instances>
 <busses>
 </busses>
@@ -467,6 +509,12 @@ by exp-lbrs.ulp</description>
 <wire x1="101.6" y1="35.56" x2="101.6" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="GND1" gate="1" pin="GND"/>
 </segment>
+<segment>
+<wire x1="93.98" y1="-17.78" x2="93.98" y2="-20.32" width="0.1524" layer="91"/>
+<pinref part="GND3" gate="1" pin="GND"/>
+<pinref part="U$3" gate="G$1" pin="GND"/>
+<wire x1="104.14" y1="-17.78" x2="93.98" y2="-17.78" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="SCL" class="0">
 <segment>
@@ -475,9 +523,9 @@ by exp-lbrs.ulp</description>
 <label x="17.78" y="38.1" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<label x="96.52" y="45.72" size="1.27" layer="95" rot="R180" xref="yes"/>
+<label x="101.6" y="45.72" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="U$1" gate="G$1" pin="SCL"/>
-<wire x1="109.22" y1="45.72" x2="96.52" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="45.72" x2="101.6" y2="45.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SDA" class="0">
@@ -487,10 +535,8 @@ by exp-lbrs.ulp</description>
 <label x="17.78" y="40.64" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<wire x1="101.6" y1="48.26" x2="96.52" y2="48.26" width="0.1524" layer="91"/>
-<label x="96.52" y="48.26" size="1.27" layer="95" rot="R180" xref="yes"/>
+<label x="101.6" y="50.8" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="U$1" gate="G$1" pin="SDA"/>
-<wire x1="101.6" y1="48.26" x2="101.6" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="101.6" y1="50.8" x2="109.22" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -508,6 +554,13 @@ by exp-lbrs.ulp</description>
 <wire x1="101.6" y1="55.88" x2="101.6" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="SUP"/>
 <wire x1="109.22" y1="55.88" x2="101.6" y2="55.88" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$4" gate="G$1" pin="3.3V"/>
+<label x="93.98" y="2.54" size="1.778" layer="95"/>
+<wire x1="93.98" y1="-2.54" x2="93.98" y2="0" width="0.1524" layer="91"/>
+<pinref part="U$3" gate="G$1" pin="3.3V"/>
+<wire x1="104.14" y1="-2.54" x2="93.98" y2="-2.54" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="INT" class="0">
@@ -530,12 +583,22 @@ by exp-lbrs.ulp</description>
 <wire x1="22.86" y1="35.56" x2="17.78" y2="35.56" width="0.1524" layer="91"/>
 <label x="17.78" y="35.56" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<pinref part="U$3" gate="G$1" pin="TX"/>
+<wire x1="104.14" y1="-12.7" x2="93.98" y2="-12.7" width="0.1524" layer="91"/>
+<label x="93.98" y="-12.7" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="RX_A7" class="0">
 <segment>
 <pinref part="Q1" gate="1" pin="RX/A7/D7"/>
 <wire x1="58.42" y1="35.56" x2="63.5" y2="35.56" width="0.1524" layer="91"/>
 <label x="63.5" y="35.56" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U$3" gate="G$1" pin="RX"/>
+<wire x1="104.14" y1="-7.62" x2="93.98" y2="-7.62" width="0.1524" layer="91"/>
+<label x="93.98" y="-7.62" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="MOSI" class="0">

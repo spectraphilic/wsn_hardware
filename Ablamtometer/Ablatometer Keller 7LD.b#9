@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.5" unitdist="mm" unit="mm" style="dots" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
@@ -192,26 +192,26 @@
 <wire x1="-10" y1="90" x2="-10" y2="20" width="0" layer="20"/>
 <wire x1="-10" y1="20" x2="10" y2="20" width="0" layer="20"/>
 <wire x1="10" y1="20" x2="10" y2="90" width="0" layer="20"/>
-<wire x1="8.75" y1="83" x2="-8.75" y2="83" width="0" layer="20"/>
-<wire x1="-8.75" y1="83" x2="-8.75" y2="62" width="0" layer="20"/>
-<wire x1="-8.75" y1="62" x2="8.75" y2="62" width="0" layer="20"/>
-<wire x1="8.75" y1="62" x2="8.75" y2="83" width="0" layer="20"/>
-<circle x="0" y="54" radius="2.5" width="0" layer="20"/>
-<circle x="0" y="26" radius="2.5" width="0" layer="20"/>
-<circle x="0" y="54" radius="6" width="0" layer="20"/>
-<circle x="0" y="26" radius="6" width="0" layer="20"/>
-<circle x="0" y="54" radius="2.1" width="0" layer="20"/>
-<circle x="0" y="26" radius="2.1" width="0" layer="20"/>
-<circle x="-2.54" y="40" radius="0.4" width="0" layer="20"/>
-<circle x="-2.54" y="40" radius="0.4" width="0" layer="20"/>
-<circle x="-1.79605" y="38.20395" radius="0.4" width="0" layer="20"/>
-<circle x="-1.79605" y="38.20395" radius="0.4" width="0" layer="20"/>
-<circle x="0" y="37.46" radius="0.4" width="0" layer="20"/>
-<circle x="0" y="37.46" radius="0.4" width="0" layer="20"/>
-<circle x="1.79605" y="38.20395" radius="0.4" width="0" layer="20"/>
-<circle x="1.79605" y="38.20395" radius="0.4" width="0" layer="20"/>
-<circle x="2.54" y="40" radius="0.4" width="0" layer="20"/>
-<circle x="2.54" y="40" radius="0.4" width="0" layer="20"/>
+<wire x1="8.75" y1="83" x2="-8.75" y2="83" width="0" layer="48"/>
+<wire x1="-8.75" y1="83" x2="-8.75" y2="62" width="0" layer="48"/>
+<wire x1="-8.75" y1="62" x2="8.75" y2="62" width="0" layer="48"/>
+<wire x1="8.75" y1="62" x2="8.75" y2="83" width="0" layer="48"/>
+<circle x="0" y="54" radius="2.5" width="0.1" layer="48"/>
+<circle x="0" y="26" radius="2.5" width="0.1" layer="48"/>
+<circle x="0" y="54" radius="6" width="0.1" layer="48"/>
+<circle x="0" y="26" radius="6" width="0.1" layer="48"/>
+<circle x="0" y="54" radius="2.1" width="0" layer="45"/>
+<circle x="0" y="26" radius="2.1" width="0" layer="45"/>
+<circle x="-2.54" y="40" radius="0.4" width="0.1" layer="48"/>
+<circle x="-2.54" y="40" radius="0.4" width="0.1" layer="48"/>
+<circle x="-1.79605" y="38.20395" radius="0.4" width="0.1" layer="48"/>
+<circle x="-1.79605" y="38.20395" radius="0.4" width="0.1" layer="48"/>
+<circle x="0" y="37.46" radius="0.4" width="0.1" layer="48"/>
+<circle x="0" y="37.46" radius="0.4" width="0.1" layer="48"/>
+<circle x="1.79605" y="38.20395" radius="0.4" width="0.1" layer="48"/>
+<circle x="1.79605" y="38.20395" radius="0.4" width="0.1" layer="48"/>
+<circle x="2.54" y="40" radius="0.4" width="0.1" layer="48"/>
+<circle x="2.54" y="40" radius="0.4" width="0.1" layer="48"/>
 </plain>
 <libraries>
 <library name="154N_NAU7802_TH">

@@ -252,112 +252,6 @@
 </deviceset>
 </devicesets>
 </library>
-<library name="154N_NAU7802_TH">
-<description>Generated from &lt;b&gt;154N_NAU7802_TH.sch&lt;/b&gt;&lt;p&gt;
-by exp-lbrs.ulp</description>
-<packages>
-<package name="QTPY">
-<pad name="1" x="-7.62" y="5.08" drill="1" diameter="1.778"/>
-<pad name="2" x="-7.62" y="2.54" drill="1" diameter="1.778"/>
-<pad name="3" x="-7.62" y="0" drill="1" diameter="1.778"/>
-<pad name="4" x="-7.62" y="-2.54" drill="1" diameter="1.778"/>
-<pad name="5" x="-7.62" y="-5.08" drill="1" diameter="1.778"/>
-<pad name="6" x="-7.62" y="-7.62" drill="1" diameter="1.778"/>
-<pad name="0" x="-7.62" y="7.62" drill="1" diameter="1.778"/>
-<text x="0" y="3.81" size="1.27" layer="25" ratio="18" align="center">&gt;NAME</text>
-<text x="0" y="-3.81" size="1.27" layer="27" ratio="10" align="center">&gt;VALUE</text>
-<smd name="1C" x="-8.255" y="5.08" dx="3.048" dy="1.778" layer="1" roundness="100" cream="no"/>
-<smd name="2C" x="-8.255" y="2.54" dx="3.048" dy="1.778" layer="1" roundness="100" cream="no"/>
-<smd name="3C" x="-8.255" y="0" dx="3.048" dy="1.778" layer="1" roundness="100" cream="no"/>
-<smd name="4C" x="-8.255" y="-2.54" dx="3.048" dy="1.778" layer="1" roundness="100" cream="no"/>
-<smd name="5C" x="-8.255" y="-5.08" dx="3.048" dy="1.778" layer="1" roundness="100" cream="no"/>
-<smd name="6C" x="-8.255" y="-7.62" dx="3.048" dy="1.778" layer="1" roundness="100" cream="no"/>
-<smd name="0C" x="-8.255" y="7.62" dx="3.048" dy="1.778" layer="1" roundness="100" cream="no"/>
-<pad name="8" x="7.62" y="-5.08" drill="1" diameter="1.778" rot="R180"/>
-<pad name="9" x="7.62" y="-2.54" drill="1" diameter="1.778" rot="R180"/>
-<pad name="10" x="7.62" y="0" drill="1" diameter="1.778" rot="R180"/>
-<pad name="11" x="7.62" y="2.54" drill="1" diameter="1.778" rot="R180"/>
-<pad name="12" x="7.62" y="5.08" drill="1" diameter="1.778" rot="R180"/>
-<pad name="13" x="7.62" y="7.62" drill="1" diameter="1.778" rot="R180"/>
-<pad name="7" x="7.62" y="-7.62" drill="1" diameter="1.778" rot="R180"/>
-<smd name="8C" x="8.255" y="-5.08" dx="3.048" dy="1.778" layer="1" roundness="100" rot="R180" cream="no"/>
-<smd name="9C" x="8.255" y="-2.54" dx="3.048" dy="1.778" layer="1" roundness="100" rot="R180" cream="no"/>
-<smd name="10C" x="8.255" y="0" dx="3.048" dy="1.778" layer="1" roundness="100" rot="R180" cream="no"/>
-<smd name="11C" x="8.255" y="2.54" dx="3.048" dy="1.778" layer="1" roundness="100" rot="R180" cream="no"/>
-<smd name="12C" x="8.255" y="5.08" dx="3.048" dy="1.778" layer="1" roundness="100" rot="R180" cream="no"/>
-<smd name="13C" x="8.255" y="7.62" dx="3.048" dy="1.778" layer="1" roundness="100" rot="R180" cream="no"/>
-<smd name="7C" x="8.255" y="-7.62" dx="3.048" dy="1.778" layer="1" roundness="100" rot="R180" cream="no"/>
-<wire x1="8.89" y1="7.8105" x2="8.89" y2="-7.8105" width="0.1524" layer="21"/>
-<wire x1="6.35" y1="-10.3505" x2="-6.35" y2="-10.3505" width="0.1524" layer="21"/>
-<wire x1="-8.89" y1="-7.8105" x2="-8.89" y2="7.8105" width="0.1524" layer="21"/>
-<wire x1="-6.35" y1="10.3505" x2="-4.445" y2="10.3505" width="0.1524" layer="21"/>
-<wire x1="-4.445" y1="10.3505" x2="4.445" y2="10.3505" width="0.1524" layer="21"/>
-<wire x1="4.445" y1="10.3505" x2="6.35" y2="10.3505" width="0.1524" layer="21"/>
-<wire x1="-8.89" y1="7.8105" x2="-6.35" y2="10.3505" width="0.127" layer="21" curve="-90"/>
-<wire x1="6.35" y1="10.3505" x2="8.89" y2="7.8105" width="0.127" layer="21" curve="-90"/>
-<wire x1="8.89" y1="-7.8105" x2="6.35" y2="-10.3505" width="0.127" layer="21" curve="-90"/>
-<wire x1="-6.35" y1="-10.3505" x2="-8.89" y2="-7.8105" width="0.127" layer="21" curve="-90"/>
-<wire x1="4.445" y1="10.3505" x2="4.445" y2="11.43" width="0.127" layer="21"/>
-<wire x1="4.445" y1="11.43" x2="-4.445" y2="11.43" width="0.127" layer="21"/>
-<wire x1="-4.445" y1="11.43" x2="-4.445" y2="10.3505" width="0.127" layer="21"/>
-<text x="0" y="8.89" size="1.27" layer="21" align="center">USB</text>
-</package>
-</packages>
-<symbols>
-<symbol name="QTPY">
-<pin name="A0/D0" x="-17.78" y="7.62" length="middle"/>
-<pin name="A1/D1" x="-17.78" y="5.08" length="middle"/>
-<pin name="A2/D2" x="-17.78" y="2.54" length="middle"/>
-<pin name="A3/D3" x="-17.78" y="0" length="middle"/>
-<pin name="SDA/D4" x="-17.78" y="-2.54" length="middle"/>
-<pin name="SCL/D5" x="-17.78" y="-5.08" length="middle"/>
-<pin name="TX/A6/D6" x="-17.78" y="-7.62" length="middle"/>
-<pin name="RX/A7/D7" x="17.78" y="-7.62" length="middle" rot="R180"/>
-<pin name="SCK/A8/D8" x="17.78" y="-5.08" length="middle" rot="R180"/>
-<pin name="MI/A9/D9" x="17.78" y="-2.54" length="middle" rot="R180"/>
-<pin name="MO/A10/D10" x="17.78" y="0" length="middle" rot="R180"/>
-<pin name="3V" x="17.78" y="2.54" length="middle" rot="R180"/>
-<pin name="GND" x="17.78" y="5.08" length="middle" rot="R180"/>
-<pin name="5V" x="17.78" y="7.62" length="middle" rot="R180"/>
-<wire x1="-12.7" y1="-10.16" x2="-12.7" y2="10.16" width="0.254" layer="94"/>
-<wire x1="-12.7" y1="10.16" x2="12.7" y2="10.16" width="0.254" layer="94"/>
-<wire x1="12.7" y1="10.16" x2="12.7" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="12.7" y1="-10.16" x2="-12.7" y2="-10.16" width="0.254" layer="94"/>
-<text x="0" y="-12.7" size="1.778" layer="96" align="center">&gt;VALUE</text>
-<text x="0" y="12.7" size="1.778" layer="95" align="center">&gt;NAME</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="QTPY" prefix="Q">
-<gates>
-<gate name="1" symbol="QTPY" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="QTPY">
-<connects>
-<connect gate="1" pin="3V" pad="11 11C" route="any"/>
-<connect gate="1" pin="5V" pad="13 13C" route="any"/>
-<connect gate="1" pin="A0/D0" pad="0 0C" route="any"/>
-<connect gate="1" pin="A1/D1" pad="1 1C" route="any"/>
-<connect gate="1" pin="A2/D2" pad="2 2C" route="any"/>
-<connect gate="1" pin="A3/D3" pad="3 3C" route="any"/>
-<connect gate="1" pin="GND" pad="12 12C" route="any"/>
-<connect gate="1" pin="MI/A9/D9" pad="9 9C" route="any"/>
-<connect gate="1" pin="MO/A10/D10" pad="10 10C" route="any"/>
-<connect gate="1" pin="RX/A7/D7" pad="7 7C" route="any"/>
-<connect gate="1" pin="SCK/A8/D8" pad="8 8C" route="any"/>
-<connect gate="1" pin="SCL/D5" pad="5 5C" route="any"/>
-<connect gate="1" pin="SDA/D4" pad="4 4C" route="any"/>
-<connect gate="1" pin="TX/A6/D6" pad="6 6C" route="any"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="UIO-John">
 <packages>
 <package name="KELLER_7LD">
@@ -443,6 +337,98 @@ by exp-lbrs.ulp</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="Ablatometer Keller 7LD">
+<description>Generated from &lt;b&gt;Ablatometer Keller 7LD.sch&lt;/b&gt;&lt;p&gt;
+by exp-lbrs.ulp</description>
+<packages>
+<package name="154N_NAU7802_TH_QTPY">
+<wire x1="8.89" y1="7.8105" x2="8.89" y2="-7.8105" width="0.1524" layer="21"/>
+<wire x1="6.35" y1="-10.3505" x2="-6.35" y2="-10.3505" width="0.1524" layer="21"/>
+<wire x1="-8.89" y1="-7.8105" x2="-8.89" y2="7.8105" width="0.1524" layer="21"/>
+<wire x1="-6.35" y1="10.3505" x2="-4.445" y2="10.3505" width="0.1524" layer="21"/>
+<wire x1="-4.445" y1="10.3505" x2="4.445" y2="10.3505" width="0.1524" layer="21"/>
+<wire x1="4.445" y1="10.3505" x2="6.35" y2="10.3505" width="0.1524" layer="21"/>
+<wire x1="-8.89" y1="7.8105" x2="-6.35" y2="10.3505" width="0.127" layer="21" curve="-90"/>
+<wire x1="6.35" y1="10.3505" x2="8.89" y2="7.8105" width="0.127" layer="21" curve="-90"/>
+<wire x1="8.89" y1="-7.8105" x2="6.35" y2="-10.3505" width="0.127" layer="21" curve="-90"/>
+<wire x1="-6.35" y1="-10.3505" x2="-8.89" y2="-7.8105" width="0.127" layer="21" curve="-90"/>
+<wire x1="4.445" y1="10.3505" x2="4.445" y2="11.43" width="0.127" layer="21"/>
+<wire x1="4.445" y1="11.43" x2="-4.445" y2="11.43" width="0.127" layer="21"/>
+<wire x1="-4.445" y1="11.43" x2="-4.445" y2="10.3505" width="0.127" layer="21"/>
+<smd name="VDDA" x="-8.255" y="7.62" dx="3.048" dy="1.778" layer="1" roundness="100" cream="no"/>
+<smd name="INT" x="-8.255" y="5.08" dx="3.048" dy="1.778" layer="1" roundness="100" cream="no"/>
+<smd name="A2" x="-8.255" y="2.54" dx="3.048" dy="1.778" layer="1" roundness="100" cream="no"/>
+<smd name="A3" x="-8.255" y="0" dx="3.048" dy="1.778" layer="1" roundness="100" cream="no"/>
+<smd name="SDA" x="-8.255" y="-2.54" dx="3.048" dy="1.778" layer="1" roundness="100" cream="no"/>
+<smd name="SCL" x="-8.255" y="-5.08" dx="3.048" dy="1.778" layer="1" roundness="100" cream="no"/>
+<smd name="TX_A6" x="-8.255" y="-7.62" dx="3.048" dy="1.778" layer="1" roundness="100" cream="no"/>
+<smd name="RX_A7" x="8.255" y="-7.62" dx="3.048" dy="1.778" layer="1" roundness="100" rot="R180" cream="no"/>
+<smd name="SCK" x="8.255" y="-5.08" dx="3.048" dy="1.778" layer="1" roundness="100" rot="R180" cream="no"/>
+<smd name="MISO" x="8.255" y="-2.54" dx="3.048" dy="1.778" layer="1" roundness="100" rot="R180" cream="no"/>
+<smd name="MOSI" x="8.255" y="0" dx="3.048" dy="1.778" layer="1" roundness="100" rot="R180" cream="no"/>
+<smd name="3V" x="8.255" y="2.54" dx="3.048" dy="1.778" layer="1" roundness="100" rot="R180" cream="no"/>
+<smd name="GND" x="8.255" y="5.08" dx="3.048" dy="1.778" layer="1" roundness="100" rot="R180" cream="no"/>
+<smd name="5V" x="8.255" y="7.62" dx="3.048" dy="1.778" layer="1" roundness="100" rot="R180" cream="no"/>
+<text x="0" y="3.81" size="1.27" layer="25" ratio="18" align="center">&gt;NAME</text>
+<text x="0" y="-3.81" size="1.27" layer="27" ratio="10" align="center">&gt;VALUE</text>
+<text x="0" y="8.89" size="1.27" layer="21" align="center">USB</text>
+</package>
+</packages>
+<symbols>
+<symbol name="154N_NAU7802_TH_QTPY">
+<wire x1="-12.7" y1="-10.16" x2="-12.7" y2="10.16" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="10.16" x2="12.7" y2="10.16" width="0.254" layer="94"/>
+<wire x1="12.7" y1="10.16" x2="12.7" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-10.16" x2="-12.7" y2="-10.16" width="0.254" layer="94"/>
+<pin name="3V" x="17.78" y="2.54" length="middle" rot="R180"/>
+<pin name="5V" x="17.78" y="7.62" length="middle" rot="R180"/>
+<pin name="A0/D0" x="-17.78" y="7.62" length="middle"/>
+<pin name="A1/D1" x="-17.78" y="5.08" length="middle"/>
+<pin name="A2/D2" x="-17.78" y="2.54" length="middle"/>
+<pin name="A3/D3" x="-17.78" y="0" length="middle"/>
+<pin name="GND" x="17.78" y="5.08" length="middle" rot="R180"/>
+<pin name="MI/A9/D9" x="17.78" y="-2.54" length="middle" rot="R180"/>
+<pin name="MO/A10/D10" x="17.78" y="0" length="middle" rot="R180"/>
+<pin name="RX/A7/D7" x="17.78" y="-7.62" length="middle" rot="R180"/>
+<pin name="SCK/A8/D8" x="17.78" y="-5.08" length="middle" rot="R180"/>
+<pin name="SCL/D5" x="-17.78" y="-5.08" length="middle"/>
+<pin name="SDA/D4" x="-17.78" y="-2.54" length="middle"/>
+<pin name="TX/A6/D6" x="-17.78" y="-7.62" length="middle"/>
+<text x="0" y="-12.7" size="1.778" layer="96" align="center">&gt;VALUE</text>
+<text x="0" y="12.7" size="1.778" layer="95" align="center">&gt;NAME</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="154N_NAU7802_TH_QTPY" prefix="Q">
+<gates>
+<gate name="1" symbol="154N_NAU7802_TH_QTPY" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="154N_NAU7802_TH_QTPY">
+<connects>
+<connect gate="1" pin="3V" pad="3V"/>
+<connect gate="1" pin="5V" pad="5V"/>
+<connect gate="1" pin="A0/D0" pad="VDDA"/>
+<connect gate="1" pin="A1/D1" pad="INT"/>
+<connect gate="1" pin="A2/D2" pad="A2"/>
+<connect gate="1" pin="A3/D3" pad="A3"/>
+<connect gate="1" pin="GND" pad="GND"/>
+<connect gate="1" pin="MI/A9/D9" pad="MISO"/>
+<connect gate="1" pin="MO/A10/D10" pad="MOSI"/>
+<connect gate="1" pin="RX/A7/D7" pad="RX_A7"/>
+<connect gate="1" pin="SCK/A8/D8" pad="SCK"/>
+<connect gate="1" pin="SCL/D5" pad="SCL"/>
+<connect gate="1" pin="SDA/D4" pad="SDA"/>
+<connect gate="1" pin="TX/A6/D6" pad="TX_A6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -457,7 +443,7 @@ by exp-lbrs.ulp</description>
 </class>
 </classes>
 <parts>
-<part name="Q1" library="154N_NAU7802_TH" deviceset="QTPY" device=""/>
+<part name="Q1" library="Ablatometer Keller 7LD" deviceset="154N_NAU7802_TH_QTPY" device=""/>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="U$7" library="microbuilder" deviceset="3.3V" device=""/>
 <part name="U$8" library="microbuilder" deviceset="3.3V" device=""/>

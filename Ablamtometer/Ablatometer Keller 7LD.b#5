@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.5" unitdist="mm" unit="mm" style="dots" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
@@ -216,58 +216,6 @@
 <hole x="0" y="26" drill="5"/>
 </plain>
 <libraries>
-<library name="154N_NAU7802_TH">
-<description>Generated from &lt;b&gt;154N_NAU7802_TH.sch&lt;/b&gt;&lt;p&gt;
-by exp-lbrs.ulp</description>
-<packages>
-<package name="QTPY">
-<pad name="1" x="-7.62" y="5.08" drill="1" diameter="1.778"/>
-<pad name="2" x="-7.62" y="2.54" drill="1" diameter="1.778"/>
-<pad name="3" x="-7.62" y="0" drill="1" diameter="1.778"/>
-<pad name="4" x="-7.62" y="-2.54" drill="1" diameter="1.778"/>
-<pad name="5" x="-7.62" y="-5.08" drill="1" diameter="1.778"/>
-<pad name="6" x="-7.62" y="-7.62" drill="1" diameter="1.778"/>
-<pad name="0" x="-7.62" y="7.62" drill="1" diameter="1.778"/>
-<text x="0" y="3.81" size="1.27" layer="25" ratio="18" align="center">&gt;NAME</text>
-<text x="0" y="-3.81" size="1.27" layer="27" ratio="10" align="center">&gt;VALUE</text>
-<smd name="1C" x="-8.255" y="5.08" dx="3.048" dy="1.778" layer="1" roundness="100" cream="no"/>
-<smd name="2C" x="-8.255" y="2.54" dx="3.048" dy="1.778" layer="1" roundness="100" cream="no"/>
-<smd name="3C" x="-8.255" y="0" dx="3.048" dy="1.778" layer="1" roundness="100" cream="no"/>
-<smd name="4C" x="-8.255" y="-2.54" dx="3.048" dy="1.778" layer="1" roundness="100" cream="no"/>
-<smd name="5C" x="-8.255" y="-5.08" dx="3.048" dy="1.778" layer="1" roundness="100" cream="no"/>
-<smd name="6C" x="-8.255" y="-7.62" dx="3.048" dy="1.778" layer="1" roundness="100" cream="no"/>
-<smd name="0C" x="-8.255" y="7.62" dx="3.048" dy="1.778" layer="1" roundness="100" cream="no"/>
-<pad name="8" x="7.62" y="-5.08" drill="1" diameter="1.778" rot="R180"/>
-<pad name="9" x="7.62" y="-2.54" drill="1" diameter="1.778" rot="R180"/>
-<pad name="10" x="7.62" y="0" drill="1" diameter="1.778" rot="R180"/>
-<pad name="11" x="7.62" y="2.54" drill="1" diameter="1.778" rot="R180"/>
-<pad name="12" x="7.62" y="5.08" drill="1" diameter="1.778" rot="R180"/>
-<pad name="13" x="7.62" y="7.62" drill="1" diameter="1.778" rot="R180"/>
-<pad name="7" x="7.62" y="-7.62" drill="1" diameter="1.778" rot="R180"/>
-<smd name="8C" x="8.255" y="-5.08" dx="3.048" dy="1.778" layer="1" roundness="100" rot="R180" cream="no"/>
-<smd name="9C" x="8.255" y="-2.54" dx="3.048" dy="1.778" layer="1" roundness="100" rot="R180" cream="no"/>
-<smd name="10C" x="8.255" y="0" dx="3.048" dy="1.778" layer="1" roundness="100" rot="R180" cream="no"/>
-<smd name="11C" x="8.255" y="2.54" dx="3.048" dy="1.778" layer="1" roundness="100" rot="R180" cream="no"/>
-<smd name="12C" x="8.255" y="5.08" dx="3.048" dy="1.778" layer="1" roundness="100" rot="R180" cream="no"/>
-<smd name="13C" x="8.255" y="7.62" dx="3.048" dy="1.778" layer="1" roundness="100" rot="R180" cream="no"/>
-<smd name="7C" x="8.255" y="-7.62" dx="3.048" dy="1.778" layer="1" roundness="100" rot="R180" cream="no"/>
-<wire x1="8.89" y1="7.8105" x2="8.89" y2="-7.8105" width="0.1524" layer="21"/>
-<wire x1="6.35" y1="-10.3505" x2="-6.35" y2="-10.3505" width="0.1524" layer="21"/>
-<wire x1="-8.89" y1="-7.8105" x2="-8.89" y2="7.8105" width="0.1524" layer="21"/>
-<wire x1="-6.35" y1="10.3505" x2="-4.445" y2="10.3505" width="0.1524" layer="21"/>
-<wire x1="-4.445" y1="10.3505" x2="4.445" y2="10.3505" width="0.1524" layer="21"/>
-<wire x1="4.445" y1="10.3505" x2="6.35" y2="10.3505" width="0.1524" layer="21"/>
-<wire x1="-8.89" y1="7.8105" x2="-6.35" y2="10.3505" width="0.127" layer="21" curve="-90"/>
-<wire x1="6.35" y1="10.3505" x2="8.89" y2="7.8105" width="0.127" layer="21" curve="-90"/>
-<wire x1="8.89" y1="-7.8105" x2="6.35" y2="-10.3505" width="0.127" layer="21" curve="-90"/>
-<wire x1="-6.35" y1="-10.3505" x2="-8.89" y2="-7.8105" width="0.127" layer="21" curve="-90"/>
-<wire x1="4.445" y1="10.3505" x2="4.445" y2="11.43" width="0.127" layer="21"/>
-<wire x1="4.445" y1="11.43" x2="-4.445" y2="11.43" width="0.127" layer="21"/>
-<wire x1="-4.445" y1="11.43" x2="-4.445" y2="10.3505" width="0.127" layer="21"/>
-<text x="0" y="8.89" size="1.27" layer="21" align="center">USB</text>
-</package>
-</packages>
-</library>
 <library name="UIO-John">
 <packages>
 <package name="KELLER_7LD">
@@ -282,6 +230,50 @@ by exp-lbrs.ulp</description>
 <smd name="SUP" x="0" y="-2.54" dx="1.397" dy="1.397" layer="1" roundness="100"/>
 <smd name="SCL" x="1.795" y="-1.795" dx="1.397" dy="1.397" layer="1" roundness="100"/>
 <smd name="GND" x="2.54" y="0" dx="1.397" dy="1.397" layer="1" roundness="100"/>
+</package>
+<package name="WIRE_PADS">
+<smd name="3.3V" x="-2" y="0" dx="6" dy="2" layer="1" rot="R90"/>
+<smd name="GND" x="2" y="0" dx="6" dy="2" layer="1" rot="R90"/>
+<smd name="TX" x="6" y="0" dx="6" dy="2" layer="1" rot="R90"/>
+<smd name="RX" x="-6" y="0" dx="6" dy="2" layer="1" rot="R90"/>
+</package>
+</packages>
+</library>
+<library name="Ablatometer Keller 7LD">
+<description>Generated from &lt;b&gt;Ablatometer Keller 7LD.sch&lt;/b&gt;&lt;p&gt;
+by exp-lbrs.ulp</description>
+<packages>
+<package name="154N_NAU7802_TH_QTPY">
+<wire x1="8.89" y1="7.8105" x2="8.89" y2="-7.8105" width="0.1524" layer="21"/>
+<wire x1="6.35" y1="-10.3505" x2="-6.35" y2="-10.3505" width="0.1524" layer="21"/>
+<wire x1="-8.89" y1="-7.8105" x2="-8.89" y2="7.8105" width="0.1524" layer="21"/>
+<wire x1="-6.35" y1="10.3505" x2="-4.445" y2="10.3505" width="0.1524" layer="21"/>
+<wire x1="-4.445" y1="10.3505" x2="4.445" y2="10.3505" width="0.1524" layer="21"/>
+<wire x1="4.445" y1="10.3505" x2="6.35" y2="10.3505" width="0.1524" layer="21"/>
+<wire x1="-8.89" y1="7.8105" x2="-6.35" y2="10.3505" width="0.127" layer="21" curve="-90"/>
+<wire x1="6.35" y1="10.3505" x2="8.89" y2="7.8105" width="0.127" layer="21" curve="-90"/>
+<wire x1="8.89" y1="-7.8105" x2="6.35" y2="-10.3505" width="0.127" layer="21" curve="-90"/>
+<wire x1="-6.35" y1="-10.3505" x2="-8.89" y2="-7.8105" width="0.127" layer="21" curve="-90"/>
+<wire x1="4.445" y1="10.3505" x2="4.445" y2="11.43" width="0.127" layer="21"/>
+<wire x1="4.445" y1="11.43" x2="-4.445" y2="11.43" width="0.127" layer="21"/>
+<wire x1="-4.445" y1="11.43" x2="-4.445" y2="10.3505" width="0.127" layer="21"/>
+<smd name="VDDA" x="-8.255" y="7.62" dx="3.048" dy="1.778" layer="1" roundness="100" cream="no"/>
+<smd name="INT" x="-8.255" y="5.08" dx="3.048" dy="1.778" layer="1" roundness="100" cream="no"/>
+<smd name="A2" x="-8.255" y="2.54" dx="3.048" dy="1.778" layer="1" roundness="100" cream="no"/>
+<smd name="A3" x="-8.255" y="0" dx="3.048" dy="1.778" layer="1" roundness="100" cream="no"/>
+<smd name="SDA" x="-8.255" y="-2.54" dx="3.048" dy="1.778" layer="1" roundness="100" cream="no"/>
+<smd name="SCL" x="-8.255" y="-5.08" dx="3.048" dy="1.778" layer="1" roundness="100" cream="no"/>
+<smd name="TX_A6" x="-8.255" y="-7.62" dx="3.048" dy="1.778" layer="1" roundness="100" cream="no"/>
+<smd name="RX_A7" x="8.255" y="-7.62" dx="3.048" dy="1.778" layer="1" roundness="100" rot="R180" cream="no"/>
+<smd name="SCK" x="8.255" y="-5.08" dx="3.048" dy="1.778" layer="1" roundness="100" rot="R180" cream="no"/>
+<smd name="MISO" x="8.255" y="-2.54" dx="3.048" dy="1.778" layer="1" roundness="100" rot="R180" cream="no"/>
+<smd name="MOSI" x="8.255" y="0" dx="3.048" dy="1.778" layer="1" roundness="100" rot="R180" cream="no"/>
+<smd name="3V" x="8.255" y="2.54" dx="3.048" dy="1.778" layer="1" roundness="100" rot="R180" cream="no"/>
+<smd name="GND" x="8.255" y="5.08" dx="3.048" dy="1.778" layer="1" roundness="100" rot="R180" cream="no"/>
+<smd name="5V" x="8.255" y="7.62" dx="3.048" dy="1.778" layer="1" roundness="100" rot="R180" cream="no"/>
+<text x="0" y="3.81" size="1.27" layer="25" ratio="18" align="center">&gt;NAME</text>
+<text x="0" y="-3.81" size="1.27" layer="27" ratio="10" align="center">&gt;VALUE</text>
+<text x="0" y="8.89" size="1.27" layer="21" align="center">USB</text>
 </package>
 </packages>
 </library>
@@ -518,16 +510,13 @@ Your Eurocircuits Team
 </pass>
 </autorouter>
 <elements>
-<element name="Q1" library="154N_NAU7802_TH" package="QTPY" value="QTPY" x="0" y="72.61" smashed="yes" rot="R180">
-<attribute name="NAME" x="0" y="68.8" size="1.27" layer="25" ratio="18" rot="R180" align="center"/>
-<attribute name="VALUE" x="0" y="76.42" size="1.27" layer="27" ratio="10" rot="R180" align="center"/>
-</element>
+<element name="Q1" library="Ablatometer Keller 7LD" package="154N_NAU7802_TH_QTPY" value="154N_NAU7802_TH_QTPY" x="0" y="72.61" smashed="yes" rot="R180"/>
 <element name="U$1" library="UIO-John" package="KELLER_7LD" value="KELLER_7LD" x="0" y="40" smashed="yes"/>
+<element name="U$3" library="UIO-John" package="WIRE_PADS" value="WIRE_PADS" x="0" y="86.5" smashed="yes"/>
 </elements>
 <signals>
 <signal name="GND">
-<contactref element="Q1" pad="12" route="any" routetag="1.GND"/>
-<contactref element="Q1" pad="12C" route="any" routetag="1.GND"/>
+<contactref element="Q1" pad="GND"/>
 <contactref element="U$1" pad="GND"/>
 <polygon width="1.016" layer="1">
 <vertex x="-10" y="91.5"/>
@@ -547,12 +536,12 @@ Your Eurocircuits Team
 <wire x1="-5.03" y1="67.53" x2="-5" y2="67.5" width="1.016" layer="1"/>
 <wire x1="-8.255" y1="67.53" x2="-5.03" y2="67.53" width="1.016" layer="1"/>
 <wire x1="-0.5" y1="67.5" x2="-0.5" y2="76.5" width="1.016" layer="1"/>
-<wire x1="2" y1="79" x2="2" y2="88" width="1.016" layer="1"/>
-<wire x1="-0.5" y1="76.5" x2="2" y2="79" width="1.016" layer="1"/>
+<wire x1="2" y1="79" x2="-0.5" y2="76.5" width="1.016" layer="1"/>
+<contactref element="U$3" pad="GND"/>
+<wire x1="2" y1="86.5" x2="2" y2="79" width="1.016" layer="1"/>
 </signal>
 <signal name="SCL">
-<contactref element="Q1" pad="5C" route="any" routetag="1.SCL/D5"/>
-<contactref element="Q1" pad="5" route="any" routetag="1.SCL/D5"/>
+<contactref element="Q1" pad="SCL"/>
 <contactref element="U$1" pad="SCL"/>
 <wire x1="8.255" y1="77.69" x2="5.19" y2="77.69" width="1.016" layer="1"/>
 <wire x1="5.19" y1="77.69" x2="2.5" y2="75" width="1.016" layer="1"/>
@@ -563,22 +552,20 @@ Your Eurocircuits Team
 <wire x1="7" y1="57" x2="7" y2="41.5" width="1.016" layer="1"/>
 </signal>
 <signal name="SDA">
-<contactref element="Q1" pad="4C" route="any" routetag="1.SDA/D4"/>
-<contactref element="Q1" pad="4" route="any" routetag="1.SDA/D4"/>
+<contactref element="Q1" pad="SDA"/>
 <contactref element="U$1" pad="SDA"/>
 <wire x1="-1.795" y1="38.205" x2="-1.795" y2="36.795" width="1.016" layer="1"/>
 <wire x1="-1.795" y1="36.795" x2="0" y2="35" width="1.016" layer="1"/>
 <wire x1="0" y1="35" x2="5" y2="35" width="1.016" layer="1"/>
 <wire x1="8.5" y1="58" x2="4" y2="62.5" width="1.016" layer="1"/>
 <wire x1="4" y1="62.5" x2="4" y2="73" width="1.016" layer="1"/>
-<wire x1="6.15" y1="75.15" x2="7.62" y2="75.15" width="1.016" layer="1"/>
+<wire x1="6.15" y1="75.15" x2="8.255" y2="75.15" width="1.016" layer="1"/>
 <wire x1="5" y1="35" x2="8.5" y2="38.5" width="1.016" layer="1"/>
 <wire x1="8.5" y1="38.5" x2="8.5" y2="58" width="1.016" layer="1"/>
 <wire x1="4" y1="73" x2="6.15" y2="75.15" width="1.016" layer="1"/>
 </signal>
 <signal name="3.3V" class="2">
-<contactref element="Q1" pad="11" route="any" routetag="1.3V"/>
-<contactref element="Q1" pad="11C" route="any" routetag="1.3V"/>
+<contactref element="Q1" pad="3V"/>
 <contactref element="U$1" pad="SUP"/>
 <wire x1="-8.255" y1="70.07" x2="-4.5" y2="70.07" width="1.016" layer="1"/>
 <wire x1="-4.07" y1="70.07" x2="-2.5" y2="68.5" width="1.016" layer="1"/>
@@ -588,53 +575,48 @@ Your Eurocircuits Team
 <wire x1="0" y1="37.46" x2="0" y2="41" width="1.016" layer="1"/>
 <wire x1="0" y1="41" x2="-7" y2="48" width="1.016" layer="1"/>
 <wire x1="-4.5" y1="70.07" x2="-4.5" y2="78.5" width="1.016" layer="1"/>
-<wire x1="-4.5" y1="78.5" x2="-2" y2="81" width="1.016" layer="1"/>
-<wire x1="-2" y1="81" x2="-2" y2="88" width="1.016" layer="1"/>
-<wire x1="-4.07" y1="70.07" x2="-7.62" y2="70.07" width="0" layer="19" extent="1-1"/>
+<wire x1="-2" y1="81" x2="-4.5" y2="78.5" width="1.016" layer="1"/>
+<contactref element="U$3" pad="3.3V"/>
+<wire x1="-2" y1="86.5" x2="-2" y2="81" width="1.016" layer="1"/>
+<wire x1="-4.07" y1="70.07" x2="-8.255" y2="70.07" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="INT">
-<contactref element="Q1" pad="1C" route="any" routetag="1.A1/D1"/>
-<contactref element="Q1" pad="1" route="any" routetag="1.A1/D1"/>
+<contactref element="Q1" pad="INT"/>
 </signal>
 <signal name="VDDA">
-<contactref element="Q1" pad="0" route="any" routetag="1.A0/D0"/>
-<contactref element="Q1" pad="0C" route="any" routetag="1.A0/D0"/>
+<contactref element="Q1" pad="VDDA"/>
 </signal>
 <signal name="TX_A6">
-<contactref element="Q1" pad="6C" route="any" routetag="1.TX/A6/D6"/>
-<contactref element="Q1" pad="6" route="any" routetag="1.TX/A6/D6"/>
-<wire x1="8.255" y1="80.23" x2="6" y2="82.485" width="1.016" layer="1"/>
-<wire x1="6" y1="82.485" x2="6" y2="88" width="1.016" layer="1"/>
+<contactref element="Q1" pad="TX_A6"/>
+<wire x1="8.255" y1="80.23" x2="7.255" y2="80.23" width="1.016" layer="1"/>
+<wire x1="6" y1="81.485" x2="7.255" y2="80.23" width="1.016" layer="1"/>
+<contactref element="U$3" pad="TX"/>
+<wire x1="6" y1="86.5" x2="6" y2="81.485" width="1.016" layer="1"/>
 </signal>
 <signal name="RX_A7">
-<contactref element="Q1" pad="7" route="any" routetag="1.RX/A7/D7"/>
-<contactref element="Q1" pad="7C" route="any" routetag="1.RX/A7/D7"/>
-<wire x1="-8.255" y1="80.23" x2="-6" y2="82.485" width="1.016" layer="1"/>
-<wire x1="-6" y1="82.485" x2="-6" y2="88" width="1.016" layer="1"/>
+<contactref element="Q1" pad="RX_A7"/>
+<wire x1="-7.255" y1="80.23" x2="-6" y2="81.485" width="1.016" layer="1"/>
+<wire x1="-8.255" y1="80.23" x2="-7.255" y2="80.23" width="1.016" layer="1"/>
+<contactref element="U$3" pad="RX"/>
+<wire x1="-6" y1="81.485" x2="-6" y2="86.5" width="1.016" layer="1"/>
 </signal>
 <signal name="MOSI">
-<contactref element="Q1" pad="10" route="any" routetag="1.MO/A10/D10"/>
-<contactref element="Q1" pad="10C" route="any" routetag="1.MO/A10/D10"/>
+<contactref element="Q1" pad="MOSI"/>
 </signal>
 <signal name="MISO">
-<contactref element="Q1" pad="9C" route="any" routetag="1.MI/A9/D9"/>
-<contactref element="Q1" pad="9" route="any" routetag="1.MI/A9/D9"/>
+<contactref element="Q1" pad="MISO"/>
 </signal>
 <signal name="SCK">
-<contactref element="Q1" pad="8C" route="any" routetag="1.SCK/A8/D8"/>
-<contactref element="Q1" pad="8" route="any" routetag="1.SCK/A8/D8"/>
+<contactref element="Q1" pad="SCK"/>
 </signal>
 <signal name="A2">
-<contactref element="Q1" pad="2" route="any" routetag="1.A2/D2"/>
-<contactref element="Q1" pad="2C" route="any" routetag="1.A2/D2"/>
+<contactref element="Q1" pad="A2"/>
 </signal>
 <signal name="A3">
-<contactref element="Q1" pad="3" route="any" routetag="1.A3/D3"/>
-<contactref element="Q1" pad="3C" route="any" routetag="1.A3/D3"/>
+<contactref element="Q1" pad="A3"/>
 </signal>
 <signal name="5V" class="1">
-<contactref element="Q1" pad="13" route="any" routetag="1.5V"/>
-<contactref element="Q1" pad="13C" route="any" routetag="1.5V"/>
+<contactref element="Q1" pad="5V"/>
 </signal>
 <signal name="GND2">
 <polygon width="1.016" layer="16">

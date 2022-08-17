@@ -22018,10 +22018,10 @@
 <smd name="GND" x="2.54" y="0" dx="1.397" dy="1.397" layer="1" roundness="100"/>
 </package>
 <package name="WIRE_PADS">
-<smd name="3.3V" x="-2" y="0" dx="6.5" dy="2" layer="1" rot="R90"/>
-<smd name="GND" x="2" y="0" dx="6.5" dy="2" layer="1" rot="R90"/>
-<smd name="TX" x="6" y="0" dx="6.5" dy="2" layer="1" rot="R90"/>
-<smd name="RX" x="-6" y="0" dx="6.5" dy="2" layer="1" rot="R90"/>
+<smd name="3.3V" x="-2" y="0" dx="6" dy="2" layer="1" rot="R90"/>
+<smd name="GND" x="2" y="0" dx="6" dy="2" layer="1" rot="R90"/>
+<smd name="TX" x="6" y="0" dx="6" dy="2" layer="1" rot="R90"/>
+<smd name="RX" x="-6" y="0" dx="6" dy="2" layer="1" rot="R90"/>
 </package>
 </packages>
 <symbols>

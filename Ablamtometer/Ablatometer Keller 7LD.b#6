@@ -52,7 +52,7 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
@@ -212,6 +212,8 @@
 <circle x="1.79605" y="38.20395" radius="0.4" width="0.1" layer="48"/>
 <circle x="2.54" y="40" radius="0.4" width="0.1" layer="48"/>
 <circle x="2.54" y="40" radius="0.4" width="0.1" layer="48"/>
+<hole x="0" y="54" drill="5"/>
+<hole x="0" y="26" drill="5"/>
 </plain>
 <libraries>
 <library name="154N_NAU7802_TH">
@@ -275,11 +277,17 @@ by exp-lbrs.ulp</description>
 <hole x="0" y="-2.54" drill="0.8"/>
 <hole x="1.795" y="-1.795" drill="0.8"/>
 <hole x="2.54" y="0" drill="0.8"/>
-<smd name="EOC" x="-2.54" y="0.635" dx="1.27" dy="2.54" layer="1" roundness="100"/>
-<smd name="SDA" x="-1.795" y="-2.43" dx="1.27" dy="2.54" layer="1" roundness="100"/>
-<smd name="SUP" x="0" y="-3.175" dx="1.27" dy="2.54" layer="1" roundness="100"/>
-<smd name="SCL" x="1.795" y="-2.43" dx="1.27" dy="2.54" layer="1" roundness="100"/>
-<smd name="GND" x="2.54" y="0.635" dx="1.27" dy="2.54" layer="1" roundness="100"/>
+<smd name="EOC" x="-2.54" y="0" dx="1.397" dy="1.397" layer="1" roundness="100"/>
+<smd name="SDA" x="-1.795" y="-1.795" dx="1.397" dy="1.397" layer="1" roundness="100"/>
+<smd name="SUP" x="0" y="-2.54" dx="1.397" dy="1.397" layer="1" roundness="100"/>
+<smd name="SCL" x="1.795" y="-1.795" dx="1.397" dy="1.397" layer="1" roundness="100"/>
+<smd name="GND" x="2.54" y="0" dx="1.397" dy="1.397" layer="1" roundness="100"/>
+</package>
+<package name="WIRE_PADS">
+<smd name="3.3V" x="-2" y="0" dx="6" dy="2" layer="1" rot="R90"/>
+<smd name="GND" x="2" y="0" dx="6" dy="2" layer="1" rot="R90"/>
+<smd name="TX" x="6" y="0" dx="6" dy="2" layer="1" rot="R90"/>
+<smd name="RX" x="-6" y="0" dx="6" dy="2" layer="1" rot="R90"/>
 </package>
 </packages>
 </library>
@@ -296,7 +304,7 @@ by exp-lbrs.ulp</description>
 <class number="2" name="3.3V" width="0.4064" drill="0">
 </class>
 </classes>
-<designrules name="eC_2Layer_PClass6_BaseCopperO18_eCDefault *">
+<designrules name="eC_2Layer_PClass6_BaseCopperO18_eCDefault">
 <description language="de">
 
 
@@ -362,7 +370,7 @@ Your Eurocircuits Team
 <param name="mdViaViaSameLayer" value="0.2mm"/>
 <param name="mnLayersViaInSmd" value="2"/>
 <param name="mdCopperDimension" value="0.25mm"/>
-<param name="mdDrill" value="0mil"/>
+<param name="mdDrill" value="0.35mm"/>
 <param name="mdSmdStop" value="0mil"/>
 <param name="msWidth" value="0.15mm"/>
 <param name="msDrill" value="0.35mm"/>
@@ -521,55 +529,77 @@ Your Eurocircuits Team
 <attribute name="VALUE" x="0" y="76.42" size="1.27" layer="27" ratio="10" rot="R180" align="center"/>
 </element>
 <element name="U$1" library="UIO-John" package="KELLER_7LD" value="KELLER_7LD" x="0" y="40" smashed="yes"/>
+<element name="U$3" library="UIO-John" package="WIRE_PADS" value="WIRE_PADS" x="0" y="86.5" smashed="yes"/>
 </elements>
 <signals>
 <signal name="GND">
 <contactref element="Q1" pad="12" route="any" routetag="1.GND"/>
 <contactref element="Q1" pad="12C" route="any" routetag="1.GND"/>
 <contactref element="U$1" pad="GND"/>
-<wire x1="-7.59" y1="67.5" x2="-7.62" y2="67.53" width="1.016" layer="1"/>
-<wire x1="2.54" y1="40.635" x2="-7.59" y2="67.5" width="0" layer="19" extent="1-1"/>
+<polygon width="1.016" layer="1">
+<vertex x="-10" y="91.5"/>
+<vertex x="-10" y="20"/>
+<vertex x="10" y="20"/>
+<vertex x="10" y="91.5"/>
+</polygon>
+<via x="-5" y="67.5" extent="1-16" drill="0.8"/>
+<via x="-0.5" y="67.5" extent="1-16" drill="0.8"/>
+<wire x1="-0.5" y1="67.5" x2="-5" y2="67.5" width="1.016" layer="16"/>
+<wire x1="-0.5" y1="67.5" x2="-0.5" y2="62" width="1.016" layer="1"/>
+<wire x1="-5.5" y1="57" x2="-5.5" y2="49" width="1.016" layer="1"/>
+<wire x1="2.5" y1="41" x2="-5.5" y2="49" width="1.016" layer="1"/>
+<wire x1="-0.5" y1="62" x2="-5.5" y2="57" width="1.016" layer="1"/>
+<wire x1="2.54" y1="40" x2="2.5" y2="40.04" width="1.016" layer="1"/>
+<wire x1="2.5" y1="40.04" x2="2.5" y2="41" width="1.016" layer="1"/>
+<wire x1="-5.03" y1="67.53" x2="-5" y2="67.5" width="1.016" layer="1"/>
+<wire x1="-8.255" y1="67.53" x2="-5.03" y2="67.53" width="1.016" layer="1"/>
+<wire x1="-0.5" y1="67.5" x2="-0.5" y2="76.5" width="1.016" layer="1"/>
+<wire x1="2" y1="79" x2="-0.5" y2="76.5" width="1.016" layer="1"/>
+<contactref element="U$3" pad="GND"/>
+<wire x1="2" y1="86.5" x2="2" y2="79" width="1.016" layer="1"/>
 </signal>
 <signal name="SCL">
 <contactref element="Q1" pad="5C" route="any" routetag="1.SCL/D5"/>
 <contactref element="Q1" pad="5" route="any" routetag="1.SCL/D5"/>
 <contactref element="U$1" pad="SCL"/>
-<wire x1="1.795" y1="37.57" x2="1.795" y2="38.205" width="1.016" layer="1"/>
 <wire x1="8.255" y1="77.69" x2="5.19" y2="77.69" width="1.016" layer="1"/>
 <wire x1="5.19" y1="77.69" x2="2.5" y2="75" width="1.016" layer="1"/>
 <wire x1="2.5" y1="75" x2="2.5" y2="61.5" width="1.016" layer="1"/>
 <wire x1="2.5" y1="61.5" x2="7" y2="57" width="1.016" layer="1"/>
-<wire x1="7" y1="36.5" x2="4.5" y2="34" width="1.016" layer="1"/>
-<wire x1="4.5" y1="34" x2="3" y2="34" width="1.016" layer="1"/>
-<wire x1="1.795" y1="35.205" x2="3" y2="34" width="1.016" layer="1"/>
-<wire x1="7" y1="57" x2="7" y2="36.5" width="1.016" layer="1"/>
-<wire x1="1.795" y1="37.57" x2="1.795" y2="35.205" width="1.016" layer="1"/>
+<wire x1="7" y1="41.5" x2="3.705" y2="38.205" width="1.016" layer="1"/>
+<wire x1="1.795" y1="38.205" x2="3.705" y2="38.205" width="1.016" layer="1"/>
+<wire x1="7" y1="57" x2="7" y2="41.5" width="1.016" layer="1"/>
 </signal>
 <signal name="SDA">
 <contactref element="Q1" pad="4C" route="any" routetag="1.SDA/D4"/>
 <contactref element="Q1" pad="4" route="any" routetag="1.SDA/D4"/>
 <contactref element="U$1" pad="SDA"/>
-<wire x1="-1.795" y1="37.57" x2="-1.795" y2="34.295" width="1.016" layer="1"/>
-<wire x1="-1.795" y1="34.295" x2="0" y2="32.5" width="1.016" layer="1"/>
-<wire x1="0" y1="32.5" x2="5.5" y2="32.5" width="1.016" layer="1"/>
+<wire x1="-1.795" y1="38.205" x2="-1.795" y2="36.795" width="1.016" layer="1"/>
+<wire x1="-1.795" y1="36.795" x2="0" y2="35" width="1.016" layer="1"/>
+<wire x1="0" y1="35" x2="5" y2="35" width="1.016" layer="1"/>
 <wire x1="8.5" y1="58" x2="4" y2="62.5" width="1.016" layer="1"/>
 <wire x1="4" y1="62.5" x2="4" y2="73" width="1.016" layer="1"/>
 <wire x1="6.15" y1="75.15" x2="7.62" y2="75.15" width="1.016" layer="1"/>
-<wire x1="5.5" y1="32.5" x2="8.5" y2="35.5" width="1.016" layer="1"/>
-<wire x1="8.5" y1="35.5" x2="8.5" y2="58" width="1.016" layer="1"/>
+<wire x1="5" y1="35" x2="8.5" y2="38.5" width="1.016" layer="1"/>
+<wire x1="8.5" y1="38.5" x2="8.5" y2="58" width="1.016" layer="1"/>
 <wire x1="4" y1="73" x2="6.15" y2="75.15" width="1.016" layer="1"/>
 </signal>
 <signal name="3.3V" class="2">
 <contactref element="Q1" pad="11" route="any" routetag="1.3V"/>
 <contactref element="Q1" pad="11C" route="any" routetag="1.3V"/>
 <contactref element="U$1" pad="SUP"/>
-<wire x1="-8.255" y1="70.07" x2="-5.57" y2="70.07" width="1.016" layer="1"/>
-<wire x1="-5.57" y1="70.07" x2="-2.5" y2="67" width="1.016" layer="1"/>
-<wire x1="-2.5" y1="67" x2="-2.5" y2="65.5" width="1.016" layer="1"/>
-<wire x1="-2.5" y1="65.5" x2="-8.5" y2="59.5" width="1.016" layer="1"/>
-<wire x1="-8.5" y1="59.5" x2="-8.5" y2="49.5" width="1.016" layer="1"/>
-<wire x1="0" y1="36.825" x2="0" y2="41" width="1.016" layer="1"/>
-<wire x1="0" y1="41" x2="-8.5" y2="49.5" width="1.016" layer="1"/>
+<wire x1="-8.255" y1="70.07" x2="-4.5" y2="70.07" width="1.016" layer="1"/>
+<wire x1="-4.07" y1="70.07" x2="-2.5" y2="68.5" width="1.016" layer="1"/>
+<wire x1="-2.5" y1="68.5" x2="-2.5" y2="62.5" width="1.016" layer="1"/>
+<wire x1="-2.5" y1="62.5" x2="-7" y2="58" width="1.016" layer="1"/>
+<wire x1="-7" y1="58" x2="-7" y2="48" width="1.016" layer="1"/>
+<wire x1="0" y1="37.46" x2="0" y2="41" width="1.016" layer="1"/>
+<wire x1="0" y1="41" x2="-7" y2="48" width="1.016" layer="1"/>
+<wire x1="-4.5" y1="70.07" x2="-4.5" y2="78.5" width="1.016" layer="1"/>
+<wire x1="-2" y1="81" x2="-4.5" y2="78.5" width="1.016" layer="1"/>
+<contactref element="U$3" pad="3.3V"/>
+<wire x1="-2" y1="86.5" x2="-2" y2="81" width="1.016" layer="1"/>
+<wire x1="-4.07" y1="70.07" x2="-7.62" y2="70.07" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="INT">
 <contactref element="Q1" pad="1C" route="any" routetag="1.A1/D1"/>
@@ -582,10 +612,18 @@ Your Eurocircuits Team
 <signal name="TX_A6">
 <contactref element="Q1" pad="6C" route="any" routetag="1.TX/A6/D6"/>
 <contactref element="Q1" pad="6" route="any" routetag="1.TX/A6/D6"/>
+<wire x1="8.255" y1="80.23" x2="7.255" y2="80.23" width="1.016" layer="1"/>
+<wire x1="6" y1="81.485" x2="7.255" y2="80.23" width="1.016" layer="1"/>
+<contactref element="U$3" pad="TX"/>
+<wire x1="6" y1="86.5" x2="6" y2="81.485" width="1.016" layer="1"/>
 </signal>
 <signal name="RX_A7">
 <contactref element="Q1" pad="7" route="any" routetag="1.RX/A7/D7"/>
 <contactref element="Q1" pad="7C" route="any" routetag="1.RX/A7/D7"/>
+<wire x1="-7.255" y1="80.23" x2="-6" y2="81.485" width="1.016" layer="1"/>
+<wire x1="-8.255" y1="80.23" x2="-7.255" y2="80.23" width="1.016" layer="1"/>
+<contactref element="U$3" pad="RX"/>
+<wire x1="-6" y1="81.485" x2="-6" y2="86.5" width="1.016" layer="1"/>
 </signal>
 <signal name="MOSI">
 <contactref element="Q1" pad="10" route="any" routetag="1.MO/A10/D10"/>
@@ -610,6 +648,14 @@ Your Eurocircuits Team
 <signal name="5V" class="1">
 <contactref element="Q1" pad="13" route="any" routetag="1.5V"/>
 <contactref element="Q1" pad="13C" route="any" routetag="1.5V"/>
+</signal>
+<signal name="GND2">
+<polygon width="1.016" layer="16">
+<vertex x="-10" y="20"/>
+<vertex x="10" y="20"/>
+<vertex x="10" y="90.5"/>
+<vertex x="-10" y="90.5"/>
+</polygon>
 </signal>
 </signals>
 <mfgpreviewcolors>
