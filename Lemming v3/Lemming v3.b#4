@@ -192,10 +192,12 @@
 <wire x1="29.5275" y1="0" x2="29.5275" y2="19.05" width="0" layer="20"/>
 <wire x1="29.5275" y1="19.05" x2="0" y2="19.05" width="0" layer="20"/>
 <wire x1="0" y1="19.05" x2="0" y2="0" width="0" layer="20"/>
-<dimension x1="-0.3175" y1="-0.635" x2="30.1625" y2="-0.635" x3="14.9225" y3="-4.445" textsize="1.778" layer="47"/>
-<dimension x1="-0.9525" y1="0" x2="-0.9525" y2="19.3675" x3="-3.4925" y3="9.68375" textsize="1.778" layer="47"/>
+<dimension x1="-0.3175" y1="-0.635" x2="30.1625" y2="-0.635" x3="14.9225" y3="-4.445" textsize="1.778" layer="51"/>
+<dimension x1="-0.9525" y1="0" x2="-0.9525" y2="19.3675" x3="-3.4925" y3="9.68375" textsize="1.778" layer="51"/>
 <text x="28.448" y="4.5085" size="1.778" layer="22" rot="MR0">(c) 2022
 john.hulth@geo.uio.no</text>
+<dimension x1="8.5725" y1="20.32" x2="28.8925" y2="20.32" x3="18.7325" y3="21.2725" textsize="1.778" layer="51"/>
+<dimension x1="30.1625" y1="16.51" x2="30.1625" y2="2.8575" x3="33.02" y3="9.68375" textsize="1.778" layer="51"/>
 </plain>
 <libraries>
 <library name="Switch">
@@ -1410,13 +1412,11 @@ Your Eurocircuits Team
 <signal name="N$8">
 <contactref element="R3" pad="2"/>
 <contactref element="JP2" pad="1"/>
-<via x="5.23" y="1.0922" extent="1-16" drill="0.35"/>
-<wire x1="5.23" y1="1.0922" x2="5.08" y2="1.0922" width="0.254" layer="16"/>
 <via x="7.3025" y="1.2518" extent="1-16" drill="0.35"/>
-<wire x1="7.3025" y1="1.2518" x2="7.1429" y2="1.0922" width="0.254" layer="16"/>
-<wire x1="7.1429" y1="1.0922" x2="5.23" y2="1.0922" width="0.254" layer="16"/>
 <wire x1="7.3025" y1="1.2518" x2="7.1937" y2="1.143" width="0.254" layer="1"/>
 <wire x1="7.1937" y1="1.143" x2="5.93" y2="1.143" width="0.254" layer="1"/>
+<wire x1="7.3025" y1="1.2518" x2="7.1429" y2="1.0922" width="0.254" layer="16"/>
+<wire x1="7.1429" y1="1.0922" x2="5.08" y2="1.0922" width="0.254" layer="16"/>
 </signal>
 <signal name="OUT0">
 <contactref element="U1" pad="1"/>
