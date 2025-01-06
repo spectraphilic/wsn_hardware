@@ -5280,7 +5280,7 @@ Temp:</text>
 <part name="GND11" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C12" library="microbuilder" deviceset="CAP_CERAMIC" device="0805-NOOUTLINE" value="10uF"/>
 <part name="GND25" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="U1" library="adafruit_power" deviceset="VREG_SOT23-5" device="" value="MIC5225-3.3"/>
+<part name="U1" library="adafruit_power" deviceset="VREG_SOT23-5" device="" value="AP2112K-3.3"/>
 <part name="U$8" library="microbuilder" deviceset="3.3V" device=""/>
 </parts>
 <sheets>

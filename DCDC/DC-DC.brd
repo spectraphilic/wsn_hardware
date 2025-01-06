@@ -3527,13 +3527,6 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <contactref element="U3" pad="2"/>
 <contactref element="U6" pad="2"/>
 <contactref element="U2" pad="2"/>
-<wire x1="39.37" y1="6.35" x2="48.26" y2="7.62" width="0" layer="19" extent="1-1"/>
-<wire x1="30.48" y1="6.35" x2="39.37" y2="6.35" width="0" layer="19" extent="1-1"/>
-<wire x1="21.59" y1="6.35" x2="30.48" y2="6.35" width="0" layer="19" extent="1-1"/>
-<wire x1="12.7" y1="6.35" x2="21.59" y2="6.35" width="0" layer="19" extent="1-1"/>
-<wire x1="39.37" y1="17.78" x2="39.37" y2="6.35" width="0" layer="19" extent="1-1"/>
-<wire x1="13.97" y1="17.78" x2="12.7" y2="6.35" width="0" layer="19" extent="1-1"/>
-<wire x1="26.67" y1="17.78" x2="30.48" y2="6.35" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="12V">
 <contactref element="J2" pad="2"/>
@@ -3591,42 +3584,6 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <mfgpreviewcolor name="coppercolor" color="0xFFFFBF00"/>
 <mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
 </mfgpreviewcolors>
-<errors>
-<approved hash="19,16,37a42d556d3e35a3"/>
-<approved hash="19,16,0a1f0a5f52635223"/>
-<approved hash="19,16,d600d641ae7dae3c"/>
-<approved hash="19,16,37a42d556d3e35a3"/>
-<approved hash="19,16,c547e7159bf7fbc9"/>
-<approved hash="19,16,0a1f0a5f52635223"/>
-<approved hash="19,16,d600d641ae7dae3c"/>
-<approved hash="19,16,719ac34169589250"/>
-<approved hash="19,16,5d477f0895eaf5c9"/>
-<approved hash="19,16,cbbea155cb3ae3bd"/>
-<approved hash="19,16,921f925f22632223"/>
-<approved hash="19,16,0a1f0a5f52635223"/>
-<approved hash="19,16,c547e7159bf7fbc9"/>
-<approved hash="19,16,0a1f0a5f52635223"/>
-<approved hash="19,16,d600d641ae7dae3c"/>
-<approved hash="19,16,ce229db2bd3ff5cc"/>
-<approved hash="19,16,0f4e8d5163f1cc65"/>
-<approved hash="19,16,719ac34169589250"/>
-<approved hash="19,16,ce229db2bd3ff5cc"/>
-<approved hash="19,16,8606c2582227dd47"/>
-<approved hash="19,16,15717c292a0e7543"/>
-<approved hash="19,16,30a6ba989ef3d18f"/>
-<approved hash="19,16,19f2debbfed7f9fc"/>
-<approved hash="19,16,1a80641bda12b8d3"/>
-<approved hash="19,16,d83fc34b5daf5a81"/>
-<approved hash="19,16,0bf10bf157cd57cd"/>
-<approved hash="19,16,dd0ef757d23b376c"/>
-<approved hash="19,16,d7dcc5e0f8b0e6ac"/>
-<approved hash="23,1,8ba0ac60ac8a8b4a"/>
-<approved hash="19,16,f0c1c1a659fcd8de"/>
-<approved hash="19,16,7eb89533918bca45"/>
-<approved hash="19,16,8fb48cbf1c831f88"/>
-<approved hash="19,16,016c09e986983e23"/>
-<approved hash="19,16,0e9c059700d8bbed"/>
-</errors>
 </board>
 </drawing>
 <compatibility>

@@ -3607,7 +3607,7 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <contactref element="D1" pad="C"/>
 <wire x1="23.495" y1="24.13" x2="24.765" y2="24.13" width="1.27" layer="1"/>
 <wire x1="24.765" y1="24.13" x2="27.305" y2="24.13" width="2.286" layer="1"/>
-<wire x1="24.765" y1="17.145" x2="24.765" y2="24.13" width="2.032" layer="1"/>
+<wire x1="24.765" y1="17.145" x2="24.765" y2="24.13" width="1.905" layer="1"/>
 <wire x1="36.195" y1="17.145" x2="39.37" y2="17.145" width="1.27" layer="1"/>
 <wire x1="39.37" y1="17.145" x2="41.91" y2="17.145" width="1.27" layer="1"/>
 <wire x1="42.545" y1="17.78" x2="47.625" y2="17.78" width="1.27" layer="1"/>
@@ -3643,15 +3643,15 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <signal name="BACK-UP">
 <contactref element="D2" pad="A"/>
 <contactref element="U$1" pad="+"/>
-<wire x1="8.255" y1="24.13" x2="8.255" y2="20.265" width="2.032" layer="1"/>
-<wire x1="8.255" y1="20.265" x2="5.08" y2="17.09" width="2.032" layer="1"/>
+<wire x1="8.255" y1="24.13" x2="8.255" y2="20.265" width="1.905" layer="1"/>
+<wire x1="8.255" y1="20.265" x2="5.08" y2="17.09" width="1.905" layer="1"/>
 </signal>
 <signal name="MAIN">
 <contactref element="D1" pad="A"/>
 <contactref element="J7" pad="6"/>
-<wire x1="47.625" y1="20.32" x2="44.45" y2="20.32" width="2.032" layer="1"/>
-<wire x1="44.45" y1="20.32" x2="42.545" y2="22.225" width="2.032" layer="1"/>
-<wire x1="42.545" y1="22.225" x2="42.545" y2="24.13" width="2.032" layer="1"/>
+<wire x1="47.625" y1="20.32" x2="44.45" y2="20.32" width="1.651" layer="1"/>
+<wire x1="44.45" y1="20.32" x2="42.545" y2="22.225" width="1.651" layer="1"/>
+<wire x1="42.545" y1="22.225" x2="42.545" y2="24.13" width="1.651" layer="1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>

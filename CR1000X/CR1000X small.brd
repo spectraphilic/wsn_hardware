@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.0125" unitdist="inch" unit="inch" style="dots" multiple="1" display="yes" altdistance="0.0025" altunitdist="inch" altunit="inch"/>
@@ -1437,7 +1437,7 @@ Your Eurocircuits Team
 <attribute name="NAME" x="17.907" y="3.048" size="0.8128" layer="25" ratio="18"/>
 <attribute name="VALUE" x="17.907" y="2.413" size="0.4064" layer="27" ratio="10"/>
 </element>
-<element name="U1" library="adafruit_power" package="SOT23-5" value="MIC5225-3.3" x="15.875" y="7.62" smashed="yes">
+<element name="U1" library="adafruit_power" package="SOT23-5" value="AP2112K-3.3" x="15.875" y="7.62" smashed="yes">
 <attribute name="NAME" x="17.853" y="7.62" size="0.8128" layer="25" ratio="18"/>
 <attribute name="VALUE" x="17.853" y="6.985" size="0.4064" layer="27" ratio="10"/>
 </element>
